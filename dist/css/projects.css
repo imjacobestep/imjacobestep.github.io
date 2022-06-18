@@ -30,7 +30,7 @@ a{
 }
 
 h1{
-    font-size: x-large;
+    font-size: 34px;
     font-family: Inter;
 }
 h2{
@@ -60,3 +60,26 @@ p{
     text-align: center;
 }
 
+a.button{
+    width: 15%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    display: block;
+    text-decoration: none;
+    color: initial;
+    border-color: #00000011;
+    border: 2px solid;
+}
+
+a.button:hover{
+    background-color: #00000011;
+}
+
+iframe {
+    border: 0.15em solid black;
+  }

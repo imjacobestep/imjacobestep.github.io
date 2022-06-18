@@ -5,6 +5,11 @@ html{
     margin: 0%;
 }
 
+html.about{
+    background-color: transparent;
+    background-image: "images/about/me.png";
+}
+
 .content{
     margin-left: auto;
     margin-right: auto;
@@ -30,25 +35,44 @@ a{
 
 h1{
     text-align: center;
-    font-size: x-large;
+    font-size: 34px;
     font-family: Inter;
 }
 
 h2{
+    text-align: center;
+    font-size: 22px;
+    font-family: Inter;
+    font-weight: normal;
+}
+
+h3{
     text-align: center;
     font-size: large;
     font-family: Inter;
     font-weight: normal;
 }
 
+p{
+    font-size: medium;
+    font-family: Inter;
+    line-height: 1.3em;
+}
+
 a.button{
+    font-size: 16px;
+    font-weight: normal;
     padding: 10px;
-    border-radius: 8px;
-    background-color: #00000011;
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
     display: inline;
     text-decoration: none;
     color: initial;
+    border-color: #00000011;
+    border: 2px solid;
+}
+
+a.button:hover{
+    background-color: #00000011;
 }
