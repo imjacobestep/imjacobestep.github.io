@@ -1,24 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 
 html{
-    background-color: white;
+    background-color: #fce2e2;
     margin: 0%;
 }
 
 .content{
-    margin: 4%;
+    margin: 0px auto;
+    padding-top: 40px;
+    width: 80%;
 }
 
 .nav{
-    width: 100%;
-    height: 20px;
-    align-content: center;
-    padding-bottom: 10px;
-    border-bottom: solid #00000011;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 10px;
+    background-color: white;
+    border-color: #00000011;
+    border-width: 2px 4px 4px 2px;
+    border-color: black;
+    border-style: solid;
 }
 
 .navItem{
-    margin-right: 10px;
+    margin: 0px;
+    
 }
 
 a{
@@ -36,6 +43,13 @@ h1{
 h2{
     font-size: large;
     font-family: Inter;
+    margin-top: 60px;
+    padding: 6px;
+    background-color: white;
+    border-color: #00000011;
+    border-width: 2px 4px 4px 2px;
+    border-color: black;
+    border-style: solid;
 }
 h2.context{
     color: #8B8B8BBB;
@@ -72,14 +86,63 @@ a.button{
     display: block;
     text-decoration: none;
     color: initial;
+    background-color: white;
     border-color: #00000011;
-    border: 2px solid;
+    border-width: 2px 4px 4px 2px;
+    border-color: black;
+    border-style: solid;
 }
 
 a.button:hover{
     background-color: #00000011;
+    border-width: 4px 2px 2px 4px;
 }
 
 iframe {
     border: 0.15em solid black;
   }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 10%;
+}
+
+.column {
+    flex: 32%;
+    max-width: 32%;
+    padding: 0 4px;
+  }
+
+div.gallery {
+    margin: 5px;
+    background-color: white;
+    border-color: black;
+    border-width: 2px 4px 4px 2px;
+    border-color: black;
+    border-style: solid;
+  }
+  
+div.gallery:hover {
+    background-color: #e1e1e1;
+    border-width: 4px 2px 2px 4px;
+}
+
+div.gallery img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: small;
+    font-family: Inter;
+    line-height: 1.3em;
+}
+
+.footer {
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+}
