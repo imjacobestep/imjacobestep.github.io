@@ -32,7 +32,7 @@ html{
 }
 
 a{
-    font-family: Inter;
+    font-family: var(--font);
     font-weight: 500;
 }
 
@@ -84,26 +84,26 @@ a{
 h1{
     text-align: center;
     font-size: 34px;
-    font-family: Inter;
+    font-family: var(--font);
 }
 
 h2{
     text-align: center;
     font-size: 22px;
-    font-family: Inter;
+    font-family: var(--font);
     font-weight: normal;
 }
 
 h3{
     text-align: center;
     font-size: large;
-    font-family: Inter;
+    font-family: var(--font);
     font-weight: normal;
 }
 
 p{
     font-size: medium;
-    font-family: Inter;
+    font-family: var(--font);
     line-height: 1.3em;
 }
 
