@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 
+
+:root {
+    --bg-color: #fce2e2;
+    --border-color: black;
+    --surface-color-normal: white;
+    --surface-color-hover: #e1e1e1;
+    --problem-color: #F50202;
+    --process-color: #F5A302;
+    --solution-color: #13D402;
+    --surface-border-normal: 2px 4px 4px 2px;
+    --surface-border-hover: 4px 2px 2px 4px;
+    --font: Inter
+  }
+
 html{
-    background-color: #fce2e2;
+    background-color: var(--bg-color);
     margin: 0px;
 }
 
@@ -13,25 +27,52 @@ html{
 
 .nav{
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
     position: fixed;
     padding: 10px;
-    background-color: white;
-    border-color: #00000011;
-    border-width: 2px 4px 4px 2px;
-    border-color: black;
+    background-color: var(--surface-color-normal);
+    border-color: var(--border-color);
+    border-width: var(--surface-border-normal);
+    border-color: var(--border-color);
     border-style: solid;
-    top: 40%;
 }
 
-.navItem{
-    margin: 0px;
-    
+.nav a{
+    border-color: var(--border-color);
+    border-width: var(--surface-border-normal);
+    border-color: var(--border-color);
+    border-style: solid;
+}
+
+.nav a:hover{
+    background-color: var(--surface-color-hover);
+}
+
+.nav.home{
+    background-color: var(--surface-color-normal);
+}
+
+.navproblem{
+    background-color: var(--problem-color);
+}
+
+.navprocess{
+    background-color: var(--process-color);
+}
+
+.navresult{
+    background-color: var(--solution-color);
+}
+
+.navWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 a{
-    font-family: Inter;
+    font-family: var(--font);
     margin-right: 10px;
     text-decoration: none;
     color: #000;
@@ -39,41 +80,37 @@ a{
 }
 
 h1{
-    font-size: 34px;
-    font-family: Inter;
+    font-size: 44px;
+    font-family: var(--font);
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 h2{
     font-size: large;
-    font-family: Inter;
+    font-family: var(--font);
     margin-top: 60px;
     padding: 6px;
-    background-color: white;
-    border-color: #00000011;
-    border-width: 2px 4px 4px 2px;
-    border-color: black;
+    background-color: var(--surface-color-normal);
+    border-color: var(--border-color);
+    border-width: var(--surface-border-normal);
     border-style: solid;
 }
 h2.context{
     color: #8B8B8BBB;
 }
 h2.problem{
-    color: #F50202BB;
+    color: var(--problem-color);
 }
 h2.process{
-    color: #F5A302BB;
+    color: var(--process-color);
 }
 h2.result{
-    color: #13D402BB;
+    color: var(--solution-color);
 }
 p{
     font-size: medium;
-    font-family: Inter;
+    font-family: var(--font);
     line-height: 1.3em;
-}
-
-.toTop{
-    width: auto;
-    text-align: center;
 }
 
 a.button{
@@ -88,46 +125,44 @@ a.button{
     display: block;
     text-decoration: none;
     color: initial;
-    background-color: white;
-    border-color: #00000011;
-    border-width: 2px 4px 4px 2px;
-    border-color: black;
+    background-color: var(--surface-color-normal);
+    border-color: var(--border-color);
+    border-width: var(--surface-border-normal);
     border-style: solid;
+    margin: 5px;
 }
 
 a.button:hover{
-    background-color: #00000011;
-    border-width: 4px 2px 2px 4px;
+    background-color: var(--surface-color-hover);
+    border-width: var(--surface-border-hover);
 }
 
 iframe {
-    border: 0.15em solid black;
+    border-color: var(--border-color);
+    border-width: var(--surface-border-normal);
+    border-style: solid;
+    margin: 5px;
   }
 
-.row {
+.photogrid{
     display: flex;
     flex-wrap: wrap;
-    padding: 30px 10%;
+    align-items: center;
+    justify-content: center;
 }
 
-.column {
-    flex: 32%;
-    max-width: 32%;
-    padding: 0 4px;
-  }
-
 div.gallery {
+    max-width: 250px;
     margin: 5px;
-    background-color: white;
-    border-color: black;
-    border-width: 2px 4px 4px 2px;
-    border-color: black;
+    background-color: var(--surface-color-normal);
+    border-color: var(--border-color);
+    border-width: var(--surface-border-normal);
     border-style: solid;
   }
   
 div.gallery:hover {
-    background-color: #e1e1e1;
-    border-width: 4px 2px 2px 4px;
+    background-color: var(--surface-color-hover);
+    border-width: var(--surface-border-hover);
 }
 
 div.gallery img {
@@ -139,12 +174,13 @@ div.desc {
     padding: 15px;
     text-align: center;
     font-size: small;
-    font-family: Inter;
+    font-family: var(--font);
     line-height: 1.3em;
 }
 
 .footer {
-    padding: 10%;
+    padding-bottom: 10%;
+    padding-top: 20%;
     display: flex;
     justify-content: center;
 }

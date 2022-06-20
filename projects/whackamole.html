@@ -8,39 +8,41 @@
     <link rel="stylesheet" href="/dist/css/projects.css" />
   </head>
   <body>
-    <div class="nav">
-      <a class="nav.page" href="/index.html">
-        <img
-          src="/images/links/home.png"
-          alt="home"
-          width="30px"
-          height="30px"
-        />
-      </a>
-      <a class="nav.page" href="#problem">
-        <img
-          src="/images/links/problem.png"
-          alt="problem"
-          width="30px"
-          height="30px"
-        />
-      </a>
-      <a class="nav.page" href="#process">
-        <img
-          src="/images/links/process.png"
-          alt="process"
-          width="30px"
-          height="30px"
-        />
-      </a>
-      <a class="nav.page" href="#result">
-        <img
-          src="/images/links/result.png"
-          alt="result"
-          width="30px"
-          height="30px"
-        />
-      </a>
+    <div class="navWrapper">
+      <div class="nav">
+        <a class="navhome" href="/index.html">
+          <img
+            src="/images/links/home.png"
+            alt="home"
+            width="30px"
+            height="30px"
+          />
+        </a>
+        <a class="navproblem" href="#problem">
+          <img
+            src="/images/links/problem.png"
+            alt="problem"
+            width="30px"
+            height="30px"
+          />
+        </a>
+        <a class="navprocess" href="#process">
+          <img
+            src="/images/links/process.png"
+            alt="process"
+            width="30px"
+            height="30px"
+          />
+        </a>
+        <a class="navresult" href="#result">
+          <img
+            src="/images/links/result.png"
+            alt="result"
+            width="30px"
+            height="30px"
+          />
+        </a>
+      </div>
     </div>
 
     <div class="content">
@@ -64,6 +66,65 @@
         project at 3 milestones, ending with a working prototype and
         demonstration.
       </p>
+      <div class="photogrid">
+        <div class="gallery">
+          <a
+            target="_blank"
+            href="/images/whackamole/process/first_prototype.jpg"
+          >
+            <img
+              src="/images/whackamole/process/first_prototype.jpg"
+              alt="a messy breadboard with buttons and wired"
+            />
+          </a>
+          <div class="desc">our first, messy prototype</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="/images/whackamole/process/ppg.jpg">
+            <img
+              src="/images/whackamole/process/ppg.jpg"
+              alt="several 3D printed finger clips"
+            />
+          </a>
+          <div class="desc">3D printed PPG sensor clip prototypes</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="/images/whackamole/process/m1.jpg">
+            <img
+              src="/images/whackamole/process/m1.jpg"
+              alt="a breadboard with wired, buttons, and LEDs"
+            />
+          </a>
+          <div class="desc">our neater milestone 1 prototype</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="/images/whackamole/process/m2.png">
+            <img
+              src="/images/whackamole/process/m2.png"
+              alt="a wooden lid with lit buttons"
+            />
+          </a>
+          <div class="desc">our laser-cut milestone 2 prototype</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="/images/whackamole/process/screen.jpg">
+            <img
+              src="/images/whackamole/process/screen.jpg"
+              alt="an LCD screen with player info"
+            />
+          </a>
+          <div class="desc">a test run of our LCD screen</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="/images/whackamole/process/wiring.jpg">
+            <img
+              src="/images/whackamole/process/wiring.jpg"
+              alt="a mess of wires falling off a desk"
+            />
+          </a>
+          <div class="desc">initial wiring for our final prototype</div>
+        </div>
+      </div>
 
       <h2 class="result" id="result">Result</h2>
       <p>
@@ -71,9 +132,41 @@
         rate, using a machine learning model to predict traditional assessment
         scores.
       </p>
+      <div class="photogrid">
+        <div class="gallery">
+          <a target="_blank" href="/images/whackamole/solution/m3.jpg">
+            <img
+              src="/images/whackamole/solution/m3.jpg"
+              alt="a whack a mole game with five buttons"
+            />
+          </a>
+          <div class="desc">our final hardware prototype</div>
+        </div>
+        <div class="gallery">
+          <a
+            target="_blank"
+            href="/images/whackamole/solution/software stack.jpg"
+          >
+            <img
+              src="/images/whackamole/solution/software stack.jpg"
+              alt="a diagram of software tools"
+            />
+          </a>
+          <div class="desc">our final software architecture</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="/images/whackamole/solution/DSP.png">
+            <img
+              src="/images/whackamole/solution/DSP.png"
+              alt="a diagram showing heart rate data processing"
+            />
+          </a>
+          <div class="desc">our final signal processing system</div>
+        </div>
+      </div>
     </div>
     <div class="footer">
-      <a class="toTop" href="#">back to top</a>
+      <a class="button" href="#">back to top</a>
     </div>
   </body>
 </html>
