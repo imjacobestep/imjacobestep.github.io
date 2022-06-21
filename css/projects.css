@@ -47,6 +47,7 @@ html{
 
 .nav a:hover{
     background-color: var(--surface-color-hover);
+    border-width: var(--surface-border-hover);
 }
 
 .nav.home{
