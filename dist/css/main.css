@@ -92,8 +92,10 @@ a.button:hover{
 
 .row{
     display: flex;
+    bottom: 30px;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 2%;
-    position: static;
+    align-items: center;
+    width: 100%;
+    position: fixed;
 }

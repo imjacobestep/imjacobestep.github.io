@@ -107,6 +107,14 @@ h2.process{
 h2.result{
     color: var(--solution-color);
 }
+
+h3{
+    text-align: center;
+    font-size: large;
+    font-family: var(--font);
+    font-weight: normal;
+}
+
 p{
     font-size: medium;
     font-family: var(--font);
