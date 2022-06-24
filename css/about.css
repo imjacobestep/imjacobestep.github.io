@@ -11,6 +11,7 @@
     --surface-border-normal: 2px 4px 4px 2px;
     --surface-border-hover: 4px 2px 2px 4px;
     --font: Inter
+    --animation: 100ms ease-in-out;
   }
 
 html{
@@ -54,6 +55,7 @@ a{
     border-width: var(--surface-border-normal);
     border-color: var(--border-color);
     border-style: solid;
+    transition: var(--animation);
 }
 
 .nav a:hover{
@@ -150,6 +152,7 @@ p{
     width: 45px;
     padding: 20px;
     margin: 8px;
+    transition: var(--animation);
 }
 
 .social:hover{
