@@ -1,8 +1,9 @@
 let bkg = document.getElementById('bkg');
 let lamp = document.getElementById("lamp_button");
+let night = false;
 
 function changeBkg(buttonHovered){
-    bkg.style.backgroundColor = "transparent"
+    //bkg.style.backgroundColor = "transparent"
     if(buttonHovered == 0){
         bkg.style.backgroundImage = "var(--lamp-hero)";
     }else if(buttonHovered == 1){
@@ -17,7 +18,6 @@ function changeBkg(buttonHovered){
 }
 
 function resetBkg(){
-    bkg.style.backgroundColor = "var(--bg-color)";
     bkg.style.backgroundImage = "none";
 }
 

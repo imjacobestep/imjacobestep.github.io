@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 
 :root {
-    --bg-color: #fce2e2;
-    --border-color: black;
-    --surface-color-normal: white;
-    --surface-color-hover: #e1e1e1;
+    --bg-color-light: #fce2e2;
+    --bg-color-dark: #504242;
+
+    --border-color-light: black;
+    --border-color-dark: white;
+
+    --surface-color-normal-light: white;
+    --surface-color-normal-dark: #333333;
+
+    --surface-color-hover-light: #e1e1e1;
+    --surface-color-hover-dark: black;
+
     --problem-color: #F50202;
     --process-color: #F5A302;
     --solution-color: #13D402;
@@ -44,28 +52,28 @@ a{
     flex-direction: row;
     position: fixed;
     padding: 10px;
-    background-color: var(--surface-color-normal);
-    border-color: var(--border-color);
+    background-color: var(--surface-color-normal-light);
+    border-color: var(--border-color-light);
     border-width: var(--surface-border-normal);
-    border-color: var(--border-color);
+    border-color: var(--border-color-light);
     border-style: solid;
 }
 
 .nav a{
-    border-color: var(--border-color);
+    border-color: var(--border-color-light);
     border-width: var(--surface-border-normal);
-    border-color: var(--border-color);
+    border-color: var(--border-color-light);
     border-style: solid;
     transition: var(--animation);
 }
 
 .nav a:hover{
-    background-color: var(--surface-color-hover);
+    background-color: var(--surface-color-hover-light);
     border-width: var(--surface-border-hover);
 }
 
 .nav.home{
-    background-color: var(--surface-color-normal);
+    background-color: var(--surface-color-normal-light);
 }
 
 .navproblem{
