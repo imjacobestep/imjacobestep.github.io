@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="bkg">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jacob Estep</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/scripts.js"></script>
   </head>
   <body>
 
@@ -23,10 +24,10 @@
       </div>
     </div>
     <div class="row">
-      <a class="button" href="/projects/vocalamp.html">VocaLamp</a>
-      <a class="button" href="/projects/whackamole.html">Whack-A-Mole</a>
-      <a class="button" href="/projects/bentwo.html">BenTwo</a>
-      <a class="button" href="/projects/ecommerce.html">eCommerce App</a>
-      <a class="button" href="/projects/spotifywear.html">Spotify Wear</a>
+      <a class="button" id="lamp_button" onmouseover="changeBkg(0)" onmouseout="resetBkg()" " href="/projects/vocalamp.html">VocaLamp</a>
+      <a class="button" id="whackamole_button" onmouseover="changeBkg(1)" onmouseout="resetBkg()" href="/projects/whackamole.html">Whack-A-Mole</a>
+      <a class="button" id="bentwo_button" onmouseover="changeBkg(2)" onmouseout="resetBkg()" href="/projects/bentwo.html">BenTwo</a>
+      <a class="button" id="ecommerce_button" onmouseover="changeBkg(3)" onmouseout="resetBkg()" href="/projects/ecommerce.html">eCommerce App</a>
+      <a class="button" id="watch_button" onmouseover="changeBkg(4)" onmouseout="resetBkg()" href="/projects/spotifywear.html">Spotify Wear</a>
   </body>
 </html>

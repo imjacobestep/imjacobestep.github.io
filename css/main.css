@@ -12,17 +12,23 @@
   --surface-border-hover: 4px 2px 2px 4px;
   --font: Inter;
   --animation: 100ms ease-in-out;
+  --lamp-hero: url("../images/hero/vocalamp.png");
+  --whackamole-hero: url("../images/hero/whackamole.png");
+  --bentwo-hero: url("../images/hero/bentwo.png");
+  --ecommerce-hero: url("../images/hero/ecommerce.png");
+  --watch-hero: url("../images/hero/spotifywatch.png");
 }
 
 html {
-  background-color: #fce2e2;
+  background-color: var(--bg-color);
+  background-image: none;
   margin: 0%;
-
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   height: 100%;
   background-attachment: fixed;
+  transition: var(--animation);
 }
 
 .header {
