@@ -57,17 +57,10 @@ a {
   border-width: var(--surface-border-normal);
   border-color: var(--border-color-light);
   border-style: solid;
-}
-
-.nav a {
-  border-color: var(--border-color-light);
-  border-width: var(--surface-border-normal);
-  border-color: var(--border-color-light);
-  border-style: solid;
   transition: var(--animation);
 }
 
-.nav a:hover {
+.nav:hover {
   background-color: var(--surface-color-hover-light);
   border-width: var(--surface-border-hover);
 }

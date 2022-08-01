@@ -56,11 +56,20 @@ html {
   border-color: var(--border-color);
   border-style: solid;
   transition: var(--animation);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav a:hover {
   background-color: var(--surface-color-hover);
   border-width: var(--surface-border-hover);
+}
+
+div.navText {
+  font-size: large;
+  font-family: var(--font);
+  padding: 4px 4px 0px 4px;
 }
 
 .navhome {
@@ -189,8 +198,15 @@ iframe {
   justify-content: center;
 }
 
+.videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 div.gallery {
-  max-width: 250px;
+  max-width: 300px;
   margin: 5px;
   background-color: var(--surface-color-normal);
   border-color: var(--border-color);
@@ -209,7 +225,7 @@ div.gallery img {
   width: 100%;
 }
 
-div.desc {
+.desc {
   padding: 15px;
   text-align: center;
   font-size: small;
@@ -217,9 +233,29 @@ div.desc {
   line-height: 1.3em;
 }
 
+.nextProject img{
+  max-width: 500px;
+}
+
+.nextProject {
+  margin: 5px;
+  background-color: var(--surface-color-normal);
+  border-color: var(--border-color);
+  border-width: var(--surface-border-normal);
+  border-style: solid;
+  transition: var(--animation);
+}
+
+.nextProject:hover{
+  background-color: var(--surface-color-hover);
+  border-width: var(--surface-border-hover);
+}
+
 .footer {
+  width: 100%;
   padding-bottom: 10%;
-  padding-top: 20%;
+  padding-top: 10%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
