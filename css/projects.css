@@ -34,7 +34,7 @@ html {
 
 .nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   position: fixed;
   padding: 10px;
@@ -69,7 +69,7 @@ html {
 div.navText {
   font-size: large;
   font-family: var(--font);
-  padding: 4px 4px 0px 4px;
+  padding: 4px 8px 0px 4px;
 }
 
 .navhome {
@@ -88,7 +88,7 @@ div.navText {
   background-color: var(--solution-color);
 }
 
-.navWrapper {
+.navSpan {
   width: 100%;
   display: flex;
   justify-content: center;
