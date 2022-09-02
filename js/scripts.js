@@ -14,6 +14,8 @@ function changeBkg(buttonHovered){
         bkg.style.backgroundImage = "var(--ecommerce-hero)";
     }else if(buttonHovered == 4){
         bkg.style.backgroundImage = "var(--watch-hero)";
+    }else if(buttonHovered == 5){
+        bkg.style.backgroundImage = "var(--honeycomb-hero)";
     }
 }
 
