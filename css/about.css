@@ -1,37 +1,59 @@
-@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-  --bg-color-light: #fce2e2;
+  --body-font: 'Space Mono', monospace;
+  --header-font: 'Darker Grotesque', sans-serif;
+
+  --bg-color-light: #df8889;
   --bg-color-dark: #504242;
+
+  --card-bkg: #fff0f1;
+
+  --error-color: transparent;
 
   --border-color-light: black;
   --border-color-dark: white;
 
+  --button-color-light: #d45c5f;
+
   --surface-color-normal-light: white;
   --surface-color-normal-dark: #333333;
 
-  --surface-color-hover-light: #e1e1e1;
+  --surface-color-hover-light: white;
   --surface-color-hover-dark: black;
+
+  --shadow-normal: drop-shadow(6px 6px 0px #000);
+  --shadow-hover: drop-shadow(0px 0px 0px #000);
 
   --problem-color: #f50202;
   --process-color: #f5a302;
   --solution-color: #13d402;
-  --surface-border-normal: 2px 4px 4px 2px;
-  --surface-border-hover: 4px 2px 2px 4px;
+  --surface-border-static: 0.2em 0.2em 0.2em 0.2em;
+  --surface-border-normal: 0.2em 0.4em 0.4em 0.2em;
+  --surface-border-hover: 0.4em 0.2em 0.2em 0.4em;
+  --edge-size: 1em;
   --font: Inter;
   --animation: 100ms ease-in-out;
+  --card-bkg-img: url('../images/surface_bkg.png');
+  --lamp-hero: url('../images/hero/vocalamp.png');
+  --whackamole-hero: url('../images/hero/whackamole.png');
+  --bentwo-hero: url('../images/hero/bentwo.png');
+  --ecommerce-hero: url('../images/hero/ecommerce.png');
+  --watch-hero: url('../images/hero/spotifywatch.png');
+  --honeycomb-hero: url('../images/hero/honeycomb.png');
 }
 
 html {
-  background-color: #fce2e2;
+  background-color: var(--bg-color-light);
   margin: 0%;
-  background-image: url("/images/about/me.png");
+  /* background-image: url('/images/about/me.png'); */
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   height: 100%;
   background-attachment: fixed;
 }
+
 .content {
   align-items: center;
   align-items: center;
@@ -42,7 +64,7 @@ html {
 }
 
 a {
-  font-family: var(--font);
+  font-family: var(--body-font);
   font-weight: 500;
 }
 
@@ -87,38 +109,82 @@ a {
   justify-content: center;
 }
 h1 {
-  text-align: center;
-  font-size: 34px;
-  font-family: var(--font);
+  margin-top: -80;
+  margin-bottom: -80;
+  text-align: start;
+  font-size: 64px;
+  font-family: var(--header-font);
 }
 
 h2 {
-  text-align: center;
-  font-size: 22px;
-  font-family: var(--font);
-  font-weight: normal;
+  text-align: start;
+  font-size: 32px;
+  font-family: var(--header-font);
+  font-weight: bold;
 }
 
 h3 {
-  text-align: center;
+  text-align: start;
   font-size: large;
-  font-family: var(--font);
+  font-family: var(--body-font);
   font-weight: normal;
 }
 
 p {
   font-size: medium;
-  font-family: var(--font);
+  font-family: var(--body-font);
   line-height: 1.3em;
 }
 
-.info {
-  padding: 10px 30px 30px 30px;
-  background-color: white;
+.image {
+  max-width: 200px;
+  background-size: cover;
+  margin-bottom: 4px;
+  /* border */
   border-color: black;
-  border-width: 2px 4px 4px 2px;
+  border-width: var(--surface-border-static);
   border-color: black;
   border-style: solid;
+}
+
+.polaroid {
+  /* font */
+  font-family: var(--body-font);
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: fit-content;
+  padding: 10px;
+  /* background */
+  background-image: var(--card-bkg-img);
+  background-repeat: repeat;
+  background-size: 300%;
+  background-color: var(--card-bkg);
+  border-color: var(--border-color-light);
+  background-position: center center;
+  /* border */
+  border-color: black;
+  border-width: var(--surface-border-static);
+  border-color: black;
+  border-style: solid;
+  filter: var(--shadow-normal);
+}
+
+.info {
+  background-image: var(--card-bkg-img);
+  background-repeat: repeat;
+  background-size: 300%;
+  background-color: var(--card-bkg);
+  border-color: var(--border-color-light);
+  background-position: center center;
+  padding: 10px 30px 30px 30px;
+  border-color: black;
+  border-width: var(--surface-border-static);
+  border-color: black;
+  border-style: solid;
+  filter: var(--shadow-normal);
+  padding: 10% 10%;
 }
 
 .header {
@@ -141,25 +207,33 @@ p {
 }
 
 .social {
-  background-color: white;
+  background-image: var(--card-bkg-img);
+  background-repeat: repeat;
+  background-size: 300%;
+  background-color: var(--card-bkg);
+  border-color: var(--border-color-light);
+  background-position: center center;
   border-color: black;
   text-decoration: none;
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
-  border-width: 2px 4px 4px 2px;
+  border-width: var(--surface-border-static);
   border-color: black;
   border-style: solid;
   height: 45px;
   width: 45px;
   padding: 20px;
   margin: 8px;
+  filter: var(--shadow-normal);
   transition: var(--animation);
 }
 
 .social:hover {
-  background-color: #e1e1e1;
-  border-width: 4px 2px 2px 4px;
+  background-color: var(--surface-color-hover-light);
+  border-width: var(--surface-border-static);
+  filter: var(--shadow-hover);
+  transform: rotate(-4deg) translate(6px, 6px);
 }
 
 .footer {

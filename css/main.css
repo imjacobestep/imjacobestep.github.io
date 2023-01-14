@@ -1,35 +1,52 @@
-@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-  --bg-color-light: #fce2e2;
+  --body-font: 'Space Mono', monospace;
+  --header-font: 'Darker Grotesque', sans-serif;
+
+  --bg-color-light: #df8889;
   --bg-color-dark: #504242;
+
+  --card-bkg: #fff0f1;
+
+  --error-color: transparent;
 
   --border-color-light: black;
   --border-color-dark: white;
 
+  --button-color-light: #d45c5f;
+
   --surface-color-normal-light: white;
   --surface-color-normal-dark: #333333;
 
-  --surface-color-hover-light: #c5c5c5;
+  --surface-color-hover-light: white;
   --surface-color-hover-dark: black;
+
+  --shadow-normal: drop-shadow(6px 6px 0px #000);
+  --shadow-hover: drop-shadow(0px 0px 0px #000);
 
   --problem-color: #f50202;
   --process-color: #f5a302;
   --solution-color: #13d402;
+  --surface-border-static: 0.2em 0.2em 0.2em 0.2em;
   --surface-border-normal: 0.2em 0.4em 0.4em 0.2em;
   --surface-border-hover: 0.4em 0.2em 0.2em 0.4em;
   --edge-size: 1em;
   --font: Inter;
   --animation: 100ms ease-in-out;
-  --lamp-hero: url("../images/hero/vocalamp.png");
-  --whackamole-hero: url("../images/hero/whackamole.png");
-  --bentwo-hero: url("../images/hero/bentwo.png");
-  --ecommerce-hero: url("../images/hero/ecommerce.png");
-  --watch-hero: url("../images/hero/spotifywatch.png");
-  --honeycomb-hero: url("../images/hero/honeycomb.png");
+  --card-bkg-img: url('../images/surface_bkg.png');
+  --lamp-hero: url('../images/hero/vocalamp.png');
+  --whackamole-hero: url('../images/hero/whackamole.png');
+  --bentwo-hero: url('../images/hero/bentwo.png');
+  --ecommerce-hero: url('../images/hero/ecommerce.png');
+  --watch-hero: url('../images/hero/spotifywatch.png');
+  --honeycomb-hero: url('../images/hero/honeycomb.png');
 }
 
 html {
+  display: flex;
   background-color: var(--bg-color-light);
   background-image: none;
   margin: 0%;
@@ -39,22 +56,34 @@ html {
   height: 100%;
   background-attachment: fixed;
   transition: var(--animation);
+  /* align-content: center; */
+  justify-content: center;
+  /* align-items: center; */
+  /* justify-items: center; */
 }
 
-.header {
+/* .header {
   padding: 19% 10%;
-}
+} */
 
 .content {
   align-items: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 98%;
+}
+
+.body {
+  display: flex;
+  /* align-content: center; */
+  justify-content: center;
+  /* align-items: center; */
+  /* justify-items: center; */
 }
 
 a {
-  font-family: Inter;
+  font-family: var(--body-font);
   font-weight: 500;
 }
 
@@ -71,63 +100,241 @@ a {
 }
 
 h1 {
-  text-align: center;
-  font-size: 34px;
-  font-family: Inter;
+  text-align: start;
+  font-size: 64px;
+  font-family: var(--header-font);
+  font-weight: 900;
 }
 
 h2 {
-  text-align: center;
+  text-align: start;
   font-size: 22px;
-  font-family: Inter;
+  font-family: 'Space Mono', monospace;
   font-weight: normal;
 }
 
 h3 {
-  text-align: center;
+  text-align: start;
   font-size: large;
-  font-family: Inter;
+  font-family: 'Space Mono', monospace;
   font-weight: normal;
 }
 
 p {
   font-size: medium;
-  font-family: Inter;
+  font-family: 'Space Mono', monospace;
   line-height: 1.3em;
 }
 
-a.button {
-  box-sizing: border-box;
+.card_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--error-color);
+}
+
+/* -------- INTRO CARD -------- */
+
+.intro_card {
+  max-width: 1000px;
+  /* aspect-ratio: 1.5; */
+  font-weight: 800;
+  font-size: 80px;
+  display: grid;
+  flex-direction: row;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: bold;
+  padding: 50px;
+  margin: auto;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  /* display: inline; */
+  text-decoration: none;
+  color: initial;
+  background-image: var(--card-bkg-img);
+  background-repeat: repeat;
+  background-size: 80rem;
+  background-color: var(--card-bkg);
+  border-color: var(--border-color-light);
+  border-width: var(--surface-border-static);
+  border-style: solid;
+  filter: var(--shadow-normal);
+  justify-content: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 0.5fr));
+  /*  */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.img_me {
+  min-width: 100px;
+  max-width: 800px;
+}
+
+.intro_text {
+  align-self: stretch;
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 40px;
+}
+
+.intro_text.greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* -------- ABOUT ME BUTTON -------- */
+
+a.about_arrow {
+  font-size: 16px;
+  font-weight: bold;
   padding: 10px;
-  margin: 20px;
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
   display: inline;
   text-decoration: none;
   color: initial;
-  background: var(--surface-color-normal-light);
+  /* background: var(--button-color-light);
   border-color: var(--border-color-light);
-  border-width: var(--surface-border-normal);
+  border-width: var(--surface-border-static);
   border-style: solid;
-  margin: 0px 10px;
+  filter: var(--shadow-normal); */
   transition: var(--animation);
 }
 
-a.button:hover {
+a.about_arrow:hover {
+  transform: rotate(-4deg) translate(6px, 6px);
+  filter: var(--shadow-hover);
   background: var(--surface-color-hover-light);
-  border-width: var(--surface-border-hover);
+  /* aspect-ratio: 1.5; */
+  border-color: var(--border-color-light);
+  border-width: var(--surface-border-static);
+  border-style: solid;
+
+  font-weight: 900;
+  /* padding: 100px; */
+  padding: 20px;
 }
 
+/* -------- BOTTOM NAVIGATION -------- */
+
 .row {
-  display: flex;
+  background-color: var(--error-color);
+  /* width: 100%; */
+  /* display: grid; */
   bottom: 30px;
+  justify-items: center;
+  /* align-items: flex-end; */
+  position: fixed;
+  gap: 10px;
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 0.8fr)); */
+  display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+a.project_card {
+  width: 200px;
+  aspect-ratio: 3;
+  font-family: var(--header-font);
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  display: flex;
+  text-decoration: none;
+  color: initial;
+  background-image: var(--card-bkg-img);
+  background-repeat: repeat;
+  background-size: 300%;
+  background-color: var(--card-bkg);
+  border-color: var(--border-color-light);
+  background-position: center center;
+  border-width: var(--surface-border-static);
+  border-style: solid;
+  filter: var(--shadow-normal);
+  transition: var(--animation);
   justify-content: center;
   align-items: center;
-  width: 100%;
-  gap: 10px;
-  position: fixed;
+}
+
+/* a.project_card + .project_card {
+  margin-left: -26%;
+} */
+
+a.project_card:hover {
+  aspect-ratio: 1.5;
+  transform: rotate(-4deg) translateY(-10px);
+  z-index: 2;
+  font-weight: 900;
+  /* padding: 100px; */
+  padding: 20px;
+  filter: var(--shadow-hover);
+  background-color: var(--surface-color-hover-light);
+}
+
+/* a.project_card:hover > :not(:hover) {
+  padding: 50px;
+} */
+
+a.project_card:hover ~ .project_card {
+  z-index: 1;
+}
+
+#honeycomb_button:hover {
+  background: url('../images/buttons/honeycomb_btn.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+}
+
+#lamp_button:hover {
+  background: url('../images/buttons/vocalamp_btn.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+}
+
+#whackamole_button:hover {
+  background: url('../images/buttons/whackamole_btn.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+}
+
+#ecommerce_button:hover {
+  background: url('../images/buttons/ecommerce_btn.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+}
+
+#watch_button:hover {
+  background: url('../images/buttons/watch_btn.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
 }
