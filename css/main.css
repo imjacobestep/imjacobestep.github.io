@@ -101,6 +101,8 @@ a {
 
 h1 {
   text-align: start;
+  /* line-height: 20px; */
+  line-height: 64px;
   font-size: 64px;
   font-family: var(--header-font);
   font-weight: 900;
@@ -177,6 +179,10 @@ p {
 }
 
 .img_me {
+  padding: 0;
+  border-color: var(--border-color-light);
+  border-width: var(--surface-border-static);
+  border-style: solid;
   min-width: 100px;
   max-width: 800px;
 }
@@ -192,6 +198,7 @@ p {
 }
 
 .intro_text.greeting {
+  padding: 0px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -200,20 +207,17 @@ p {
 /* -------- ABOUT ME BUTTON -------- */
 
 a.about_arrow {
-  font-size: 16px;
+  /* layout */
+  font-size: 24px;
   font-weight: bold;
   padding: 20px;
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
   display: inline;
+  /* styling */
   text-decoration: none;
   color: initial;
-  /* background: var(--button-color-light);
-  border-color: var(--border-color-light);
-  border-width: var(--surface-border-static);
-  border-style: solid;
-  filter: var(--shadow-normal); */
   border-color: transparent;
   border-width: var(--surface-border-static);
   border-style: solid;
@@ -221,16 +225,12 @@ a.about_arrow {
 }
 
 a.about_arrow:hover {
-  /* transform: translate(6px, 6px); */
   filter: var(--shadow-hover);
   background: var(--surface-color-hover-light);
-  /* aspect-ratio: 1.5; */
   border-color: var(--border-color-light);
   border-width: var(--surface-border-static);
   border-style: solid;
-
   font-weight: 900;
-  /* padding: 100px; */
   padding: 20px;
 }
 
