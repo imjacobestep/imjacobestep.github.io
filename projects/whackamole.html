@@ -1,191 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="../js/about.js" defer></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Whack-A-Mole</title>
-    <link rel="icon" type="image/x-icon" href="/images/links/favicon.png" />
+    <title>VocaLamp</title>
     <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="icon" type="image/x-icon" href="/images/links/favicon.png" />
   </head>
   <body>
-    <div class="navSpan">
-      <div class="nav">
-        <div class="navText">
-          <h4 class="shortcuts">shortcuts</h2>
-        </div>
-        <a class="navhome" href="/index.html">
-          <img
-            src="/images/links/logo.png"
-            alt="home"
-            width="30px"
-            height="30px"
-          />
-        </a>
-        <a class="navproblem" href="#problem">
-          <img
-            src="/images/links/problem.png"
-            alt="problem"
-            width="30px"
-            height="30px"
-          />
-        </a>
-        <a class="navprocess" href="#process">
-          <img
-            src="/images/links/process.png"
-            alt="process"
-            width="30px"
-            height="30px"
-          />
-        </a>
-        <a class="navresult" href="#result">
-          <img
-            src="/images/links/result.png"
-            alt="result"
-            width="30px"
-            height="30px"
-          />
-        </a>
-      </div>
+    <div class="navWrapper">
+      <a class="navhome" href="/index.html">
+        <img
+          class="icon"
+          src="/images/links/logo.png"
+          alt="home"
+          width="30px"
+          height="30px"
+        />
+      </a>
     </div>
 
     <div class="content">
-      <img class="heroImg"
-              src="/images/hero/on_page/whackamole_page.png"
-              alt="a prototype whack-a-mole game"
-            />
-      <h1>Whack-A-Mole</h1>
-      <h2 class="context">Context</h2>
-      <p>10 week project for GIX Hardware/Software Lab 1</p>
-      <p>
-        <em>My role:</em> user researcher, product designer, software engineer
-      </p>
-
-      <h2 class="problem" id="problem">Problem</h2>
-      <p>
-        Traditional cognitive assessments are unengaging and induce anxiety,
-        reducing accuracy.
-      </p>
-
-      <h2 class="process" id="process">Process</h2>
-      <p>
-        Throughout the quarter, my team conducted secondary research and early
-        tests to inform a proposed solution. We presented the status of the
-        project at 3 milestones, ending with a working prototype and
-        demonstration.
-      </p>
-      <div class="photogrid">
-        <div class="gallery">
-          <a
-            target="_blank"
-            href="/images/whackamole/process/first_prototype.jpg"
-          >
+      <div class="info">
+        <h1>Whack-A-Mole</h1>
+        <p>
+          10 week project for GIX HW/SW Lab 1 <br />
+          My role: user researcher, product designer, software engineer
+        </p>
+        <h2>Problem:</h2>
+        <p>
+          Traditional cognitive assessments are unengaging and induce anxiety,
+          reducing accuracy.
+        </p>
+        <h2>Process:</h2>
+        <p>
+          Throughout the quarter, my team conducted secondary research and early
+          tests to inform a proposed solution. We presented the status of the
+          project at 3 milestones, ending with a working prototype and
+          demonstration.
+        </p>
+        <h2>Result:</h2>
+        <p>
+          We created a smart whack-a-mole game that tracks user stats and heart
+          rate, using a machine learning model to predict traditional assessment
+          scores.
+        </p>
+        <div class="links">
+          <a class="social" href="https://github.com/imjacobestep/whack-a-mole">
             <img
-              src="/images/whackamole/process/first_prototype.jpg"
-              alt="a messy breadboard with buttons and wired"
+              class="icon"
+              src="/images/links/github.png"
+              alt="Github"
+              width="45px"
+              height="45px"
             />
+            github
           </a>
-          <div class="desc">our first, messy prototype</div>
-        </div>
-        <div class="gallery">
-          <a target="_blank" href="/images/whackamole/process/ppg.jpg">
-            <img
-              src="/images/whackamole/process/ppg.jpg"
-              alt="several 3D printed finger clips"
-            />
-          </a>
-          <div class="desc">3D printed PPG sensor clip prototypes</div>
-        </div>
-        <div class="gallery">
-          <a target="_blank" href="/images/whackamole/process/m1.jpg">
-            <img
-              src="/images/whackamole/process/m1.jpg"
-              alt="a breadboard with wired, buttons, and LEDs"
-            />
-          </a>
-          <div class="desc">our neater milestone 1 prototype</div>
-        </div>
-        <div class="gallery">
-          <a target="_blank" href="/images/whackamole/process/m2.png">
-            <img
-              src="/images/whackamole/process/m2.png"
-              alt="a wooden lid with lit buttons"
-            />
-          </a>
-          <div class="desc">our laser-cut milestone 2 prototype</div>
-        </div>
-        <div class="gallery">
-          <a target="_blank" href="/images/whackamole/process/screen.jpg">
-            <img
-              src="/images/whackamole/process/screen.jpg"
-              alt="an LCD screen with player info"
-            />
-          </a>
-          <div class="desc">a test run of our LCD screen</div>
-        </div>
-        <div class="gallery">
-          <a target="_blank" href="/images/whackamole/process/wiring.jpg">
-            <img
-              src="/images/whackamole/process/wiring.jpg"
-              alt="a mess of wires falling off a desk"
-            />
-          </a>
-          <div class="desc">initial wiring for our final prototype</div>
         </div>
       </div>
 
-      <h2 class="result" id="result">Result</h2>
-      <p>
-        We created a smart whack-a-mole game that tracks user stats and heart
-        rate, using a machine learning model to predict traditional assessment
-        scores.
-      </p>
-      <div class="photogrid">
-        <div class="gallery">
-          <a target="_blank" href="/images/whackamole/solution/m3.jpg">
-            <img
-              src="/images/whackamole/solution/m3.jpg"
-              alt="a whack a mole game with five buttons"
-            />
-          </a>
-          <div class="desc">our final hardware prototype</div>
+      <div class="wrapper">
+        <div class="polaroid">
+          <img
+            class="image"
+            id="mainPhoto"
+            src="../images/whackamole/our_prototype_in_use.png"
+            alt="a person using a prototype game board"
+          />
+          <div class="caption" id="mainCaption">our prototype in use</div>
         </div>
-        <div class="gallery">
-          <a
-            target="_blank"
-            href="/images/whackamole/solution/software stack.jpg"
-          >
-            <img
-              src="/images/whackamole/solution/software stack.jpg"
-              alt="a diagram of software tools"
-            />
-          </a>
-          <div class="desc">our final software architecture</div>
-        </div>
-        <div class="gallery">
-          <a target="_blank" href="/images/whackamole/solution/DSP.png">
-            <img
-              src="/images/whackamole/solution/DSP.png"
-              alt="a diagram showing heart rate data processing"
-            />
-          </a>
-          <div class="desc">our final signal processing system</div>
+        <div class="image-wrapper">
+          <img
+            class="imgCarousel"
+            src="../images/whackamole/milestone_1 prototype.png"
+            alt="a basic prototype game with five buttons"
+            id="milestone 1 prototype"
+          />
+          <img
+            class="imgCarousel"
+            src="../images/whackamole/ppg_prototypes.png"
+            alt="four 3d printed prototype sensor enclosures"
+            id="ppg sensor enclosure prototypes"
+          />
+          <img
+            class="imgCarousel"
+            src="../images/whackamole/wiring_work.png"
+            alt="a mess of wires and large buttons"
+            id="wiring work for our final prototype"
+          />
+          <img
+            class="imgCarousel"
+            src="../images/whackamole/signal_processing.png"
+            alt="a sketch of signal processing steps"
+            id="our signal processing stack"
+          />
+          <img
+            class="imgCarousel"
+            src="../images/whackamole/system_flow.png"
+            alt="a sketch of data pipelines"
+            id="our system flow diagram"
+          />
+          <img
+            class="imgCarousel"
+            src="../images/whackamole/our_prototype_in_use.png"
+            alt="a person using a prototype game board"
+            id="our prototype in use"
+          />
         </div>
       </div>
-    </div>
-    <div class="videos">
-      <a
-        class="button"
-        href="https://github.com/imjacobestep/whack-a-mole"
-        >view code on GitHub</a
-      >
-    </div>
-    <div class="footer">
-      <a class="nextProject" href="/projects/bentwo.html">
-        <img src="/images/hero/bentwo.png" alt="a render of a lunchbox">
-        <div class="desc">bentwo</div>
-      </a>
-      <a class="button" href="#">back to top</a>
     </div>
   </body>
+  <div class="footer">
+    <a class="nextProject" href="/projects/ecommerce.html">
+      <img
+        src="/images/buttons/ecommerce_btn.png"
+        alt="a UI mockup of an ecommerce app"
+      />
+      <div class="desc">next up: GoDart App</div>
+    </a>
+    <a class="button" href="#">back to top</a>
+  </div>
 </html>
