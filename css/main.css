@@ -28,7 +28,6 @@
   --surface-border-normal: 0.2em 0.4em 0.4em 0.2em;
   --surface-border-hover: 0.4em 0.2em 0.2em 0.4em;
   --edge-size: 1em;
-  --font: Inter;
   --animation: 100ms ease-in-out;
   --card-bkg-img: url('../images/surface_bkg.png');
   --lamp-hero: url('../images/hero/vocalamp.png');
@@ -37,7 +36,15 @@
   --ecommerce-hero: url('../images/hero/ecommerce.png');
   --watch-hero: url('../images/hero/spotifywatch.png');
   --honeycomb-hero: url('../images/hero/honeycomb.png');
-  --transform: rotate(-4deg) translateY(-20px) scale(1.5);
+  --transform: rotate(-4deg) translateY(-20px) scale(1.2);
+
+  --html-sizing: unset;
+}
+
+@media (min-width: 1060px) {
+  :root {
+    --html-sizing: 100%;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,17 +65,19 @@
 
 html {
   display: flex;
+  height: var(--html-sizing);
+  flex-direction: column;
   background-color: var(--bg-color);
   background-image: none;
   margin: 0%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 100%;
+  /* height: 100%; */
   background-attachment: fixed;
   transition: var(--animation);
   /* align-content: center; */
-  justify-content: center;
+  justify-content: space-between;
   /* align-items: center; */
   /* justify-items: center; */
 }
@@ -76,6 +85,7 @@ html {
 .body {
   /* padding-top: 150px; */
   /* height: 100%; */
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -244,9 +254,9 @@ p {
 a.about_arrow {
   color: var(--text-color);
   /* layout */
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
-  padding: 20px;
+  padding: 10px;
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;

@@ -26,7 +26,7 @@
   --edge-size: 1em;
   --animation: 100ms ease-in-out;
   --card-bkg-img: url('../images/surface_bkg.png');
-  --transform: rotate(-4deg) translateY(-20px) scale(1.5);
+  --transform: rotate(-4deg) translateY(-20px) scale(1.2);
   /* buttons */
   --icon-filter: unset;
 }
@@ -74,7 +74,7 @@ a {
   display: flex;
   justify-content: start;
   flex-direction: row;
-  position: fixed;
+  /* position: fixed; */
   padding: 10px;
   /* background */
   background-color: var(--card-bkg);

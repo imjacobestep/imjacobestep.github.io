@@ -22,7 +22,7 @@
   /* styling */
   --animation: 100ms ease-in-out;
   --card-bkg-img: url('../images/surface_bkg.png');
-  --transform: rotate(-4deg) translateY(-20px) scale(1.5);
+  --transform: rotate(-4deg) translateY(-20px) scale(1.2);
   /* buttons */
   --icon-filter: unset;
 }
@@ -58,6 +58,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   /* height: 100%; */
   justify-content: space-evenly;
 }
@@ -72,7 +73,7 @@ a {
   display: flex;
   justify-content: start;
   flex-direction: row;
-  position: fixed;
+  /* position: fixed; */
   padding: 10px;
   /* background */
   background-color: var(--card-bkg);
@@ -257,7 +258,7 @@ p {
   /* font */
   color: var(--text-color);
   font-family: var(--body-font);
-  font-size: 20px;
+  font-size: 18px;
   /* layout */
   display: flex;
   flex-direction: column;
@@ -308,13 +309,13 @@ p {
   border-color: var(--border-color);
   border-width: var(--surface-border-static);
   border-style: solid;
+  cursor: pointer;
   /* margin: 3px; */
 }
 
-img {
-  /* border-radius: 10px; */
+/* img {
   cursor: pointer;
-}
+} */
 
 .nextProject img {
   width: 300px;
