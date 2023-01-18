@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="../js/about.js" defer></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,66 +10,171 @@
     <link rel="icon" type="image/x-icon" href="/images/links/favicon.png" />
   </head>
   <body>
-    <div class="navSpan">
-      <div class="nav">
-        <div class="navText">
-          <h4 class="shortcuts">shortcuts</h2>
-        </div>
-        <a class="navhome" href="/index.html">
-          <img
+    <div class="navWrapper">
+      <a class="navhome" href="/index.html">
+        <img
           class="icon"
-            src="/images/links/logo.png"
-            alt="home"
-            width="30px"
-            height="30px"
-          />
-        </a>
-        <a class="navproblem" href="#problem">
-          <img
-            src="/images/links/problem.png"
-            alt="problem"
-            width="30px"
-            height="30px"
-          />
-        </a>
-        <a class="navprocess" href="#process">
-          <img
-            src="/images/links/process.png"
-            alt="process"
-            width="30px"
-            height="30px"
-          />
-        </a>
-        <a class="navresult" href="#result">
-          <img
-            src="/images/links/result.png"
-            alt="result"
-            width="30px"
-            height="30px"
-          />
-        </a>
-      </div>
+          src="/images/links/logo.png"
+          alt="home"
+          width="30px"
+          height="30px"
+        />
+      </a>
     </div>
     <div class="content">
-      UNDER CONSTRUCTION
+      <div class="info">
+        <h1>Honeycomb</h1>
+        <p>
+          A capstone for grad school, completed in 2 quarters and sponsored by
+          Mary's Place and Starbucks. <br />
+          My roles: UX Researcher/Designer, Front-End Engineer
+        </p>
+        <h2>Problem:</h2>
+        <p>
+          Mary's Place's Diversion team lacked organized info on homelessness
+          resources to match clients with. This put a strain on shelter
+          capacity.
+        </p>
+        <h2>Process:</h2>
+        <p>
+          Research: We conducted interviews, contextual inquiries, cognitive
+          walkthroughs, and co-design activities with staff. We created 3
+          high-fidelity prototypes and conducted 2 rounds of user testing.
+        </p>
+        <p>
+          Development: We split development into 5 week-long sprints, using
+          Flutter for iOS. After each sprint, we tested any new changes. Once
+          feature-complete, we stress-tested with batch uploads/deletes and over
+          130 local resources.
+        </p>
+        <h2>Result:</h2>
+        <p>
+          Honeycomb gives Diversion Specialists a reliable source of resource
+          info, a nearby map view, search and filtering, and client-resource
+          matching and sharing tools. Mary's Place plans to adopt Honeycomb
+          internally in early 2023, with hopes to expand it in the future.
+        </p>
+        <div class="links">
+          <a
+            class="social"
+            href="https://docs.google.com/presentation/d/1_vw353XLFEFkAalk892QSfokmUUloFxZw8RZA0Z8q1s/edit?usp=sharing"
+          >
+            <img
+              class="icon"
+              src="/images/links/android.png"
+              alt="Final Presentation"
+              width="45px"
+              height="45px"
+            />
+            Final Presentation
+          </a>
+          <a class="social" href="https://github.com/imjacobestep/honeycomb">
+            <img
+              class="icon"
+              src="/images/links/github.png"
+              alt="Github"
+              width="45px"
+              height="45px"
+            />
+            github
+          </a>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="polaroid">
+          <img
+            class="image"
+            id="mainPhoto"
+            src="../images/honeycomb/the_working_app.png"
+            alt="a hand holding a phone"
+          />
+          <div class="caption" id="mainCaption">Honeycomb in the wild</div>
+        </div>
+        <div class="image-wrapper">
+          <img
+            class="imgCarousel"
+            src="../images/honeycomb/working_with_marys_place.png"
+            alt="five people smiling"
+            id="working with Mary's Place"
+          />
+          <img
+            class="imgCarousel"
+            src="../images/honeycomb/focus_group.png"
+            alt="a group of people being interviewed"
+            id="focus group interview"
+          />
+          <img
+            class="imgCarousel"
+            src="../images/honeycomb/user_flow_codesign.png"
+            alt="a person writing on a diagram"
+            id="mapping our user's current flow"
+          />
+          <img
+            class="imgCarousel"
+            src="../images/honeycomb/affinity_diagraming.png"
+            alt="two people putting sticky notes on a whiteboard"
+            id="affinity analysis"
+          />
+          <img
+            class="imgCarousel"
+            src="../images/honeycomb/prototype_iteration.png"
+            alt="a group of people working around a computer"
+            id="prototype iteration"
+          />
+          <img
+            class="imgCarousel"
+            src="../images/honeycomb/user_testing.png"
+            alt="a person using an app prototype on a phone"
+            id="user testing round 2"
+          />
+          <img
+            class="imgCarousel"
+            src="../images/honeycomb/the_working_app.png"
+            alt="a hand holding a phone"
+            id="Honeycomb in the wild"
+          />
+          <img
+            class="imgCarousel"
+            src="../images/honeycomb/home_and_resources.png"
+            alt="two phones showing screens of an app"
+            id="home and resources"
+          />
+          <img
+            class="imgCarousel"
+            src="../images/honeycomb/resource_and_map.png"
+            alt="two phones showing screens of an app"
+            id="resource details and map"
+          />
+          <img
+            class="imgCarousel"
+            src="../images/honeycomb/client_details.png"
+            alt="two phones showing screens of an app"
+            id="client details and matching"
+          />
+        </div>
+      </div>
     </div>
-    <div class="videos">
-      <a
-        class="button"
-        href="https://docs.google.com/presentation/d/1uJRCl9ZpyKtTdLXecH1rzovpBtMoDJZ77ShS0hvHHog/edit?usp=sharing"
-        >view milestone 3 slide deck</a
-      >
-      <a
-        class="button"
-        href="https://www.figma.com/file/N4RNSv348UjG8ctkRB5KZB/Wireframe?node-id=0%3A1"
-        >view prototype on Figma</a
-      >
+    <div class="polaroid">
+      <iframe
+        width="450"
+        height="450"
+        class="youtube"
+        src="https://www.youtube.com/embed/5FTuROvII_g"
+        title="Honeycomb - a GIX Cohort 5 Launch Project"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <div class="caption">Final Video</div>
     </div>
-    
   </body>
   <div class="footer">
     <a class="nextProject" href="/projects/vocalamp.html">
-      <img src="/images/buttons/vocalamp_btn.png" alt="a prototype smart lamp">
+      <img
+        src="/images/buttons/vocalamp_btn.png"
+        alt="a prototype smart lamp"
+      />
       <div class="desc">next up: VocaLamp</div>
     </a>
     <a class="button" href="#">back to top</a>

@@ -219,7 +219,7 @@ p {
 }
 
 .img_me {
-  max-width: 450px;
+  max-width: 350px;
   padding: 0;
   border-color: var(--border-color);
   border-width: var(--surface-border-static);
