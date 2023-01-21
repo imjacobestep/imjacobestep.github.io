@@ -377,3 +377,12 @@ a.project_card:hover ~ .project_card {
   background-position: center center;
   background-color: var(--surface-color-hover);
 }
+
+.footer {
+  font-family: var(--body-font);
+  font-size: small;
+  color: var(--text-color);
+  opacity: 20%;
+  position: absolute;
+  bottom: 10px;
+}
