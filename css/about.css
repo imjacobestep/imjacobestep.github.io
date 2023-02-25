@@ -5,6 +5,11 @@
   --body-font: 'Space Mono', monospace;
   --header-font: 'Darker Grotesque', sans-serif;
 
+  --tile-width: 90%;
+  --header-txt-size: large;
+  --body-txt-size: small;
+  --button-txt-size: medium;
+
   --bg-color: #df8889;
 
   --card-bkg: #fff0f1;
@@ -29,6 +34,70 @@
   --transform: rotate(-4deg) translateY(-20px) scale(1.2);
   /* buttons */
   --icon-filter: unset;
+  --direction: wrap;
+  --main-direction: column;
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) {
+  :root {
+    --h1-size: 5vw;
+    --h2-size: 2vw;
+    --h3-size: 2vw;
+    --p-size: 4vw;
+
+    --h1-size: 60px;
+    --h2-size: 20px;
+    --h3-size: 18px;
+    --p-size: 16px;
+
+    --h1-line: 8px;
+    --h2-line: unset;
+    --h3-line: 8px;
+    --p-line: 1.3em;
+
+    --footer-position: absolute;
+
+    --main-direction: row;
+
+    --html-sizing: 100%;
+  }
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --h1-size: 6vw;
+    --h2-size: 2.5vw;
+    --h3-size: 2vw;
+    --p-size: 2.5vw;
+
+    --h1-line: 8px;
+    --h2-line: unset;
+    --h3-line: 8px;
+    --p-line: 1.3em;
+
+    --html-sizing: 100%;
+    /* --direction: wrap-reverse; */
+  }
+}
+
+/* PHONE */
+@media only screen and (max-width: 767px) {
+  :root {
+    --h1-size: 8vw;
+    --h2-size: 4vw;
+    --h3-size: 4vw;
+    --p-size: 4vw;
+
+    --h1-line: 8px;
+    --h2-line: unset;
+    --h3-line: 8px;
+    --p-line: 1.3em;
+
+    --html-sizing: 100%;
+    /* --direction: wrap-reverse; */
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,15 +122,33 @@
 }
 
 html {
+  display: flex;
+  height: var(--html-sizing);
+  flex-direction: column;
   background-color: var(--bg-color);
+  background-image: none;
   margin: 0%;
-  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* height: 100%; */
+  background-attachment: fixed;
+  transition: var(--animation);
+  /* align-content: center; */
+  justify-content: space-between;
+  /* align-items: center; */
+  /* justify-items: center; */
 }
 
 body {
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  row-gap: 20px;
+
+  /* TESTING */
 }
 
 a {
@@ -99,23 +186,23 @@ a {
   filter: var(--shadow-hover);
 }
 .navWrapper {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: start;
 }
 h1 {
   color: var(--text-color);
   font-weight: 900;
-  line-height: 10px;
+  line-height: var(--h1-line);
   text-align: start;
-  font-size: 64px;
+  font-size: var(--h1-size);
   font-family: var(--header-font);
 }
 
 h2 {
   color: var(--text-color);
   text-align: start;
-  font-size: 32px;
+  font-size: var(--h2-size);
   font-family: var(--header-font);
   font-weight: bold;
 }
@@ -123,14 +210,14 @@ h2 {
 h3 {
   color: var(--text-color);
   text-align: start;
-  font-size: large;
+  font-size: var(--h3-size);
   font-family: var(--body-font);
   font-weight: normal;
 }
 
 p {
   color: var(--text-color);
-  font-size: medium;
+  font-size: var(--p-size);
   font-family: var(--body-font);
   line-height: 1.3em;
 }
@@ -138,20 +225,29 @@ p {
 .content {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: var(--direction);
   align-items: center;
   align-self: center;
   justify-content: space-evenly;
   justify-items: stretch;
   justify-self: center;
   padding: 0px;
-  height: 100%;
+  row-gap: 20px;
+  width: 100%;
+  /* height: 100%; */
+  /* TESTING */
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding-top: 10px; */
 }
 
 .info {
   /* layout */
-  width: 450px;
+  width: 100%;
+  max-width: 600px;
   justify-self: center;
+  /* margin: 10px; */
   /* background */
   background-image: var(--card-bkg-img);
   background-repeat: repeat;
@@ -165,21 +261,12 @@ p {
   border-color: black;
   border-style: solid;
   /* styling */
-  padding: 0px 30px 30px 30px;
+  padding: 30px;
   filter: var(--shadow-normal);
 }
 
 .header {
   padding: 44% 10%;
-}
-
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* padding-top: 40px; */
-  width: auto;
-  /* position: static; */
 }
 
 .links a {
@@ -189,10 +276,12 @@ p {
 
 .social {
   /* layout */
-  height: 45px;
-  width: 45px;
+  width: 12%;
+  height: 12%;
+  max-height: 45px;
+  max-width: 45px;
   padding: 20px;
-  margin: 8px;
+  /* margin: 8px; */
   /* styling */
   transition: var(--animation);
   text-decoration: none;
@@ -237,13 +326,18 @@ p {
 }
 
 .wrapper {
+  width: 100%;
+  max-width: 600px;
+  /* justify-self: center; */
+  /* margin: 10px; */
   /* position: absolute;
   right: 80px; */
-  width: 450px;
+  /* width: 450px; */
   display: flex;
   flex-direction: column;
+  row-gap: 20px;
   align-items: center;
-  margin: 50px;
+  /* margin: 50px; */
 }
 
 .polaroid {
@@ -252,13 +346,15 @@ p {
   font-family: var(--body-font);
   font-size: 22px;
   /* layout */
+  /* width: fit-content; */
+  /* width: 100%; */
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: fit-content;
   padding: 10px;
   z-index: 0;
-  margin: 20px;
+  /* margin: 20px; */
   /* background */
   background-image: var(--card-bkg-img);
   background-repeat: repeat;
@@ -277,9 +373,16 @@ p {
 }
 
 #mainPhoto {
-  width: 400px;
+  /* width: 400px; */
+  width: 100%;
+  max-width: 600px;
   background-color: var(--card-bkg);
 }
+
+/* img#mainPhoto {
+  width: 100%;
+  max-width: 600px;
+} */
 
 .imgCarousel {
   /* layout */
