@@ -55,6 +55,7 @@
     --p-line: 1.3em;
 
     --footer-position: absolute;
+    --body-height: 100%;
 
     --html-sizing: 100%;
   }
@@ -132,7 +133,7 @@ html {
 .body {
   /* padding-top: 150px; */
   /* height: 100%; */
-  /* height: 100%; */
+  height: var(--body-height);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
