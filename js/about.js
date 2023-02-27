@@ -16,3 +16,7 @@ function updateImage(event) {
 images.forEach(function (image) {
   image.addEventListener('click', updateImage);
 });
+
+window.onbeforeunload = function (e) {
+  document.getElementByClassName('body').className = 'out';
+};

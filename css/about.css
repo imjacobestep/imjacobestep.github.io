@@ -153,6 +153,23 @@ body {
   /* TESTING */
 }
 
+body > * {
+  animation: fade_in 0.5s cubic-bezier(0.05, 0.8, 0.1, 0.95);
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+    transform: translate(50px, 0px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 a {
   font-family: var(--body-font);
   font-weight: 500;
