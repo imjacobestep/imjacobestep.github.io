@@ -29,7 +29,7 @@
 
   --surface-border-static: 0.2em 0.2em 0.2em 0.2em;
   --edge-size: 1em;
-  --animation: 100ms ease-in-out;
+  --animation: 0.5s cubic-bezier(0.05, 0.8, 0.1, 0.95);
   --card-bkg-img: url('../images/surface_bkg.png');
   --transform: rotate(-4deg) translateY(-20px) scale(1.2);
   /* buttons */
