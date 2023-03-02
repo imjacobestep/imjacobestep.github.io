@@ -99,11 +99,11 @@
   :root {
     --text-color: white;
 
-    --bg-color: #421313;
+    --bg-color: #0c0c0c;
 
-    --card-bkg: #373233;
+    --card-bkg: #000000;
 
-    --button-color: #8d2325;
+    --button-color: #252525;
 
     --surface-color-normal: black;
 
@@ -148,7 +148,8 @@ body > * {
 @keyframes fade_in {
   0% {
     opacity: 0;
-    transform: translate(50px, 0px);
+    /* transform: translate(50px, 0px); */
+    transform: scale(1.5);
   }
   50% {
     opacity: 1;
@@ -228,7 +229,7 @@ p {
   padding: 30px;
   background-image: var(--card-bkg-img);
   background-repeat: repeat;
-  background-size: 80rem;
+  /* background-size: 80rem; */
   background-color: var(--card-bkg);
   border-color: var(--border-color);
   border-width: var(--surface-border-static);
@@ -272,7 +273,7 @@ p {
   color: initial;
   background-image: var(--card-bkg-img);
   background-repeat: repeat;
-  background-size: 80rem;
+  /* background-size: 80rem; */
   background-color: var(--card-bkg);
   border-color: var(--border-color);
   border-width: var(--surface-border-static);
@@ -404,6 +405,43 @@ a.project_card:hover {
   /* font-weight: 900; */
   filter: var(--shadow-hover);
   background-color: var(--surface-color-hover);
+}
+
+/* a.project_card:nth-child(1) {
+  animation: jiggle 12s cubic-bezier(0.05, 0.8, 0.1, 0.95) 2s infinite;
+}
+a.project_card:nth-child(2) {
+  animation: jiggle 12s cubic-bezier(0.05, 0.8, 0.1, 0.95) 4s infinite;
+}
+a.project_card:nth-child(3) {
+  animation: jiggle 12s cubic-bezier(0.05, 0.8, 0.1, 0.95) 6s infinite;
+}
+a.project_card:nth-child(4) {
+  animation: jiggle 12s cubic-bezier(0.05, 0.8, 0.1, 0.95) 8s infinite;
+}
+a.project_card:nth-child(5) {
+  animation: jiggle 12s cubic-bezier(0.05, 0.8, 0.1, 0.95) 10s infinite;
+} */
+
+@keyframes jiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(-4deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(4deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 a.project_card:hover ~ .project_card {

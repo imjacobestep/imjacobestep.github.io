@@ -27,6 +27,7 @@
   --icon-filter: unset;
   --direction: wrap;
   --main-direction: column;
+  --video-width: 450px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -154,7 +155,8 @@ body.out {
 @keyframes fade_in {
   0% {
     opacity: 0;
-    transform: translate(50px, 0px);
+    /* transform: translate(50px, 0px); */
+    transform: scale(0.5);
   }
   50% {
     opacity: 1;
