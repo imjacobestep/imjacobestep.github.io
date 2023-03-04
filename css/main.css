@@ -90,13 +90,13 @@
 
 @keyframes tease {
   0% {
-    transform: translate(0px, 0px);
+    transform: translate(-10px, 0px);
   }
   50% {
-    transform: translate(0px, 20px);
+    transform: translate(-10px, 20px);
   }
   100% {
-    transform: translate(0px, 0px);
+    transform: translate(-10px, 0px);
   }
 }
 
@@ -253,12 +253,12 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  animation: fade_in 1s cubic-bezier(0.05, 0.8, 0.1, 0.95);
+  /* animation: fade_in 1s cubic-bezier(0.05, 0.8, 0.1, 0.95); */
 }
 
-/* body > * {
+body > *.start {
   animation: fade_in 0.5s cubic-bezier(0.05, 0.8, 0.1, 0.95);
-} */
+}
 
 .section {
   margin: 0;
@@ -293,8 +293,17 @@ body {
   line-height: 2px;
 }
 
+#header > .a {
+  width: 100vw;
+  align-self: center;
+  justify-self: center;
+}
+
 #down_arrow {
+  align-self: center;
+  justify-self: center;
   position: absolute;
+  transform: translate(-10px, 0px);
   bottom: 20%;
   font-size: 40px;
   animation: tease 2s cubic-bezier(0.05, 0.8, 0.1, 0.95) 2s infinite;
@@ -308,8 +317,9 @@ body {
   opacity: 0.6;
   position: absolute;
   height: 50vh;
-  width: 100vw;
+  width: 50vw;
   filter: var(--dark-filter);
+  z-index: 0;
 }
 
 .left_img {
@@ -321,6 +331,17 @@ body {
   background-position: right;
   bottom: -2%;
   right: -2%;
+}
+
+#header > .left_img {
+  background-image: url('../images/gifs/wobbly.gif');
+  filter: brightness(300%);
+  max-width: 400px;
+}
+#header > .right_img {
+  background-image: url('../images/gifs/blob.gif');
+  filter: brightness(200%);
+  max-width: 400px;
 }
 
 #honeycomb > .left_img {
