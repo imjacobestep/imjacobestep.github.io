@@ -263,7 +263,7 @@ body {
 .section {
   margin: 0;
   padding: 0;
-  scroll-snap-align: end;
+  scroll-snap-align: center;
   overflow: hidden;
   display: flex;
   flex-direction: column;
