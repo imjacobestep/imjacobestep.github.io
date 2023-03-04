@@ -334,14 +334,17 @@ body > *.start {
 }
 
 #header > .left_img {
-  background-image: url('../images/gifs/wobbly.gif');
-  filter: brightness(300%);
+  /* background-image: url('../images/gifs/star.gif'); */
+  filter: brightness(-300%);
   max-width: 400px;
 }
 #header > .right_img {
-  background-image: url('../images/gifs/blob.gif');
-  filter: brightness(200%);
-  max-width: 400px;
+  height: 70vmax;
+  width: 70vmax;
+  opacity: 0.4;
+  background-image: url('../images/gifs/portrait.gif');
+  /* filter: brightness(200%); */
+  max-width: 1200px;
 }
 
 #honeycomb > .left_img {
