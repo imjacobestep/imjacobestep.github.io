@@ -293,6 +293,11 @@ body > *.start {
   line-height: 2px;
 }
 
+#intro-tagline,
+#intro-title > p {
+  font-weight: 600;
+}
+
 #header > .a {
   width: 100vw;
   align-self: center;
@@ -339,9 +344,10 @@ body > *.start {
   max-width: 400px;
 }
 #header > .right_img {
+  right: unset;
   height: 70vmax;
   width: 70vmax;
-  opacity: 0.4;
+  opacity: 0.3;
   background-image: url('../images/gifs/portrait.gif');
   /* filter: brightness(200%); */
   max-width: 1200px;
