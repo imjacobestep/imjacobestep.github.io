@@ -128,7 +128,7 @@
 /* TABLET */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   :root {
-    --h1-size: 6vw;
+    --h1-size: 2.5rem;
     --h2-size: 2.5vw;
     --h3-size: 2vw;
     --p-size: 1vw;
@@ -145,7 +145,7 @@
 /* PHONE */
 @media only screen and (max-width: 767px) {
   :root {
-    --h1-size: 8vw;
+    --h1-size: 2rem;
     --h2-size: 4vw;
     --h3-size: 4vw;
     --p-size: 4vw;
@@ -385,7 +385,7 @@ body {
   padding: 10px 40px 40px 40px;
   width: 40%;
   max-width: 890px;
-  width: clamp(420px, 40%, 890px);
+  width: clamp(300px, 40%, 890px);
   border-color: var(--border-color);
   border-width: var(--surface-border-static);
   border-style: solid;

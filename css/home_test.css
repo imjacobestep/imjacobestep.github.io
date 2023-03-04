@@ -382,8 +382,8 @@ body {
   background-repeat: repeat;
   padding: 10px 40px 40px 40px;
   width: 40%;
-  max-width: 890px;
-  width: clamp(420px, 40%, 890px);
+  /* max-width: 890px; */
+  width: clamp(40px, 40%, 890px);
   border-color: var(--border-color);
   border-width: var(--surface-border-static);
   border-style: solid;
