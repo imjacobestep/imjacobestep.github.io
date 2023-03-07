@@ -26,14 +26,20 @@
   --honeycomb-bg-color: #f9da74;
   --honeycomb-card-color: #fff5a6;
 
-  --vocalamp-bg-color: #97eab4;
-  --vocalamp-card-color: #d8f6e2;
+  --vocalamp-bg-color: #c1f5b2;
+  --vocalamp-card-color: #dcfdd3;
 
   --godart-bg-color: #92bbf2;
   --godart-card-color: #d0dff4;
 
   --rebirth-bg-color: #55e0ff;
   --rebirth-card-color: #c5f4fe;
+
+  --whackamole-bg-color: #ba96f5;
+  --whackamole-card-color: #e1d9fb;
+
+  --spotify-bg-color: #82e9a6;
+  --spotify-card-color: #b6e5c6;
 
   --shadow-normal: drop-shadow(6px 6px 0px #000);
   --shadow-hover: drop-shadow(0px 0px 0px #000);
@@ -45,6 +51,8 @@
   --edge-size: 1em;
 
   --animation: 0.5s cubic-bezier(0.05, 0.8, 0.1, 0.95);
+
+  --bezier: cubic-bezier(0.05, 0.8, 0.1, 0.95);
 
   --card-bkg-img: url('../images/surface_bkg.png');
 
@@ -65,6 +73,12 @@
   --rebirth_bkg_left: url('../images/home/rebirth-bg-left.png');
   --rebirth_bkg_right: url('../images/home/rebirth-bg-right.png');
 
+  --whackamole_bkg_left: url('../images/home/whackamole-bg-left.png');
+  --whackamole_bkg_right: url('../images/home/whackamole-bg-right.png');
+
+  --spotify_bkg_left: url('../images/home/spotify-bg-left.png');
+  --spotify_bkg_right: url('../images/home/spotify-bg-right.png');
+
   --transform: rotate(-4deg) translateY(-20px) scale(1.2);
 
   --html-sizing: unset;
@@ -75,7 +89,7 @@
 @keyframes fade_in {
   0% {
     opacity: 0;
-    /* transform: translate(0px, -20px); */
+    transform: translate(0px, -20px);
 
     /* transform: translate(50px, 0px); */
     /* transform: scale(1.2); */
@@ -242,7 +256,7 @@ html {
   overflow: scroll;
   overflow-x: hidden;
   background-color: var(--bg-color);
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   scroll-behavior: smooth;
   position: relative;
 }
@@ -254,10 +268,6 @@ body {
   padding: 0;
   margin: 0;
   /* animation: fade_in 1s cubic-bezier(0.05, 0.8, 0.1, 0.95); */
-}
-
-body > *.start {
-  animation: fade_in 0.5s cubic-bezier(0.05, 0.8, 0.1, 0.95);
 }
 
 .section {
@@ -280,6 +290,7 @@ body > *.start {
 #intro {
   padding: 20px;
   text-decoration: none;
+  z-index: 1;
 }
 
 #intro-title {
@@ -302,6 +313,11 @@ body > *.start {
   width: 100vw;
   align-self: center;
   justify-self: center;
+}
+
+#header > .button {
+  background-color: #000;
+  z-index: 2;
 }
 
 #down_arrow {
@@ -381,6 +397,20 @@ body > *.start {
   background-image: var(--rebirth_bkg_right);
 }
 
+#whackamole > .left_img {
+  background-image: var(--whackamole_bkg_left);
+}
+#whackamole > .right_img {
+  background-image: var(--whackamole_bkg_right);
+}
+
+#spotify > .left_img {
+  background-image: var(--spotify_bkg_left);
+}
+#spotify > .right_img {
+  background-image: var(--spotify_bkg_right);
+}
+
 #honeycomb {
   background-color: var(--honeycomb-bg-color);
 }
@@ -404,6 +434,18 @@ body > *.start {
 }
 #rebirth > .project_card {
   background-color: var(--rebirth-card-color);
+}
+#whackamole {
+  background-color: var(--whackamole-bg-color);
+}
+#whackamole > .project_card {
+  background-color: var(--whackamole-card-color);
+}
+#spotify {
+  background-color: var(--spotify-bg-color);
+}
+#spotify > .project_card {
+  background-color: var(--spotify-card-color);
 }
 
 .project_card {
