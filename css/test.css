@@ -2,7 +2,7 @@
 
 /* @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Poppins:wght@800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Gochi+Hand&family=Poppins:wght@800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @font-face {
   font-family: 'Newake';
@@ -12,8 +12,8 @@
 :root {
   --text-color: black;
   --body-font: 'Space Mono', monospace;
-  --header-font: 'Newake';
   --header-font: 'Poppins';
+  --notes-font: 'Gochi Hand', cursive;
 
   --bg-color: #df8889;
   --card-bkg: #fff0f1;
@@ -61,6 +61,7 @@
   --html-sizing: unset;
   --footer-position: unset;
   --dark-filter: unset;
+  --bezier: cubic-bezier(0.05, 0.8, 0.1, 0.95);
 }
 
 @keyframes fade_in {
@@ -234,6 +235,7 @@ html {
   position: relative;
 }
 body {
+  background-color: white;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -245,21 +247,75 @@ body {
 
 .section {
   margin: 0;
-  padding-inline: 50px;
+  /* padding-inline: 50px; */
   padding-block: 30px;
   /* overflow: hidden; */
   display: flex;
   flex-direction: column;
-  /* align-items: center;
+  align-items: center;
   justify-content: center;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; */
-  /* min-height: 100vh;
-  min-height: 200px; */
   height: auto;
   width: 100vw;
   position: relative;
+}
+
+.text-section {
+  max-width: 800px;
+  /* margin-inline: 300px; */
+  padding-inline: 50px;
+  padding-block: 30px;
+}
+
+.photo-section {
+  background-color: white;
+  width: 100vw;
+  min-height: 440px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 20px;
+  /* overflow-x: scroll; */
+  /* overflow-y: hidden; */
+}
+
+.notes-section {
+  width: 100vw;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
+}
+
+.items {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100vw;
+  overflow-x: scroll;
+  /* overflow-y: hidden; */
+  transition: all 0.2s;
+  transition-timing-function: var(--bezier);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+  gap: 30px;
+  padding: 20px;
+}
+
+.items.active {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1.02);
+  transform: scale(0.98);
+}
+
+.items.active > * {
+  transform: rotate(2deg);
 }
 
 /* HEADER */
@@ -359,7 +415,7 @@ body {
 
 /* QUOTE */
 
-#quote > h1 {
+.quote > h1 {
   font-size: 1.6rem;
 }
 
@@ -367,9 +423,12 @@ strong {
   color: var(--button-color);
 }
 
-#quote {
-  background-color: white;
+.quote {
   padding: 20px 50px;
+}
+
+.section:nth-child(even) {
+  background-color: white;
 }
 
 /* BACKGROUND */
@@ -383,19 +442,6 @@ strong {
 /* DEVELOPMENT */
 
 /* PHOTOS */
-
-.photo-section {
-  background-color: white;
-  width: 100vw;
-  min-height: 440px;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  padding: 20px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
 
 .polaroid {
   /* layout */
@@ -441,17 +487,10 @@ strong {
   border-style: solid;
 }
 
-.notes-section {
-  /* background-color: white; */
-  width: 100vw;
-  /* min-height: 400px; */
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  padding: 20px;
-  overflow-x: scroll;
-  overflow-y: hidden;
+.items::-webkit-scrollbar {
+  background: white;
+  background-color: transparent;
+  cursor: grab;
 }
 
 .sticky-note {
@@ -482,6 +521,8 @@ strong {
 }
 
 .sticky-note > p {
+  font-family: var(--notes-font);
+  font-size: var(--h2-size);
   font-weight: bold;
   text-align: center;
 }

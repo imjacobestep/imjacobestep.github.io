@@ -1,43 +1,61 @@
-const track = document.getElementById('image-track');
+// const slider = document.querySelector('.items');
+// let isDown = false;
+// let startX;
+// let scrollLeft;
 
-const handleOnDown = (e) => (track.dataset.mouseDownAt = e.clientX);
+// slider.addEventListener('mousedown', (e) => {
+//   isDown = true;
+//   slider.classList.add('active');
+//   startX = e.pageX - slider.offsetLeft;
+//   scrollLeft = slider.scrollLeft;
+// });
+// slider.addEventListener('mouseleave', () => {
+//   isDown = false;
+//   slider.classList.remove('active');
+// });
+// slider.addEventListener('mouseup', () => {
+//   isDown = false;
+//   slider.classList.remove('active');
+// });
+// slider.addEventListener('mousemove', (e) => {
+//   if (!isDown) return;
+//   e.preventDefault();
+//   const x = e.pageX - slider.offsetLeft;
+//   const walk = (x - startX) * 3; //scroll-fast
+//   slider.scrollLeft = scrollLeft - walk;
+//   console.log(walk);
+// });
 
-const handleOnUp = () => {
-  track.dataset.mouseDownAt = '0';
-  track.dataset.prevPercentage = track.dataset.percentage;
-};
+// const slider = document.querySelector('.items');
+let sliders = Array.from(document.getElementsByClassName('items'));
+let isDown = false;
+let startX;
+let scrollLeft;
 
-const handleOnMove = (e) => {
-  if (track.dataset.mouseDownAt === '0') return;
-
-  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-    maxDelta = window.innerWidth / 2;
-
-  const percentage = (mouseDelta / maxDelta) * -100,
-    nextPercentageUnconstrained =
-      parseFloat(track.dataset.prevPercentage) + percentage,
-    nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -80);
-
-  track.dataset.percentage = nextPercentage;
-
-  track.animate(
-    {
-      transform: `translate(${nextPercentage}%, -50%)`,
-    },
-    { duration: 1200, fill: 'forwards' }
-  );
-
-  for (const image of track.getElementsByClassName('image')) {
-    image.animate(
-      {
-        objectPosition: `${100 + nextPercentage}% center`,
-      },
-      { duration: 1200, fill: 'forwards' }
-    );
-  }
-};
-
-/* -- Had to add extra lines for touch events -- */
+sliders.forEach(function (slider) {
+  slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
+  slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+  });
+  slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.classList.remove('active');
+  });
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 3; //scroll-fast
+    slider.scrollLeft = scrollLeft - walk;
+    console.log(walk);
+  });
+});
 
 window.onmousedown = (e) => handleOnDown(e);
 
