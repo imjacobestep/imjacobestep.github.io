@@ -48,7 +48,7 @@
         </div>
         <div id="project-context">
           <div class="project-detail" id="role">
-            <h3>Role</h3>
+            <h3 id="subsection-header">Role</h3>
             <p>Lead Front-End Engineer / User Researcher</p>
             <p>
               (Secondary Research, User Research, System Design, Product Design,
@@ -56,11 +56,11 @@
             </p>
           </div>
           <div class="project-detail" id="time-frame">
-            <h3>Time Frame</h3>
+            <h3 id="subsection-header">Time Frame</h3>
             <p>Two 9-week Quarters</p>
           </div>
           <div class="project-detail" id="links">
-            <h3>Links</h3>
+            <h3 id="subsection-header">Links</h3>
             <div id="project-links">
               <a
                 class="social"
@@ -110,14 +110,14 @@
       <div class="text-section">
         <h2>Background</h2>
         <div>
-          <h3>Who is Mary's Place?</h3>
+          <h3 id="subsection-header">Who is Mary's Place?</h3>
           <p>
             Mary's Place is a Seattle-based non-profit dedicated to providing
             safety, stability, and hope to families experiencing homelessness.
           </p>
         </div>
         <div>
-          <h3>How did I get this project?</h3>
+          <h3 id="subsection-header">How did I get this project?</h3>
           <p>
             At GIX, sponsors pitch their projects in a weekly studio class
             during our Spring quarter. Mary's Place pitched at my first class
@@ -129,7 +129,7 @@
           </p>
         </div>
         <div>
-          <h3>Who did I work with?</h3>
+          <h3 id="subsection-header">Who did I work with?</h3>
           <p>
             Team Honeycomb consisted of Abhijeet Saraf (Lead UX Designer), Saif
             Mustafa (PM), Shih-Hsin Lo (Back-end Engineer), and myself
@@ -143,7 +143,7 @@
 
     <div id="research-secondary" class="section">
       <div class="text-section">
-        <h2>Secondary Research</h2>
+        <h2 id="section-header">Secondary Research</h2>
         <p>
           We weren't given a specific problem to solve, so we began our project
           by combing through Mary's Place's current intake statistics, org
@@ -156,11 +156,11 @@
       </div>
     </div>
 
-    <div id="research" class="section">
+    <div id="research-primary" class="section">
       <div class="text-section">
-        <h2>Primary Research</h2>
+        <h2 id="section-header">Primary Research</h2>
         <div>
-          <h3>Exploring Outreach</h3>
+          <h3 id="subsection-header">Exploring Outreach</h3>
           <p>
             We developed a rough user flow diagram tracing family experiences,
             but org charts and brief meetings only gave us so much insight into
@@ -171,7 +171,9 @@
             our user flow diagram, correcting any mistakes and highlighting pain
             points.
           </p>
-          <h3>Questions</h3>
+        </div>
+        <div>
+          <h3 id="subsection-header">Questions</h3>
           <ul>
             <li><p>Is our user-flow correct and complete?</p></li>
             <li><p>What common issues arise with the current process?</p></li>
@@ -180,7 +182,7 @@
             <li><p>How are families prioritized or determined eligible?</p></li>
           </ul>
         </div>
-        <h3>Findings</h3>
+        <h3 id="subsection-header">Findings</h3>
       </div>
       <div class="notes-section">
         <div class="items">
@@ -213,15 +215,17 @@
         </div>
       </div>
       <div class="text-section">
-        <h3>Exploring Intake</h3>
-        <p>
-          In our focus group, specialists mentioned that the intake team also
-          uses outreach's main online tool for onboarding families. To make sure
-          we understood the intake process and gauge whether our solution would
-          impact the intake team, we interviewed the intake manager and had her
-          give us a technical walkthrough of the intake process.
-        </p>
-        <h3>Findings</h3>
+        <div>
+          <h3 id="subsection-header">Exploring Intake</h3>
+          <p>
+            In our focus group, specialists mentioned that the intake team also
+            uses outreach's main online tool for onboarding families. To make
+            sure we understood the intake process and gauge whether our solution
+            would impact the intake team, we interviewed the intake manager and
+            had her give us a technical walkthrough of the intake process.
+          </p>
+        </div>
+        <h3 id="subsection-header">Findings</h3>
       </div>
       <div class="notes-section">
         <div class="items">
@@ -253,154 +257,385 @@
           </div>
         </div>
       </div>
-
-      <div class="item text-section">
-        <h3>Analysis</h3>
-        <p>
-          To process what we'd learned and identify patterns, we used an
-          affinity analysis technique: sticky notes everywhere! We grouped our
-          notes, labelled high-impact pain points, and discovered our problem.
-        </p>
+      <div class="text-section">
+        <div>
+          <h3 id="subsection-header">Analysis</h3>
+          <p>
+            To process what we'd learned and identify patterns, we used an
+            affinity analysis technique: sticky notes everywhere! We grouped our
+            notes, labelled high-impact pain points, and discovered our problem.
+          </p>
+        </div>
       </div>
     </div>
-
     <div class="quote section">
       <h1>
         How can we help outreach specialists explore, document, utilize, and
         collaborate on community resource information?
       </h1>
     </div>
-
-    <!-- <div class="photo-section">
-      <div class="polaroid">
-        <img
-          class="image"
-          id="photo"
-          src="../images/honeycomb/the_working_app.png"
-          alt="a hand holding a phone"
-        />
-        <div class="caption">
-          <p>This is a longer caption to test how it flows</p>
-        </div>
-      </div>
-      <div class="polaroid">
-        <img
-          class="image"
-          id="photo"
-          src="../images/honeycomb/the_working_app.png"
-          alt="a hand holding a phone"
-        />
-        <div class="caption">
-          <p>Caption</p>
-        </div>
-      </div>
-      <div class="polaroid">
-        <img
-          class="image"
-          id="photo"
-          src="../images/honeycomb/the_working_app.png"
-          alt="a hand holding a phone"
-        />
-        <div class="caption">
-          <p>Caption</p>
-        </div>
-      </div>
-      <div class="polaroid">
-        <img
-          class="image"
-          id="photo"
-          src="../images/honeycomb/the_working_app.png"
-          alt="a hand holding a phone"
-        />
-        <div class="caption">
-          <p>Caption</p>
-        </div>
-      </div>
-      <div class="polaroid">
-        <img
-          class="image"
-          id="photo"
-          src="../images/honeycomb/the_working_app.png"
-          alt="a hand holding a phone"
-        />
-        <div class="caption">
-          <p>Caption</p>
-        </div>
-      </div>
-      <div class="polaroid">
-        <img
-          class="image"
-          id="photo"
-          src="../images/honeycomb/the_working_app.png"
-          alt="a hand holding a phone"
-        />
-        <div class="caption">
-          <p>Caption</p>
-        </div>
-      </div>
-    </div> -->
-
-    <div id="prototype-1" class="section">
+    <div id="prototyping" class="section">
       <div class="text-section">
-        <h2>Prototype 1</h2>
-        <div>
-          <h3>Who is Mary's Place?</h3>
+        <h2 id="section-header">Prototyping</h2>
+        <div class="subsection">
+          <h3 id="subsection-header">Brainstorming</h3>
           <p>
-            Mary's Place is a Seattle-based non-profit dedicated to providing
-            safety, stability, and hope to families experiencing homelessness.
+            Now that we had identified a problem, we needed to come up with a
+            solution. Since MP used Microsoft Teams extensively, we explored
+            building a custom Teams chatbot that could find resources based on
+            input family data and provide shareable resource cards. Admin access
+            needed for this proved to be a blocker. Instead, we decided to build
+            an iOS app Outreach Specialists could use on their work iPhones.
           </p>
         </div>
       </div>
-    </div>
-
-    <div id="testing-1" class="section">
+      <div class="photos-section">
+        <div class="items">
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/honeycomb/prototyping/brainstorming/affinity-diagramming.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/honeycomb/prototyping/brainstorming/wireframing.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/honeycomb/prototyping/brainstorming/lo-fi-explore.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/honeycomb/prototyping/brainstorming/lo-fi-search.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/honeycomb/prototyping/brainstorming/lo-fi-visual.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="text-section">
-        <h2>User Testing Round 1</h2>
-        <div>
-          <h3>Who is Mary's Place?</h3>
+        <div class="subsection">
+          <h3 id="subsection-header">Prototype v1</h3>
           <p>
-            Mary's Place is a Seattle-based non-profit dedicated to providing
-            safety, stability, and hope to families experiencing homelessness.
+            To test how well our prototype would work in practice, we created a
+            basic interactive mockup of our app in Figma for user testing.
           </p>
         </div>
       </div>
-    </div>
-
-    <div id="prototype-2" class="section">
+      <div class="photos-section">
+        <div class="items">
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 1/p1-home.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 1/p1-map.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 1/p1-list.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 1/p1-filters.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 1/p1-input.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 1/p1-provider.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="text-section">
-        <h2>Prototype 2</h2>
-        <div>
-          <h3>Who is Mary's Place?</h3>
+        <div class="subsection">
+          <h3 id="subsection-header">User Testing Round 1</h3>
           <p>
-            Mary's Place is a Seattle-based non-profit dedicated to providing
-            safety, stability, and hope to families experiencing homelessness.
+            To see how well our prototype performed, we made a visit to MP's
+            Allen Family Center to test it with five Outreach Specialists.
+          </p>
+        </div>
+        <div class="subsection">
+          <h3 id="subsection-header">Questions</h3>
+          <ul>
+            <li><p>Does our resource model make sense?</p></li>
+            <li><p>How will our lists feature be used?</p></li>
+            <li><p>Do our filters provide enough granularity?</p></li>
+            <li><p>Is our collected information useful?</p></li>
+            <li><p>Should lists be private or visible by the team?</p></li>
+            <li><p>Would our proposed app help with resource research?</p></li>
+          </ul>
+        </div>
+        <h3 id="subsection-header">Findings</h3>
+      </div>
+      <div class="notes-section">
+        <div class="items">
+          <div class="item sticky-note">
+            <p>Some of our labels are confusing ('list' vs 'lists')</p>
+          </div>
+          <div class="item sticky-note">
+            <p>Our maps feature is super useful!</p>
+          </div>
+          <div class="item sticky-note">
+            <p>Our split provider-service model didn't make sense</p>
+          </div>
+          <div class="item sticky-note">
+            <p>Map view needs to be more prominent</p>
+          </div>
+          <div class="item sticky-note">
+            <p>A bunch of new filters!</p>
+          </div>
+          <div class="item sticky-note">
+            <p>We need robust data validation systems</p>
+          </div>
+          <div class="item sticky-note">
+            <p>Collaborating on a single list might be useful</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-section">
+        <div class="subsection">
+          <h3 id="subsection-header">Prototype v2</h3>
+          <p>
+            Our first round of user testing gave us so many great insights! Now
+            it was time to integrate the necessary changes into our prototype.
+            We wanted v2 to be more interactive and indicative of what we could
+            actually code with Flutter. In v1, we were modelling resources as a
+            provider-service relationship. With v2, we simplified this and
+            instead allowed multiple contacts and resource types.
           </p>
         </div>
       </div>
-    </div>
-
-    <div id="testing-2" class="section">
+      <div class="photos-section">
+        <div class="items">
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 2/p2-client.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 2/p2-share.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 2/p2-maps.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 2/p2-resources.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 2/p2-filters.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 2/p2-resource.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 2/p2-edit.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="text-section">
-        <h2>User Testing Round 2</h2>
-        <div>
-          <h3>Who is Mary's Place?</h3>
+        <div class="subsection">
+          <h3 id="subsection-header">User Testing Round 2</h3>
           <p>
-            Mary's Place is a Seattle-based non-profit dedicated to providing
-            safety, stability, and hope to families experiencing homelessness.
+            Since our first round of testing confirmed our value proposition,
+            this round gave us a chance to gauge top features and set
+            development priorities.
           </p>
+        </div>
+        <div class="subsection">
+          <h3 id="subsection-header">Questions</h3>
+          <ul>
+            <li>
+              <p>Does our new, simplified resource model make more sense?</p>
+            </li>
+            <li><p>Does our clients feature capture enough information?</p></li>
+            <li><p>Does our homepage surface useful features?</p></li>
+            <li><p>What features are most useful for our users?</p></li>
+          </ul>
+        </div>
+        <h3 id="subsection-header">Findings</h3>
+      </div>
+      <div class="notes-section">
+        <div class="items">
+          <div class="item sticky-note">
+            <p>Our new resource model is simple and effective!</p>
+          </div>
+          <div class="item sticky-note">
+            <p>Our 'clients' feature would be very popular</p>
+          </div>
+          <div class="item sticky-note">
+            <p>We need a few redundant shortcuts between linked features</p>
+          </div>
+          <div class="item sticky-note">
+            <p>Client collaboration isn't worth the dev time</p>
+          </div>
         </div>
       </div>
     </div>
 
     <div id="development" class="section">
       <div class="text-section">
-        <h2>Development</h2>
-        <div>
-          <h3>Who is Mary's Place?</h3>
+        <h2 id="section-header">Development</h2>
+        <div class="subsection">
+          <h3 id="subsection-header">Brainstorming</h3>
           <p>
-            Mary's Place is a Seattle-based non-profit dedicated to providing
-            safety, stability, and hope to families experiencing homelessness.
+            Now that we had identified a problem, we needed to come up with a
+            solution. Since MP used Microsoft Teams extensively, we explored
+            building a custom Teams chatbot that could find resources based on
+            input family data and provide shareable resource cards. Admin access
+            needed for this proved to be a blocker. Instead, we decided to build
+            an iOS app Outreach Specialists could use on their work iPhones.
           </p>
+        </div>
+      </div>
+      <div class="photos-section">
+        <div class="items">
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/honeycomb/prototyping/brainstorming/affinity-diagramming.png"
+              alt="a hand holding a phone"
+            />
+            <div class="caption">
+              <p>This is a longer caption to test how it flows</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

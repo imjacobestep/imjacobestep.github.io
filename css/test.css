@@ -139,7 +139,7 @@
 @media only screen and (max-width: 767px) {
   :root {
     --h1-size: 8vw;
-    --h2-size: 4vw;
+    --h2-size: 6vw;
     --h3-size: 4vw;
     --p-size: 4vw;
 
@@ -208,7 +208,7 @@ h3 {
   font-size: var(--h3-size);
   font-family: 'Space Mono', monospace;
   font-weight: bold;
-  line-height: 8px;
+  line-height: 0px;
 }
 
 p {
@@ -222,12 +222,12 @@ p {
 
 html {
   height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  overflow: scroll;
+  overflow-y: scroll;
   overflow-x: hidden;
   background-color: var(--honeycomb-bg-color);
   /* scroll-snap-type: y mandatory; */
@@ -260,33 +260,32 @@ body {
 }
 
 .text-section {
-  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
   /* margin-inline: 300px; */
   padding-inline: 50px;
-  padding-block: 30px;
+  padding-top: 30px;
+  padding-bottom: 4px;
+  gap: 10px;
 }
 
-.photo-section {
-  background-color: white;
-  width: 100vw;
-  min-height: 440px;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  padding: 20px;
-  /* overflow-x: scroll; */
-  /* overflow-y: hidden; */
-}
-
+.photo-section,
 .notes-section {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   width: 100%;
   height: auto;
   padding: 0px;
   margin: 0px;
-  /* overflow-x: hidden; */
-  /* overflow-y: hidden; */
+  gap: 4px;
+  overflow-y: visible;
+}
+
+.photo-section,
+.notes-section > h3 {
+  padding-inline: 50px;
 }
 
 .items {
@@ -297,25 +296,29 @@ body {
   width: 100vw;
   overflow-x: scroll;
   /* overflow-y: hidden; */
+  overflow-y: visible;
   transition: all 0.2s;
   transition-timing-function: var(--bezier);
   will-change: transform;
   user-select: none;
-  cursor: pointer;
+  cursor: grab;
   gap: 30px;
-  padding: 20px;
+  padding-inline: 20px;
+  padding-left: 10%;
+  padding-bottom: 20px;
 }
 
 .items.active {
   background: rgba(255, 255, 255, 0.3);
   cursor: grabbing;
   cursor: -webkit-grabbing;
-  transform: scale(1.02);
-  transform: scale(0.98);
+  /* transform: scale(1.02); */
+  /* transform: scale(0.9); */
 }
 
 .items.active > * {
-  transform: rotate(2deg);
+  z-index: 100;
+  transform: rotate(2deg) scale(0.9);
 }
 
 /* HEADER */
@@ -365,7 +368,7 @@ body {
 
 #project-context {
   /* background-color: purple; */
-  gap: 10px;
+  /* gap: 4px; */
   /* max-width: 500px; */
 }
 
@@ -393,6 +396,11 @@ body {
   border-style: solid;
   filter: var(--shadow-normal);
   transition: var(--animation);
+  height: 50px;
+}
+
+a > p {
+  font-size: calc(var(--p-size) - 2px);
 }
 
 #project-links > a:hover {
@@ -428,7 +436,7 @@ strong {
 }
 
 .section:nth-child(even) {
-  background-color: white;
+  background-color: var(--card-bkg);
 }
 
 /* BACKGROUND */
@@ -445,8 +453,6 @@ strong {
 
 .polaroid {
   /* layout */
-  /* min-width: 300px;
-  min-height: 380px; */
   height: auto;
   display: flex;
   flex-direction: column;
@@ -464,6 +470,9 @@ strong {
   /* styling */
   filter: var(--shadow-normal);
   transition: var(--animation);
+
+  min-width: 300px;
+  max-width: 300px;
 }
 
 .caption {
@@ -530,10 +539,10 @@ strong {
 .screenshot {
   width: 100%;
   max-width: 280px;
-  background-color: var(--card-bkg);
-  border-width: 2px;
-  border-color: black;
-  border-style: solid;
+  /* background-color: var(--card-bkg); */
+  /* border-width: 2px; */
+  /* border-color: black; */
+  /* border-style: solid; */
 }
 
 .project_card {
