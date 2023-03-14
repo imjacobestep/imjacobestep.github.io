@@ -604,7 +604,7 @@ strong {
 .sticky-note > p {
   font-family: var(--notes-font);
   font-size: var(--h2-size);
-  font-weight: bold;
+  /* font-weight: bold; */
   text-align: center;
 }
 
