@@ -224,6 +224,24 @@ p {
   filter: var(--dark-filter);
 }
 
+ul {
+  list-style: none; /* Remove default bullets */
+}
+ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+ul li::before {
+  content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--text-color); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
 html {
   height: 100vh;
   max-width: 100vw;
@@ -233,7 +251,7 @@ html {
   padding: 0;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: var(--honeycomb-bg-color);
+  background-color: var(--bg-color);
   /* scroll-snap-type: y mandatory; */
   scroll-behavior: smooth;
   position: relative;
@@ -391,7 +409,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  background-color: var(--honeycomb-bg-color);
+  background-color: var(--bg-color);
 }
 
 #project-summary,
@@ -422,7 +440,7 @@ body {
   align-items: center;
   padding-right: 20px;
   background-image: var(--card-bkg-img);
-  background-color: var(--honeycomb-card-color);
+  background-color: var(--card-bkg);
   background-repeat: repeat;
   border-color: var(--border-color);
   border-width: var(--surface-border-static);
