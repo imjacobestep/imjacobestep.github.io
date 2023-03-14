@@ -2,8 +2,8 @@ matcher = window.matchMedia('(prefers-color-scheme: dark)');
 matcher.addListener(onUpdate);
 onUpdate();
 
-lightSchemeIcon = document.querySelector('link#light-icon');
-darkSchemeIcon = document.querySelector('link#dark-icon');
+lightSchemeIcon = document.querySelector('link#light-scheme-icon');
+darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
 
 function onUpdate() {
   if (matcher.matches) {
