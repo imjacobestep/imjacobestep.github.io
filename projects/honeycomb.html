@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="../js/about.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/test.js" defer></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Honeycomb</title>
-    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/honeycomb.css" />
     <link rel="icon" type="image/x-icon" href="/images/links/favicon.png" />
     <style>
       :root {
         --bg-color: #f9da74;
         --card-bkg: #fff5a6;
-        --button-color: #ea9b00;
+        --button-color: #da6a02;
       }
       @media (prefers-color-scheme: dark) {
         :root {
-          --bg-color: #0c0c0c;
+          --bg-color: #0f0f0f;
 
-          --card-bkg: #000000;
+          --card-bkg: #060606;
 
-          --button-color: #252525;
+          --button-color: #484848;
         }
       }
     </style>
   </head>
   <body>
-    <div class="navWrapper">
+    <div id="header">
       <a class="navhome" href="/">
         <img
           class="icon"
@@ -36,170 +42,746 @@
           height="30px"
         />
       </a>
-    </div>
-    <div class="content">
-      <div class="info">
-        <h1>Honeycomb</h1>
-        <p>
-          A capstone for grad school, completed in 2 quarters and sponsored by
-          Mary's Place and Starbucks. <br />
-          My roles: UX Researcher/Designer, Front-End Engineer
-        </p>
-        <h2>Problem:</h2>
-        <p>
-          Mary's Place's Diversion team lacked organized info on homelessness
-          resources to match clients with. This put a strain on shelter
-          capacity.
-        </p>
-        <h2>Process:</h2>
-        <p>
-          Research: We conducted interviews, contextual inquiries, cognitive
-          walkthroughs, and co-design activities with staff. We created 3
-          high-fidelity prototypes and conducted 2 rounds of user testing.
-        </p>
-        <p>
-          Development: We split development into 5 week-long sprints, using
-          Flutter for iOS. After each sprint, we tested any new changes. Once
-          feature-complete, we stress-tested with batch uploads/deletes and over
-          130 local resources.
-        </p>
-        <h2>Result:</h2>
-        <p>
-          Honeycomb gives Diversion Specialists a reliable source of resource
-          info, a nearby map view, search and filtering, and client-resource
-          matching and sharing tools. Mary's Place plans to adopt Honeycomb
-          internally in early 2023, with hopes to expand it in the future.
-        </p>
-        <div class="links">
-          <a
-            class="social"
-            href="https://docs.google.com/presentation/d/1_vw353XLFEFkAalk892QSfokmUUloFxZw8RZA0Z8q1s/edit?usp=sharing"
-          >
-            <img
-              class="icon"
-              src="/images/links/document.png"
-              alt="Final Presentation"
-              width="45px"
-              height="45px"
-            />
-            Final Presentation
-          </a>
-          <a class="social" href="https://github.com/imjacobestep/honeycomb">
-            <img
-              class="icon"
-              src="/images/links/github.png"
-              alt="Github"
-              width="45px"
-              height="45px"
-            />
-            github
-          </a>
-          <a class="social" href="/projects/honeycomb_test.html"> . </a>
-        </div>
-      </div>
-
-      <div class="wrapper">
-        <div class="polaroid">
-          <img
-            class="image"
-            id="mainPhoto"
-            src="../images/honeycomb/the_working_app.png"
-            alt="a hand holding a phone"
-          />
-          <div class="caption" id="mainCaption">Honeycomb in the wild</div>
-        </div>
-        <div class="image-wrapper">
-          <img
-            class="imgCarousel"
-            src="../images/honeycomb/working_with_marys_place.png"
-            alt="five people smiling"
-            id="working with Mary's Place"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/honeycomb/focus_group.png"
-            alt="a group of people being interviewed"
-            id="focus group interview"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/honeycomb/user_flow_codesign.png"
-            alt="a person writing on a diagram"
-            id="mapping our user's current flow"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/honeycomb/affinity_diagraming.png"
-            alt="two people putting sticky notes on a whiteboard"
-            id="affinity analysis"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/honeycomb/prototype_iteration.png"
-            alt="a group of people working around a computer"
-            id="prototype iteration"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/honeycomb/user_testing.png"
-            alt="a person using an app prototype on a phone"
-            id="user testing round 2"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/honeycomb/testing_bereal.png"
-            alt="a social media post showing progress on an app"
-            id="a BeReal of me working on the app"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/honeycomb/the_working_app.png"
-            alt="a hand holding a phone"
-            id="Honeycomb in the wild"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/honeycomb/home_and_resources.png"
-            alt="two phones showing screens of an app"
-            id="home and resources"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/honeycomb/resource_and_map.png"
-            alt="two phones showing screens of an app"
-            id="resource details and map"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/honeycomb/client_details.png"
-            alt="two phones showing screens of an app"
-            id="client details and matching"
-          />
-        </div>
-      </div>
-    </div>
-    <div class="polaroid">
       <iframe
         width="450"
         height="450"
+        id="header-img"
         class="youtube"
-        src="https://www.youtube.com/embed/5FTuROvII_g"
+        src="https://www.youtube.com/embed/5FTuROvII_g?autoplay=1&rel=0&iv_load_policy=3&color=white&disablekb=1"
         title="Honeycomb - a GIX Cohort 5 Launch Project"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-      <div class="caption">Final Video</div>
+
+      <div id="project-info">
+        <div id="project-summary">
+          <h1>Honeycomb</h1>
+          <p>
+            Honeycomb is an iOS app designed as a hub for Mary's Place Seattle
+            to organize, explore, and share community resources. This was
+            created as my graduate launch project at GIX, sponsored by Starbucks
+            and Mary's Place. The objective was to help MP's Outreach and
+            Diversion team more easily connect families in need with community
+            resources.
+          </p>
+        </div>
+        <div id="project-context">
+          <div class="project-detail" id="role">
+            <h3 id="subsection-header">Role</h3>
+            <p>Lead Front-End Engineer / User Researcher</p>
+            <p>
+              (Secondary Research, User Research, System Design, Product Design,
+              Prototyping & Testing, Pitching, iOS Front-End Development)
+            </p>
+          </div>
+          <div class="project-detail" id="time-frame">
+            <h3 id="subsection-header">Time Frame</h3>
+            <p>Two 9-week Quarters</p>
+          </div>
+          <div class="project-detail" id="links">
+            <h3 id="subsection-header">Links</h3>
+            <div id="project-links">
+              <a
+                class="social"
+                href="https://github.com/imjacobestep/honeycomb"
+              >
+                <img
+                  class="icon"
+                  src="/images/links/github.png"
+                  alt="Github"
+                  width="45px"
+                  height="45px"
+                />
+                <p>Github</p>
+              </a>
+              <a
+                class="social"
+                href="https://docs.google.com/presentation/d/1_vw353XLFEFkAalk892QSfokmUUloFxZw8RZA0Z8q1s/edit?usp=sharing"
+              >
+                <img
+                  class="icon"
+                  src="/images/links/document.png"
+                  alt="Final Presentation"
+                  width="45px"
+                  height="45px"
+                />
+                <p>Final Presentation</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#honeycomb" onclick="scrollTo(honeycomb)"
+        ><h3 id="down_arrow">V</h3></a
+      >
+    </div>
+
+    <div id="PROBLEM-QUOTE" class="quote section">
+      <h1>
+        In January of 2020, Washington had an estimated
+        <strong>22,923</strong> residents experiencing homelessness on any given
+        day.
+      </h1>
+      <p>-US Interagency Council on Homelessness</p>
+    </div>
+
+    <div id="BACKGROUND" class="section">
+      <div class="text-section">
+        <h2>Background</h2>
+        <div>
+          <p>
+            Mary's Place is a Seattle-based nonprofit dedicated to providing
+            safety, stability, and hope to families experiencing homelessness.
+            When they pitched their sponsored capstone in my graduate program, I
+            immediately knew it was the project for me. I grew up lower income
+            in rural West Virginia; this topic was near to my heart. More than
+            anything, I wanted to apply my skills to something that would
+            actually impact real people, not just build a flashy tech demo.
+          </p>
+        </div>
+        <h3 id="subsection-header">Team Honeycomb</h3>
+      </div>
+      <div id="TEAM-IMGS" class="photos-section">
+        <div class="items">
+          <div id="teammate" class="item polaroid">
+            <img
+              class="teammate-img"
+              src="/images/honeycomb/background/saif.png"
+              alt="my teammate Saif"
+            />
+            <h3>Saif</h3>
+            <p>Project Manager</p>
+          </div>
+
+          <div id="teammate" class="item polaroid">
+            <img
+              class="teammate-img"
+              src="/images/honeycomb/background/sam.png"
+              alt="my teammate Sam"
+            />
+            <h3>Shih-Hsin</h3>
+            <p>Back-end Engineer</p>
+          </div>
+
+          <div id="teammate" class="item polaroid">
+            <img
+              class="teammate-img"
+              src="/images/honeycomb/background/abhi.png"
+              alt="my teammate Abhi"
+            />
+            <h3>Abhijeet</h3>
+            <p>UX Designer</p>
+          </div>
+
+          <div id="teammate" class="item polaroid">
+            <img
+              class="teammate-img"
+              src="/images/honeycomb/background/me.png"
+              alt="Me!"
+            />
+            <h3>Me!</h3>
+            <p>UX Engineer</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-section">
+        <h3 id="subsection-header">Timeline</h3>
+      </div>
+      <div id="big-photo" class="item polaroid">
+        <img
+          class="big-img"
+          src="/images/honeycomb/background/timeline.png"
+          alt="A timeline of project stages"
+        />
+        <p>Our project took two quarters</p>
+      </div>
+    </div>
+
+    <div id="SECONDARY-RESEARCH" class="section">
+      <div class="text-section">
+        <h2 id="section-header">Secondary Research</h2>
+        <p>
+          Families calling Mary's Place wait an average of 45 days before
+          getting access to shelter. Our job was to lower this number. To
+          identify bottlenecks, we first needed to understand MP's process. We
+          began by combing through training materials and reports, and meeting
+          with MP's Data Team. At this point, it was looking like our solution
+          would be a new intake process that automatically matched families with
+          eligible resources.
+        </p>
+      </div>
+    </div>
+
+    <div id="PRIMARY-RESEARCH" class="section">
+      <div class="text-section">
+        <h2 id="section-header">Primary Research</h2>
+        <div id="GOALS">
+          <h3 id="subsection-header">Goals</h3>
+          <ul>
+            <li><p>Create a user-flow diagram of the current process</p></li>
+            <li><p>Identify what slows outreach specialists down</p></li>
+            <li><p>Learn more about what resources are commonly needed</p></li>
+            <li><p>Understand how resource eligibility is determined</p></li>
+            <li><p>Scope where our solution will have impacts</p></li>
+          </ul>
+        </div>
+        <div id="OUTREACH">
+          <h3 id="subsection-header">Exploring Outreach</h3>
+          <p>
+            Our first day of field research began with a contextual inquiry of
+            an outreach request where specialists were assisting a family of ten
+            living in an SUV. Next, we conducted an interview with the Outreach
+            Team manager and a focus group with five team members. In these
+            interviews we clarified processes and identified pain points. We
+            also had interviewees annotate a print-out of our user flow diagram,
+            fixing any mistakes and highlighting bottlenecks.
+          </p>
+        </div>
+        <div id="INTAKE">
+          <h3 id="subsection-header">Exploring Intake</h3>
+          <p>
+            Knowing shelter capacity was a big issue for Outreach, so we met
+            with Intake to learn how they manage this issue. We interviewed the
+            Intake Line Manager and had her walk us through how she either
+            refers families to Outreach or puts them on a shelter waitlist. We
+            learned that Intake already has a shelter-matching system
+            incompatible with Outreach's needs. Addressing this would be risky,
+            organizational, and out of scope for our project.
+          </p>
+        </div>
+        <h3 id="subsection-header">Findings</h3>
+      </div>
+      <div id="FINDINGS" class="notes-section">
+        <div class="items">
+          <div class="item sticky-note">
+            <p>Specialists are each assigned 15 families per week</p>
+          </div>
+          <div class="item sticky-note">
+            <p>No process for documenting resource discovery or use</p>
+          </div>
+          <div class="item sticky-note">
+            <p>
+              Most of their time is spent tracking down accurate resource
+              information
+            </p>
+          </div>
+          <div class="item sticky-note">
+            <p>
+              Families need more than shelter (clothes, childcare, immigration,
+              etc.)
+            </p>
+          </div>
+          <div class="item sticky-note">
+            <p>
+              Team knowledge of resources is fragmented, everyone has their own
+              list
+            </p>
+          </div>
+          <div class="item sticky-note">
+            <p>Resources are complex (multiple services, locations, etc.)</p>
+          </div>
+          <div class="item sticky-note">
+            <p>
+              Proximity, resource type, and eligibility are top considerations
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="ANALYSIS" class="text-section">
+        <div>
+          <h3 id="subsection-header">Analysis</h3>
+          <p>
+            To process what we'd learned and identify patterns, we used an
+            affinity analysis technique: sticky notes everywhere! We grouped our
+            notes, labelled high-impact pain points, and discovered our problem.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="PROBLEM-STATEMENT" class="quote section">
+      <h1>
+        How can we help outreach specialists explore, document, utilize, and
+        collaborate on community resource information?
+      </h1>
+    </div>
+    <div id="PROTOTYPING" class="section">
+      <div class="text-section">
+        <h2 id="section-header">Prototyping</h2>
+        <div id="BRAINSTORMING" class="subsection">
+          <h3 id="subsection-header">Brainstorming</h3>
+          <p>
+            With our problem identified, we needed to craft a solution. MP uses
+            Microsoft Teams extensively so we initially considered building a
+            chatbot to document and surface resource info in-chat, but this
+            would require admin access we couldn't be granted. Instead, we
+            landed on building an iOS app specialists could use to contribute to
+            and pull from a shared database on their work iPhones.
+          </p>
+        </div>
+      </div>
+      <div id="BRAINSTORMING-IMGS" class="photos-section">
+        <div class="items">
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/honeycomb/prototyping/brainstorming/affinity-diagramming.png"
+              alt="two people sorting sticky notes"
+            />
+            <div class="caption">
+              <p>Affinity analysis</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/honeycomb/prototyping/brainstorming/wireframing.png"
+              alt="sketches on a whiteboard"
+            />
+            <div class="caption">
+              <p>Sketching our components and user flow</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/honeycomb/prototyping/brainstorming/lo-fi-explore.png"
+              alt="a basic mockup of an app map and list view"
+            />
+            <div class="caption">
+              <p>A lo-fi resource discovery exploration</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/honeycomb/prototyping/brainstorming/lo-fi-search.png"
+              alt="a basic mockup of an app home screen and search"
+            />
+            <div class="caption">
+              <p>A lo-fi resource search exploration</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/honeycomb/prototyping/brainstorming/lo-fi-visual.png"
+              alt="a basic mockup of an app home screen and list view"
+            />
+            <div class="caption">
+              <p>A basic style exploration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-section">
+        <div id="PROTOTYPE-1" class="subsection">
+          <h3 id="subsection-header">Prototype v1</h3>
+        </div>
+      </div>
+      <div id="PROTOTYPE-1-IMGS" class="photos-section">
+        <div class="items">
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 1/p1-home.png"
+              alt="an app home screen with shortcuts"
+            />
+            <div class="caption">
+              <p>Honeycomb home screen</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 1/p1-map.png"
+              alt="a map of resources"
+            />
+            <div class="caption">
+              <p>Search map-view</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 1/p1-list.png"
+              alt="a list of resources"
+            />
+            <div class="caption">
+              <p>Search list-view</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 1/p1-filters.png"
+              alt="list filter conditions"
+            />
+            <div class="caption">
+              <p>Filtering based on category, location, and status</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 1/p1-input.png"
+              alt="basic provider info onboarding screen"
+            />
+            <div class="caption">
+              <p>Provider-level onboarding</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 1/p1-provider.png"
+              alt="a resource provider detail page"
+            />
+            <div class="caption">
+              <p>Provider-level details with services offered</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-section">
+        <div id="TESTING-1" class="subsection">
+          <h3 id="subsection-header">User Testing Round 1</h3>
+          <p>
+            We paid another visit to the Outreach Team to test our prototype
+            with five specialists. In our data model, we separated resources
+            into 'providers' with multiple 'services'. Our primary testing goals
+            were to confirm our value proposition, test our implementation, and
+            determine whether this data model made sense to our users.
+          </p>
+        </div>
+        <h3 id="subsection-header">Findings</h3>
+      </div>
+      <div id="TESTING-1-FINDINGS" class="notes-section">
+        <div class="items">
+          <div class="item sticky-note">
+            <p>Labelling issues confused our users ('list' vs 'lists')</p>
+          </div>
+          <div class="item sticky-note">
+            <p>Our split data model was unintuitive</p>
+          </div>
+          <div class="item sticky-note">
+            <p>Map view was useful, but not visible enough</p>
+          </div>
+          <div class="item sticky-note">
+            <p>We needed more filters and data points on resources</p>
+          </div>
+          <div class="item sticky-note">
+            <p>Data validation will need to be robust</p>
+          </div>
+          <div class="item sticky-note">
+            <p>
+              'Lists' will stand in for clients, not useful in other situations
+            </p>
+          </div>
+          <div class="item sticky-note">
+            <p>Collaborating on clients might be useful?</p>
+          </div>
+          <div class="item sticky-note">
+            <p>Overall, our app was well-received!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-section">
+        <div id="PROTOTYPE-2" class="subsection">
+          <h3 id="subsection-header">Prototype v2</h3>
+        </div>
+      </div>
+      <div id="PROTOTYPE-2-IMGS" class="photos-section">
+        <div class="items">
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 2/p2-client.png"
+              alt="a family profile in honeycomb"
+            />
+            <div class="caption">
+              <p>Client Details</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 2/p2-share.png"
+              alt="the iOS share sheet sharing a list of resources"
+            />
+            <div class="caption">
+              <p>Sharing resources with a client</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 2/p2-maps.png"
+              alt="a map view with nearby resources"
+            />
+            <div class="caption">
+              <p>Resources near a specified location</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 2/p2-resources.png"
+              alt="a list of community resources"
+            />
+            <div class="caption">
+              <p>The main list of resources in the database</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 2/p2-filters.png"
+              alt="a set of list filter conditions"
+            />
+            <div class="caption">
+              <p>Filtering based on status and type</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 2/p2-resource.png"
+              alt="details about a local resource"
+            />
+            <div class="caption">
+              <p>Resource details and quick actions</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/prototyping/prototype 2/p2-edit.png"
+              alt="a resource onboarding screen"
+            />
+            <div class="caption">
+              <p>Step 1 of 3 onboarding a resource</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-section">
+        <div id="TESTING-2" class="subsection">
+          <h3 id="subsection-header">User Testing Round 2</h3>
+          <p>
+            With our value proposition confirmed, this round of testing could
+            help confirm what we changed from round 1, gauge top features and
+            set development priorities.
+          </p>
+        </div>
+        <h3 id="subsection-header">Findings</h3>
+      </div>
+      <div id="TESTING-2-FINDINGS" class="notes-section">
+        <div class="items">
+          <div class="item sticky-note">
+            <p>Our simplified resource model is so much better!</p>
+          </div>
+          <div class="item sticky-note">
+            <p>'Clients' and 'Map View' were super popular</p>
+          </div>
+          <div class="item sticky-note">
+            <p>We need a few redundant shortcuts between linked features</p>
+          </div>
+          <div class="item sticky-note">
+            <p>Client collaboration isn't worth the dev time</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="USER-QUOTE" class="quote section">
+      <h1>
+        "I <strong>love</strong> that you can open the client in Agency. I
+        thought that was bomb."
+      </h1>
+      <p>-Outreach Specialist in Round 2</p>
+    </div>
+
+    <div id="DEVELOPMENT" class="section">
+      <div class="text-section">
+        <h2 id="section-header">Development</h2>
+
+        <div id="FEATURE-LOCK" class="subsection">
+          <h3 id="subsection-header">Feature Lock</h3>
+          <p>
+            With satisfactory user testing results, it was time to lock down our
+            features and start development. We decided to build our app using
+            Flutter for three reasons: I was already familiar with it, it played
+            nicely with Firebase and Google Maps APIs, and its cross-platform
+            nature would make it easy to expand in the future.
+          </p>
+        </div>
+        <div id="SPRINT-PLANNING" class="subsection">
+          <h3 id="subsection-header">Sprint Planning</h3>
+          <p>
+            We had less than five weeks to go from a Figma prototype to a
+            working app we could present and hand over to Mary's Place. To get
+            this done we divided front-end and back-end tasks between myself and
+            Shih-Hsin respectively, and split features into five weekly sprints.
+            I would distribute a new build on TestFlight and Abhi and Saif would
+            test for bugs on Fridays.
+          </p>
+        </div>
+        <h3 id="subsection-header">Final App</h3>
+      </div>
+
+      <div id="FINAL-IMGS" class="photos-section">
+        <div class="items">
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/final_screenshots/Home-screen.png"
+              alt="a home screen with shortcuts"
+            />
+            <div class="caption">
+              <p>Honeycomb's home screen surfaces useful shortcuts</p>
+            </div>
+          </div>
+
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/final_screenshots/maps-view.png"
+              alt="a map view with nearby resources"
+            />
+            <div class="caption">
+              <p>
+                Map View helps Specialists view resources near a family in need
+              </p>
+            </div>
+          </div>
+
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/final_screenshots/resource-details-page.png"
+              alt="useful details about a family center"
+            />
+            <div class="caption">
+              <p>Resource pages show location, quick links, and notes</p>
+            </div>
+          </div>
+
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/final_screenshots/add-resources-family.png"
+              alt="a popup to add a resource to a client list"
+            />
+            <div class="caption">
+              <p>Resources can be added to a Client's List</p>
+            </div>
+          </div>
+
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/final_screenshots/list-view.png"
+              alt="a list of community resources in a database"
+            />
+            <div class="caption">
+              <p>
+                Resources info is shared, annotated, and kept up to date by the
+                team
+              </p>
+            </div>
+          </div>
+
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/final_screenshots/family-details-page.png"
+              alt="a family profile with matched resources"
+            />
+            <div class="caption">
+              <p>
+                Client pages contain notes and a link to MP's internal profile
+              </p>
+            </div>
+          </div>
+
+          <div class="item polaroid">
+            <img
+              class="screenshot"
+              id="photo"
+              src="../images/honeycomb/final_screenshots/client-share.png"
+              alt="a popup to share a list of resources with a family"
+            />
+            <div class="caption">
+              <p>Client Lists can be shared via text or printable PDF</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-section">
+        <div id="TESTING" class="subsection">
+          <h3 id="subsection-header">Testing</h3>
+          <p>
+            We finished core development early! With our extra time, we ran
+            scripts to stress test our back-end and we manually onboarded over
+            130 verified local resources.
+          </p>
+        </div>
+        <div id="HAND-OFF" class="subsection">
+          <h3 id="subsection-header">Hand-off</h3>
+          <p>
+            In mid-December 2022, we met with Mary's Place one last time to walk
+            team members through our final app and hand over a folder with our
+            research notes, code, and thorough documentation. The Mary's Place
+            data team is working on an early 2023 internal rollout plan.
+          </p>
+        </div>
+
+        <h3 id="subsection-header">Proposed Future Development</h3>
+      </div>
+      <div id="big-photo" class="item polaroid">
+        <img
+          class="big-img"
+          src="/images/honeycomb/future.png"
+          alt="A timeline of possible future work"
+        />
+        <p>We also invisioned future expansions</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="#header">
+        <h3>V</h3>
+        <p>scroll to top</p>
+        <h3>V</h3>
+      </a>
+      <p>designed and coded by me, hosted on github</p>
     </div>
   </body>
-  <div class="footer">
-    <a class="nextProject" href="/projects/vocalamp.html">
-      <img
-        src="/images/buttons/vocalamp_btn.png"
-        alt="a prototype smart lamp"
-      />
-      <div class="desc">next up: VocaLamp</div>
-    </a>
-    <a class="button" href="#">back to top</a>
-  </div>
 </html>
