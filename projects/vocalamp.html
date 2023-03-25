@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VocaLamp</title>
-    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/honeycomb.css" />
     <link rel="icon" type="image/x-icon" href="/images/links/favicon.png" />
     <style>
       :root {
-        --bg-color: #f0b094;
-        --card-bkg: #ffd5c3;
-        --button-color: #cd5927;
+        --bg-color: #c1f5b2;
+        --card-bkg: #dcfdd3;
+        --button-color: #50AF33;
       }
       @media (prefers-color-scheme: dark) {
         :root {
@@ -26,7 +26,7 @@
     </style>
   </head>
   <body>
-    <div class="navWrapper">
+    <div id="header">
       <a class="navhome" href="/">
         <img
           class="icon"
@@ -36,170 +36,318 @@
           height="30px"
         />
       </a>
-    </div>
-
-    <div class="content">
-      <div class="info">
-        <h1>VocaLamp</h1>
-        <p>
-          This was a 9 week project for GIX <br />
-          My roles: user researcher, product designer, software engineer
-        </p>
-        <h2>Problem:</h2>
-        <p>
-          Children need to learn new words while reading, but using a phone to
-          look them up is distracting.
-        </p>
-        <h2>Process:</h2>
-        <p>
-          Throughout the quarter, my team conducted secondary research and user
-          interviews to inform a proposed solution. We presented the status of
-          the project at 3 milestones, ending with a working prototype and
-          demonstration.
-        </p>
-        <h2>Result:</h2>
-        <p>
-          We built a smart study lamp that detects when a user points at a word,
-          speaks the word and definition, and saves them to a parent app to
-          review and keep track of progress.
-        </p>
-        <h2>Further Work:</h2>
-        <p>
-          Since the end of this class, we presented for the next cohort, entered
-          into UW's CoMotion startup incubator and are (as of Jan 2023)
-          conducting user testing for a CHI 2023 research paper.
-        </p>
-        <div class="links">
-          <a
-            class="social"
-            href="https://github.com/imjacobestep/smart_lamp_app"
-          >
-            <img
-              class="icon"
-              src="/images/links/android.png"
-              alt="Android app"
-              width="45px"
-              height="45px"
-            />
-            app
-          </a>
-          <a
-            class="social"
-            href="https://github.com/imjacobestep/smart-study-lamp"
-          >
-            <img
-              class="icon"
-              src="/images/links/github.png"
-              alt="Github"
-              width="45px"
-              height="45px"
-            />
-            github
-          </a>
-          <a class="social" href="https://youtu.be/EfJi6HEn3-0">
-            <img
-              class="icon"
-              src="/images/links/youtube.png"
-              alt="Github"
-              width="45px"
-              height="45px"
-            />
-            video
-          </a>
-        </div>
-      </div>
-
-      <div class="wrapper">
-        <div class="polaroid">
-          <img
-            class="image"
-            id="mainPhoto"
-            src="../images/vocalamp/user_testing_setup.png"
-            alt="a lamp prototype in front of a window"
-          />
-          <div class="caption" id="mainCaption">our user testing setup</div>
-        </div>
-        <div class="image-wrapper">
-          <img
-            class="imgCarousel"
-            src="../images/vocalamp/lighting_prototype.png"
-            alt="a basic prototype lamp"
-            id="1st prototype with auto lighting"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/vocalamp/camera_prototype.png"
-            alt="a prototype with a camera sensor over a book"
-            id="our camera prototype"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/vocalamp/led_diagram.png"
-            alt="a sketch of ring lights and sensors"
-            id="a sketch of our sensor layout"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/vocalamp/system_flow.png"
-            alt="a sketch showing text detection and cloud syncing"
-            id="our system flow"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/vocalamp/testing_wiring.png"
-            alt="a person checking wires on a prototype lamp"
-            id="testing our final wiring"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/vocalamp/custom_pcb_exploration.png"
-            alt="a circuit board diagram"
-            id="a design for our custom pcb"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/vocalamp/new_words_in_app.png"
-            alt="app screens of words and their definitions"
-            id="the parent companion app"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/vocalamp/lighting_dashboard.png"
-            alt="app screens of a lighting dashboard"
-            id="our basic lighting dashboard"
-          />
-          <img
-            class="imgCarousel"
-            src="../images/vocalamp/user_testing_setup.png"
-            alt="a lamp prototype in front of a window"
-            id="our user testing setup"
-          />
-        </div>
-      </div>
-    </div>
-    <div class="polaroid">
       <iframe
         width="450"
         height="450"
+        id="header-img"
         class="youtube"
-        src="https://www.youtube.com/embed/EfJi6HEn3-0"
-        title="VocaLamp"
-        frameborder="1"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        src="https://www.youtube.com/embed/EfJi6HEn3-0?autoplay=0&rel=0&iv_load_policy=3&color=white&disablekb=1"
+        title="Honeycomb - a GIX Cohort 5 Launch Project"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-      <div class="caption">Final Video</div>
-    </div>
-  </body>
 
-  <div class="footer">
-    <a class="nextProject" href="/projects/whackamole.html">
-      <img
-        src="/images/buttons/whackamole_btn.png"
-        alt="a prototype whack-a-mole game"
-      />
-      <div class="desc">next up: ML whack-a-mole</div>
-    </a>
-    <a class="button" href="#">back to top</a>
-  </div>
+      <div id="project-info">
+        <div id="project-summary">
+          <h1>VocaLamp</h1>
+          <p>
+            VocaLamp is a prototype smart lamp that adapts lighting, reads word
+            definitions, and helps parents reinforce learning. This was created
+            as a project for my graduate Hardware/Software Lab 2 class at GIX
+            and continued through UW’s CoMotion incubator program. The objective
+            was to help parents and children connect over distraction-free
+            vocabulary learning
+          </p>
+        </div>
+        <div id="project-context">
+          <div class="project-detail" id="role">
+            <h3 id="subsection-header">Role</h3>
+            <p>Lead Software Engineer / User Researcher</p>
+            <p>
+              (Secondary Research, User Research, System Design, Product Design,
+              Prototyping & Testing, Python, Android App Development)
+            </p>
+          </div>
+          <div class="project-detail" id="time-frame">
+            <h3 id="subsection-header">Time Frame</h3>
+            <p>One 9-week Quarter</p>
+          </div>
+          <div class="project-detail" id="links">
+            <h3 id="subsection-header">Links</h3>
+            <div id="project-links">
+              <a
+                class="social"
+                href="https://github.com/imjacobestep/smart_lamp_app"
+              >
+                <img
+                  class="icon"
+                  src="/images/links/github.png"
+                  alt="Github"
+                  width="45px"
+                  height="45px"
+                />
+                <p>App Repo</p>
+              </a>
+              <a
+                class="social"
+                href="https://github.com/imjacobestep/smart-study-lamp"
+              >
+                <img
+                  class="icon"
+                  src="/images/links/github.png"
+                  alt="Final Presentation"
+                  width="45px"
+                  height="45px"
+                />
+                <p>Lamp Repo</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#background" onclick="scrollTo(background)"
+        ><h3 id="down_arrow">V</h3></a
+      >
+    </div>
+
+    <!-- PROBLEM QUOTE -->
+    <div id="PROBLEM-QUOTE" class="quote section">
+      <h1>
+        How can we help parents connect with their children over 
+        <strong>distraction free</strong> language learning?
+      </h1>
+    </div>
+    <!-- BACKGROUND -->
+    <div id="BACKGROUND" class="section">
+      <div class="text-section">
+        <h2>Background</h2>
+        <div>
+          <p>
+            My grad program had two Hardware/Software Lab classes where we have nine weeks to go from idea to working prototype. VocaLamp started as one of these projects. Our initial idea was a smart bookmark that would sync progress from a physical book to an eBook. After two weeks of research and sketching, our advisor changed his mind on the idea and we had to start over. Having researched the benefits of reading physical books, we pivoted to an IoT children's lamp. I was the only software engineer on a team with Sumayyah (communications), Vinitha (architecture), Abhi (UX), and, working remotely from China, Yiran (architecture).
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- MILESTONE 1 SECTION (secondary research, prototype 1, photos) -->
+    <div id="MILESTONE-1" class="section">
+      <div class="text-section">
+        <h2 id="section-header">Milestone 1</h2>
+        <div id="SECONDARY-RESEARCH" class="subsection">
+          <h3 id="subsection-header">Secondary Research</h3>
+          <p>We conducted around two weeks of secondary research focusing around the pros/cons of physical vs digital books, and the effect lighting had on reading comprehension. We found that physical books are much better for long-term learning, but lack accessibility features, integrated word look-up, and the ability to easily expand content beyond the text.</p>
+        </div>
+        <div id="PROTOTYPE-1" class="subsection">
+          <h3 id="subsection-header">Prototype 1</h3>
+          <p>Our lamp would detect when the user turned the page and take a picture. When they pointed to a word, the coordinates would be used to find the corresponding word in the image. A child-focused companion app would contain vocabulary quizzes to reinforce memory of these new words. A parent-focused app would show a learning dashboard. For our Milestone 1 demo, we showcased our working automatic brightness optimization and basic text recognition from an image of a page.</p>
+        </div>
+      </div>
+      <div id="M1-IMGS" class="photos-section">
+        <div class="items">
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/vocalamp/m1/lighting_prototype.png"
+              alt="a prototype lamp"
+            />
+            <div class="caption">
+              <p>Our lighting prototype</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/vocalamp/m1/hardware.png"
+              alt="a hardware diagram for a lamp"
+            />
+            <div class="caption">
+              <p>Our hardware architecture</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/vocalamp/m1/system_flow.png"
+              alt="a software architecture for a lamp"
+            />
+            <div class="caption">
+              <p>Our word-to-app flow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MILESTONE 2 SECTION (user research, prototype 2, photos) -->
+    <div id="MILESTONE-2" class="section">
+      <div class="text-section">
+        <h2 id="section-header">Milestone 2</h2>
+        <div id="SECONDARY-RESEARCH" class="subsection">
+          <h3 id="subsection-header">Secondary Research</h3>
+          <p>For Milestone 2, we conducted two rounds of user research. First, we interviewed family members and classmates to learn about the environmental and sensory changes they find most conducive to deep reading. We also conducted contextual inquiries with classmates to learn about their study habits and what tricks they use to remember new things. We found that lighting and sensory aids (a warm drink, background music, something to hold) help improve focus, and that integrating something recently learned into regular life significantly boosted long-term recall.</p>
+        </div>
+        <div id="PROTOTYPE-2" class="subsection">
+          <h3 id="subsection-header">Prototype 2</h3>
+          <p>For Milestone 2, we made a number of changes to our prototype. We scrapped the planned screen to decrease distractions, added privacy switches to turn off the camera, and attempted (and failed) to switch to a custom-built PCB. Yiran also updated our children's app, removing learning stats and adding more color. We demoed manual light modes and a working gesture detection system that identified hands in-frame, tracked the tip of the pointer finger, and triggered a lighting change when pointing for a given trigger time. We were still working out the kinks in our system for translating those coordinates into words.</p>
+        </div>
+      </div>
+      <div id="M2-IMGS" class="photos-section">
+        <div class="items">
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/vocalamp/m2/camera_prototype.png"
+              alt="a phone stand with a camera and raspberry pi attatched"
+            />
+            <div class="caption">
+              <p>Our gesture-to-word prototype</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/vocalamp/m2/hand_tracking.png"
+              alt="a screen showing a tracked hand pointing to a word"
+            />
+            <div class="caption">
+              <p>Working hand tracking</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/vocalamp/m2/custom_pcb.png"
+              alt="an attempted custom circuit board"
+            />
+            <div class="caption">
+              <p>A (failed) custom PCB prototype</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MILESTONE 3 SECTION (prototype 3, photos) -->
+    <div id="MILESTONE-3" class="section">
+      <div class="text-section">
+        <h2 id="section-header">Milestone 3</h2>
+        <div id="PROTOTYPE-3" class="subsection">
+          <h3 id="subsection-header">Prototype 3</h3>
+          <p>Leading up to Milestone 3, two members of our team (working on the physical body of the lamp and final soldering) had other commitments that limited their availability and I caught covid! Because of these challenges, we cut the children's app and focused on demoing working point-to-word detection and showing those words shared to the parent's app. While I was in quarantine, I wrote our app using Flutter and Firebase and finished the final system code via an SSH client on my teammate's laptop controlled remotely over Zoom 😧. Luckily, we got everything working and assembled in our 3D printed lamp body the night before our presentation, leaving just enough time to run a short user test with Sumayyah's daughter. Our demo went perfectly and really impressed our advisors and guest evaluator!</p>
+        </div>
+      </div>
+      <div id="M3-IMGS" class="photos-section">
+        <div class="items">
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/vocalamp/m3/child_test.png"
+              alt="a child using our prototype"
+            />
+            <div class="caption">
+              <p>Sumayyah's daughter testing our lamp!</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/vocalamp/m3/testing_wiring.png"
+              alt="a person fixing wiring on a prototype"
+            />
+            <div class="caption">
+              <p>Finalizing our wiring</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/vocalamp/m3/new_words_in_app.png"
+              alt="screens showing words with definitions"
+            />
+            <div class="caption">
+              <p>Parents can boost learning</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/vocalamp/m3/lighting_dashboard.png"
+              alt="screens showing lighting measurements"
+            />
+            <div class="caption">
+              <p>A lighting dashboard to ensure proper conditions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- POST-QUARTER SECTION (CoMotion, app work, photos) -->
+    <div id="POST-QUARTER" class="section">
+      <div class="text-section">
+        <h2 id="section-header">Post-Quarter</h2>
+        <div id="COMOTION" class="subsection">
+          <h3 id="subsection-header">CoMotion</h3>
+          <p>Though our time working on VocaLamp for school was over, we brought our prototype back online to conduct preliminary user testing. We observed a few parents and their children using the lamp together, identifying areas of future development. We learned that native speakers of English may not benefit as much from our lamp, but ESL students and their parents found it particularly useful. We explored monetization strategies and competitive advantages as members of UW CoMotion's Winter 2023 cohort.</p>
+        </div>
+        <div id="APP-WORK" class="subsection">
+          <h3 id="subsection-header">App Work</h3>
+          <p>I developed the parent's companion app further on my own, exploring ways to surface relevant content related to newly learned words. Initially, I added links to Google searches for definitions, images, and videos. Later, I integrated OwlBot's dictionary API to list word variants, definitions, and their usages. More recently, I explored integrating OpenAI's GPT-3.5 and Dall-E 2. When a parent opens the details for a newly scanned word, GPT appears as a personification of the word telling the user about itself in a more natural way than just reading a definition. GPT can also generate a bedtime story about the word. These are just a couple of ways VocaLamp can help parents reinforce word learning by using newly learned words in everyday life.</p>
+        </div>
+      </div>
+      <div id="POST-QUARTER-IMGS" class="photos-section">
+        <div class="items">
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/vocalamp/pq/user_testing_setup.png"
+              alt="a prototype lamp with a book in front of it"
+            />
+            <div class="caption">
+              <p>Our user-testing station</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/vocalamp/pq/gpt_chat.png"
+              alt="a screen showing details of a word"
+            />
+            <div class="caption">
+              <p>GPT-enabled chats with the word</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="image"
+              id="photo"
+              src="../images/vocalamp/pq/list.png"
+              alt="a screen showing a list of words"
+            />
+            <div class="caption">
+              <p>I overhauled the basic app design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="#header">
+        <h3>V</h3>
+        <p>scroll to top</p>
+        <h3>V</h3>
+      </a>
+      <p>designed and coded by me, hosted on github</p>
+      <p>copyright Jacob Estep 2023</p>
+    </div>
 </html>
