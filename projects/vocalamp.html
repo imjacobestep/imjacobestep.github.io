@@ -12,7 +12,7 @@
       :root {
         --bg-color: #c1f5b2;
         --card-bkg: #dcfdd3;
-        --button-color: #50AF33;
+        --button-color: #50af33;
       }
       @media (prefers-color-scheme: dark) {
         :root {
@@ -27,15 +27,21 @@
   </head>
   <body>
     <div id="header">
-      <a class="navhome" href="/">
-        <img
-          class="icon"
-          src="/images/links/logo.png"
-          alt="home"
-          width="30px"
-          height="30px"
-        />
-      </a>
+      <div class="nav-wrapper" id="nav-wrapper">
+        <div class="nav-left">
+          <a class="nav home" href="/">
+            <h2 class="nav-text">jacob estep</h2>
+          </a>
+        </div>
+        <div class="nav-right">
+          <a class="nav about" href="/about.html">
+            <h2 class="nav-text">about</h2>
+          </a>
+          <a class="nav contact" href="mailto:jacobwestep@gmail.com">
+            <h2 class="nav-text">contact</h2>
+          </a>
+        </div>
+      </div>
       <iframe
         width="450"
         height="450"
@@ -113,10 +119,12 @@
 
     <!-- PROBLEM QUOTE -->
     <div id="PROBLEM-QUOTE" class="quote section">
-      <div class="quote-text"><h2>
-        How can we help parents connect with their children over 
-        <strong>distraction-free</strong> language learning?
-      </h2></div>
+      <div class="quote-text">
+        <h2>
+          How can we help parents connect with their children over
+          <strong>distraction-free</strong> language learning?
+        </h2>
+      </div>
     </div>
     <!-- BACKGROUND -->
     <div id="BACKGROUND" class="section">
@@ -124,7 +132,16 @@
         <h2>Background</h2>
         <div>
           <p>
-            My grad program had two Hardware/Software Lab classes where we have nine weeks to go from idea to working prototype. VocaLamp started as one of these projects. Our initial idea was a smart bookmark that would sync progress from a physical book to an eBook. After two weeks of research and sketching, our advisor changed his mind on the idea and we had to start over. Having researched the benefits of reading physical books, we pivoted to an IoT children's lamp. I was the only software engineer on a team with Sumayyah (communications), Vinitha (architecture), Abhi (UX), and, working remotely from China, Yiran (architecture).
+            My grad program had two Hardware/Software Lab classes where we have
+            nine weeks to go from idea to working prototype. VocaLamp started as
+            one of these projects. Our initial idea was a smart bookmark that
+            would sync progress from a physical book to an eBook. After two
+            weeks of research and sketching, our advisor changed his mind on the
+            idea and we had to start over. Having researched the benefits of
+            reading physical books, we pivoted to an IoT children's lamp. I was
+            the only software engineer on a team with Sumayyah (communications),
+            Vinitha (architecture), Abhi (UX), and, working remotely from China,
+            Yiran (architecture).
           </p>
         </div>
       </div>
@@ -136,11 +153,36 @@
         <h2 id="section-header">GIX</h2>
         <div id="RESEARCH" class="subsection">
           <h3 id="subsection-header">Research</h3>
-          <p>Throughout the quarter, my team conducted research to learn more about environmental and temporal effects on learning while reading. I started with two weeks of secondary research focused on physical vs digital reading. Next, I conducted a series of interviews to learn about reading habits and preferred environments and sensory stimuli. Lastly, I conducted contextual inquiries, learning about study habits and useful strategies for long-term learning. Overall, we found that sensory and environmental factors play a huge role in long term recall. "Setting the mood" for focus and repeating a stimuli while studying can build lasting connections in memory.</p>
+          <p>
+            Throughout the quarter, my team conducted research to learn more
+            about environmental and temporal effects on learning while reading.
+            I started with two weeks of secondary research focused on physical
+            vs digital reading. Next, I conducted a series of interviews to
+            learn about reading habits and preferred environments and sensory
+            stimuli. Lastly, I conducted contextual inquiries, learning about
+            study habits and useful strategies for long-term learning. Overall,
+            we found that sensory and environmental factors play a huge role in
+            long term recall. "Setting the mood" for focus and repeating a
+            stimuli while studying can build lasting connections in memory.
+          </p>
         </div>
         <div id="PROTOTYPING" class="subsection">
           <h3 id="subsection-header">Prototyping</h3>
-          <p>We had three milestones to present work-in-progress prototypes. Milestone 1 consisted of working automatic lighting and basic text recognition. Milestone 2 was basic gesture recognition with triggered lighting changes. Finally, for Milestone 3 we demoed a prototype with point-to-word gesture recognition, spoken definitions, and syncing with a parent companion app. We streamlined our approach throughout the process, cutting a planned screen and child-companion app to reduce distractions. We wrote our main lamp code in python and developed our simple prototype app with Flutter and Firebase. Milestone 3 was almost derailed by myself having to quarantine with covid, but we figured out a system of controlling our Raspberry Pi via VNC on a laptop I controlled via Zoom on my laptop (we made it work!).</p>
+          <p>
+            We had three milestones to present work-in-progress prototypes.
+            Milestone 1 consisted of working automatic lighting and basic text
+            recognition. Milestone 2 was basic gesture recognition with
+            triggered lighting changes. Finally, for Milestone 3 we demoed a
+            prototype with point-to-word gesture recognition, spoken
+            definitions, and syncing with a parent companion app. We streamlined
+            our approach throughout the process, cutting a planned screen and
+            child-companion app to reduce distractions. We wrote our main lamp
+            code in python and developed our simple prototype app with Flutter
+            and Firebase. Milestone 3 was almost derailed by myself having to
+            quarantine with covid, but we figured out a system of controlling
+            our Raspberry Pi via VNC on a laptop I controlled via Zoom on my
+            laptop (we made it work!).
+          </p>
         </div>
       </div>
 
@@ -234,10 +276,8 @@
               <p>Parents can boost learning</p>
             </div>
           </div>
-          
         </div>
       </div>
-      
     </div>
 
     <!-- POST-QUARTER SECTION (CoMotion, app work, photos) -->
@@ -246,11 +286,35 @@
         <h2 id="section-header">Post-Quarter</h2>
         <div id="COMOTION" class="subsection">
           <h3 id="subsection-header">CoMotion</h3>
-          <p>Though our time working on VocaLamp for school was over, we brought our prototype back online to conduct preliminary user testing. We observed a few parents and their children using the lamp together, identifying areas of future development. We learned that native speakers of English may not benefit as much from our lamp, but ESL students and their parents found it particularly useful. We explored monetization strategies and competitive advantages as members of UW CoMotion's Winter 2023 cohort.</p>
+          <p>
+            Though our time working on VocaLamp for school was over, we brought
+            our prototype back online to conduct preliminary user testing. We
+            observed a few parents and their children using the lamp together,
+            identifying areas of future development. We learned that native
+            speakers of English may not benefit as much from our lamp, but ESL
+            students and their parents found it particularly useful. We explored
+            monetization strategies and competitive advantages as members of UW
+            CoMotion's Winter 2023 cohort.
+          </p>
         </div>
         <div id="APP-WORK" class="subsection">
           <h3 id="subsection-header">Independent Work</h3>
-          <p>After our teamwork on the app was finished, I had some ideas for further development on our companion app. We had discussed adding in-app content for parents to engage with their children around the words they had learned. First, I added simple Google search links to find external content. Next, I replaced our placeholder definitions and examples with OwlBot's dictionary API. Eventually, I redesigned the app in its entirety, adding a proper back-end and timed learning progress. I also added two OpenAI-enabled features. The first of these is a GPT-based chat experience, allowing parents and children to speak to a new word personified by GPT. For instance, a child can ask a villa (a word prompted during user tests) how big it is, or who lived in it. The second AI feature is a generated bedtime story, complete with illustrations. Parents can generate engaging stories that help their child learn the word in-context.</p>
+          <p>
+            After our teamwork on the app was finished, I had some ideas for
+            further development on our companion app. We had discussed adding
+            in-app content for parents to engage with their children around the
+            words they had learned. First, I added simple Google search links to
+            find external content. Next, I replaced our placeholder definitions
+            and examples with OwlBot's dictionary API. Eventually, I redesigned
+            the app in its entirety, adding a proper back-end and timed learning
+            progress. I also added two OpenAI-enabled features. The first of
+            these is a GPT-based chat experience, allowing parents and children
+            to speak to a new word personified by GPT. For instance, a child can
+            ask a villa (a word prompted during user tests) how big it is, or
+            who lived in it. The second AI feature is a generated bedtime story,
+            complete with illustrations. Parents can generate engaging stories
+            that help their child learn the word in-context.
+          </p>
         </div>
       </div>
       <div id="POST-QUARTER-IMGS" class="photos-section">
@@ -321,19 +385,19 @@
               <p>Definitions and examples for each word variant</p>
             </div>
           </div>
-          
-          
         </div>
       </div>
     </div>
+    <script src="js/scripts.js"></script>
+  </body>
 
-    <div class="footer">
-      <a href="#header">
-        <h3>V</h3>
-        <p>scroll to top</p>
-        <h3>V</h3>
-      </a>
-      <p>designed and coded by me, hosted on github</p>
-      <p>copyright Jacob Estep 2023</p>
-    </div>
+  <div class="footer">
+    <a href="#header">
+      <h3>V</h3>
+      <p>scroll to top</p>
+      <h3>V</h3>
+    </a>
+    <p>designed and coded by me, hosted on github</p>
+    <p>copyright Jacob Estep 2023</p>
+  </div>
 </html>

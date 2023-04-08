@@ -1,23 +1,17 @@
-matcher = window.matchMedia('(prefers-color-scheme: dark)');
-matcher.addListener(onUpdate);
-onUpdate();
+// function scrollTo(elementID) {
+//   document.getElementById(elementID).scrollIntoView(true);
+// }
 
-lightSchemeIcon = document.querySelector('link#light-scheme-icon');
-darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+// var downArrow = document.getElementById('down_arrow');
+// downArrow.addEventListener('click', scrollTo('#honeycomb'), false);
 
-function onUpdate() {
-  if (matcher.matches) {
-    lightSchemeIcon.remove();
-    document.head.append(darkSchemeIcon);
+var nav = document.getElementById('nav-wrapper');
+window.onscroll = function () {
+  if (document.body.scrollHeight >= 41) {
+    nav.classList.add('scrolled');
+    console.log('added: ' + document.body.scrollHeight);
   } else {
-    document.head.append(lightSchemeIcon);
-    darkSchemeIcon.remove();
+    nav.classList.remove('scrolled');
+    console.log('removed: ' + document.body.scrollHeight);
   }
-}
-
-function scrollTo(elementID) {
-  document.getElementById(elementID).scrollIntoView(true);
-}
-
-var downArrow = document.getElementById('down_arrow');
-downArrow.addEventListener('click', scrollTo('#honeycomb'), false);
+};

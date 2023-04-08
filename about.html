@@ -1,43 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" class="about">
+<html lang="en" id="bkg">
   <head>
-    <script src="js/about.js" defer></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/images/links/wave.png"
-      id="light-scheme-icon"
-    />
-    <link rel="stylesheet" href="css/about.css" />
+    <title>About me</title>
+    <link rel="icon" type="image/svg+xml" href="/images/links/favicon.svg" />
+    <link id="style-used" rel="stylesheet" href="css/about.css" />
+    <script src="js/scripts.js"></script>
   </head>
-  <body>
-    <div class="navWrapper">
-      <a class="navhome" href="/">
-        <img
-          class="icon"
-          src="/images/links/logo.png"
-          alt="home"
-          width="30px"
-          height="30px"
-        />
-      </a>
+  <body class="body">
+    <div class="nav-wrapper" id="nav-wrapper">
+      <div class="nav-left">
+        <a class="nav home" href="/">
+          <h2 class="nav-text">jacob estep</h2>
+        </a>
+      </div>
+      <div class="nav-right">
+        <a class="nav about" href="/about.html">
+          <h2 class="nav-text">about</h2>
+        </a>
+        <a class="nav contact" href="mailto:jacobwestep@gmail.com">
+          <h2 class="nav-text">contact</h2>
+        </a>
+      </div>
     </div>
-
-    <div class="content">
-      <div class="info">
-        <h1>Hi, I'm Jacob</h1>
+    <div id="header" class="section">
+      <div id="intro">
+        <div id="intro-title">
+          <h1>Hi, I'm Jacob</h1>
+        </div>
         <p>
           I'm a queer Appalachian living with my partner (Fab) and my dog
           (Meebo) in the Seattle area.
-        </p>
-        <p>
-          I grew up in small town West Virginia before moving here for grad
-          school. I love to paint, play video games, and make concept tech
-          designs.
         </p>
         <p>
           I really love learning new things! (especially tech, politics, and
@@ -112,58 +107,26 @@
           </div>
         </div>
       </div>
-
-      <div class="wrapper">
-        <div class="polaroid">
-          <img
-            class="image"
-            id="mainPhoto"
-            src="./images/about/me_thumb.png"
-            alt="sketch of peek feature"
-          />
-          <div class="caption" id="mainCaption">me!</div>
-        </div>
-        <!-- <img id="mainPhoto" src="./images/about/me_thumb.png" alt="" /> -->
-        <div class="image-wrapper">
-          <img
-            class="imgCarousel"
-            src="./images/about/me_thumb.png"
-            alt="a person wearing glasses and smiling"
-            id="me!"
-          />
-          <img
-            class="imgCarousel"
-            src="./images/about/fab_and_i.png"
-            alt="two people holding bouquets"
-            id="Fab and I"
-          />
-          <img
-            class="imgCarousel"
-            src="./images/about/team_hc.png"
-            alt="four nerds in an elevator"
-            id="GIX Team Honeycomb"
-          />
-          <img
-            class="imgCarousel"
-            src="./images/about/meebo.png"
-            alt="a happy dog"
-            id="Meebo"
-          />
-          <img
-            class="imgCarousel"
-            src="./images/about/undergrad.png"
-            alt="me standing next to a friend in regalia"
-            id="✔️ undergrad"
-          />
-          <img
-            class="imgCarousel"
-            src="./images/about/big_tree.png"
-            alt="two people hugging a large tree"
-            id="a big tree"
-          />
+      <div class="item polaroid">
+        <img
+          class="image"
+          id="photo"
+          src="../images/about/me_thumb.png"
+          alt="a prototype lamp"
+        />
+        <div class="caption">
+          <p>Me!</p>
         </div>
       </div>
     </div>
   </body>
-  <div class="footer"></div>
+
+  <div class="footer">
+    <a href="#header">
+      <h2>V</h2>
+      <p>scroll to top</p>
+      <h2>V</h2>
+    </a>
+    <p>designed and coded by me, hosted on github</p>
+  </div>
 </html>

@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <script src="../js/test.js" defer></script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,15 +34,21 @@
   </head>
   <body>
     <div id="header">
-      <a class="navhome" href="/">
-        <img
-          class="icon"
-          src="/images/links/logo.png"
-          alt="home"
-          width="30px"
-          height="30px"
-        />
-      </a>
+      <div class="nav-wrapper" id="nav-wrapper">
+        <div class="nav-left">
+          <a class="nav home" href="/">
+            <h2 class="nav-text">jacob estep</h2>
+          </a>
+        </div>
+        <div class="nav-right">
+          <a class="nav about" href="/about.html">
+            <h2 class="nav-text">about</h2>
+          </a>
+          <a class="nav contact" href="mailto:jacobwestep@gmail.com">
+            <h2 class="nav-text">contact</h2>
+          </a>
+        </div>
+      </div>
       <iframe
         width="450"
         height="450"
@@ -792,6 +799,8 @@
         <p>We also invisioned future expansions</p>
       </div>
     </div>
+    <script src="../js/scripts.js"></script>
+  </body>
 
     <div class="footer">
       <a href="#header">
