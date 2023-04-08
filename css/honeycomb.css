@@ -5,14 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Gochi+Hand&family=Poppins:wght@800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @font-face {
-  font-family: 'Newake';
-  src: url('../assets/Newake-Font-Demo.otf');
+  font-family: 'Bechtlers';
+  src: url('../assets/BechtlersRegular.otf');
 }
 
 :root {
   --text-color: black;
   --body-font: 'Space Mono', monospace;
-  --header-font: 'Poppins';
+  --body-bold: 'Poppins';
+  --header-font: 'Bechtlers';
   --notes-font: 'Gochi Hand', cursive;
 
   --bg-color: #df8889;
@@ -57,6 +58,9 @@
   --honeycomb_bkg_right: url('../images/home/honeycomb-bg-right.png');
 
   --transform: rotate(-4deg) translateY(-20px) scale(1.2);
+
+  --shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
   --html-sizing: unset;
   --footer-position: unset;
@@ -199,20 +203,20 @@ h1 {
 h2 {
   line-height: 2px;
   font-size: var(--h2-size);
-  font-family: var(--header-font);
+  font-family: var(--body-bold);
   font-weight: normal;
   /* opacity: 60%; */
 }
 
 h3 {
-  font-size: var(--h3-size);
+  font-size: var(--body-font);
   font-family: 'Space Mono', monospace;
   font-weight: bold;
   line-height: 0px;
 }
 
 p {
-  font-family: 'Space Mono', monospace;
+  font-family: var(--body-font);
   line-height: 1.3em;
 }
 
@@ -375,6 +379,7 @@ body {
   /* styling */
 
   transition: var(--animation);
+  /* box-shadow: var(--shadow); */
   filter: var(--shadow-normal);
 }
 
@@ -445,6 +450,7 @@ body {
   border-width: var(--surface-border-static);
   border-style: solid;
   filter: var(--shadow-normal);
+  /* box-shadow: var(--shadow); */
   transition: var(--animation);
   height: 50px;
 }
@@ -507,11 +513,12 @@ strong {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   /* background */
   background-image: var(--card-bkg-img);
   background-repeat: repeat;
   background-color: var(--card-bkg);
+  background-color: white;
   background-position: center center;
   /* border */
   border-width: var(--surface-border-static);
@@ -519,6 +526,9 @@ strong {
   border-style: solid;
   /* styling */
   filter: var(--shadow-normal);
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
   transition: var(--animation);
 
   min-width: 300px;
@@ -541,7 +551,7 @@ strong {
   width: 100%;
   max-width: 280px;
   background-color: var(--card-bkg);
-  border-width: 2px;
+  border-width: 1px;
   border-color: black;
   border-style: solid;
 }
@@ -597,6 +607,7 @@ strong {
   border-style: solid;
   /* styling */
   filter: var(--shadow-normal);
+  /* box-shadow: var(--shadow); */
   transition: var(--animation);
 }
 
@@ -630,6 +641,7 @@ strong {
   border-width: var(--surface-border-static);
   border-style: solid;
   filter: var(--shadow-normal);
+  /* box-shadow: var(--shadow); */
   transition: var(--animation);
 }
 
