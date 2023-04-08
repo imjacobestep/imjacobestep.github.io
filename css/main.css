@@ -293,6 +293,10 @@ body {
   position: relative;
 }
 
+.project {
+  min-height: 50vh;
+}
+
 #intro {
   padding: 20px;
   text-decoration: none;
