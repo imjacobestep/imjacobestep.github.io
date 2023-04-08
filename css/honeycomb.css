@@ -201,7 +201,7 @@ h1 {
 }
 
 h2 {
-  line-height: 2px;
+  /* line-height: 2px; */
   font-size: var(--h2-size);
   font-family: var(--body-bold);
   font-weight: normal;
@@ -480,7 +480,12 @@ a > p {
 /* QUOTE */
 
 .quote > h1 {
+  max-width: 800px;
   font-size: 1.6rem;
+}
+
+.quote-text {
+  max-width: 1000px;
 }
 
 strong {

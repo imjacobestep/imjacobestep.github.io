@@ -113,10 +113,10 @@
 
     <!-- PROBLEM QUOTE -->
     <div id="PROBLEM-QUOTE" class="quote section">
-      <h1>
+      <div class="quote-text"><h2>
         How can we help parents connect with their children over 
-        <strong>distraction free</strong> language learning?
-      </h1>
+        <strong>distraction-free</strong> language learning?
+      </h2></div>
     </div>
     <!-- BACKGROUND -->
     <div id="BACKGROUND" class="section">
@@ -129,20 +129,22 @@
         </div>
       </div>
     </div>
-    <!-- MILESTONE 1 SECTION (secondary research, prototype 1, photos) -->
-    <div id="MILESTONE-1" class="section">
+
+    <!-- GIX SECTION -->
+    <div id="GIX" class="section">
       <div class="text-section">
-        <h2 id="section-header">Milestone 1</h2>
-        <div id="SECONDARY-RESEARCH" class="subsection">
-          <h3 id="subsection-header">Secondary Research</h3>
-          <p>We conducted around two weeks of secondary research focusing around the pros/cons of physical vs digital books, and the effect lighting had on reading comprehension. We found that physical books are much better for long-term learning, but lack accessibility features, integrated word look-up, and the ability to easily expand content beyond the text.</p>
+        <h2 id="section-header">GIX</h2>
+        <div id="RESEARCH" class="subsection">
+          <h3 id="subsection-header">Research</h3>
+          <p>Throughout the quarter, my team conducted research to learn more about environmental and temporal effects on learning while reading. I started with two weeks of secondary research focused on physical vs digital reading. Next, I conducted a series of interviews to learn about reading habits and preferred environments and sensory stimuli. Lastly, I conducted contextual inquiries, learning about study habits and useful strategies for long-term learning. Overall, we found that sensory and environmental factors play a huge role in long term recall. "Setting the mood" for focus and repeating a stimuli while studying can build lasting connections in memory.</p>
         </div>
-        <div id="PROTOTYPE-1" class="subsection">
-          <h3 id="subsection-header">Prototype 1</h3>
-          <p>Our lamp would detect when the user turned the page and take a picture. When they pointed to a word, the coordinates would be used to find the corresponding word in the image. A child-focused companion app would contain vocabulary quizzes to reinforce memory of these new words. A parent-focused app would show a learning dashboard. For our Milestone 1 demo, we showcased our working automatic brightness optimization and basic text recognition from an image of a page.</p>
+        <div id="PROTOTYPING" class="subsection">
+          <h3 id="subsection-header">Prototyping</h3>
+          <p>We had three milestones to present work-in-progress prototypes. Milestone 1 consisted of working automatic lighting and basic text recognition. Milestone 2 was basic gesture recognition with triggered lighting changes. Finally, for Milestone 3 we demoed a prototype with point-to-word gesture recognition, spoken definitions, and syncing with a parent companion app. We streamlined our approach throughout the process, cutting a planned screen and child-companion app to reduce distractions. We wrote our main lamp code in python and developed our simple prototype app with Flutter and Firebase. Milestone 3 was almost derailed by myself having to quarantine with covid, but we figured out a system of controlling our Raspberry Pi via VNC on a laptop I controlled via Zoom on my laptop (we made it work!).</p>
         </div>
       </div>
-      <div id="M1-IMGS" class="photos-section">
+
+      <div id="GIX-IMGS" class="photos-section">
         <div class="items">
           <div class="item polaroid">
             <img
@@ -166,35 +168,6 @@
               <p>Our hardware architecture</p>
             </div>
           </div>
-          <div class="item polaroid">
-            <img
-              class="image"
-              id="photo"
-              src="../images/vocalamp/m1/system_flow.png"
-              alt="a software architecture for a lamp"
-            />
-            <div class="caption">
-              <p>Our word-to-app flow</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- MILESTONE 2 SECTION (user research, prototype 2, photos) -->
-    <div id="MILESTONE-2" class="section">
-      <div class="text-section">
-        <h2 id="section-header">Milestone 2</h2>
-        <div id="SECONDARY-RESEARCH" class="subsection">
-          <h3 id="subsection-header">Secondary Research</h3>
-          <p>For Milestone 2, we conducted two rounds of user research. First, we interviewed family members and classmates to learn about the environmental and sensory changes they find most conducive to deep reading. We also conducted contextual inquiries with classmates to learn about their study habits and what tricks they use to remember new things. We found that lighting and sensory aids (a warm drink, background music, something to hold) help improve focus, and that integrating something recently learned into regular life significantly boosted long-term recall.</p>
-        </div>
-        <div id="PROTOTYPE-2" class="subsection">
-          <h3 id="subsection-header">Prototype 2</h3>
-          <p>For Milestone 2, we made a number of changes to our prototype. We scrapped the planned screen to decrease distractions, added privacy switches to turn off the camera, and attempted (and failed) to switch to a custom-built PCB. Yiran also updated our children's app, removing learning stats and adding more color. We demoed manual light modes and a working gesture detection system that identified hands in-frame, tracked the tip of the pointer finger, and triggered a lighting change when pointing for a given trigger time. We were still working out the kinks in our system for translating those coordinates into words.</p>
-        </div>
-      </div>
-      <div id="M2-IMGS" class="photos-section">
-        <div class="items">
           <div class="item polaroid">
             <img
               class="image"
@@ -228,20 +201,6 @@
               <p>A (failed) custom PCB prototype</p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- MILESTONE 3 SECTION (prototype 3, photos) -->
-    <div id="MILESTONE-3" class="section">
-      <div class="text-section">
-        <h2 id="section-header">Milestone 3</h2>
-        <div id="PROTOTYPE-3" class="subsection">
-          <h3 id="subsection-header">Prototype 3</h3>
-          <p>Leading up to Milestone 3, two members of our team (working on the physical body of the lamp and final soldering) had other commitments that limited their availability and I caught covid! Because of these challenges, we cut the children's app and focused on demoing working point-to-word detection and showing those words shared to the parent's app. While I was in quarantine, I wrote our app using Flutter and Firebase and finished the final system code via an SSH client on my teammate's laptop controlled remotely over Zoom 😧. Luckily, we got everything working and assembled in our 3D printed lamp body the night before our presentation, leaving just enough time to run a short user test with Sumayyah's daughter. Our demo went perfectly and really impressed our advisors and guest evaluator!</p>
-        </div>
-      </div>
-      <div id="M3-IMGS" class="photos-section">
-        <div class="items">
           <div class="item polaroid">
             <img
               class="image"
@@ -275,20 +234,12 @@
               <p>Parents can boost learning</p>
             </div>
           </div>
-          <div class="item polaroid">
-            <img
-              class="image"
-              id="photo"
-              src="../images/vocalamp/m3/lighting_dashboard.png"
-              alt="screens showing lighting measurements"
-            />
-            <div class="caption">
-              <p>A lighting dashboard to ensure proper conditions</p>
-            </div>
-          </div>
+          
         </div>
       </div>
+      
     </div>
+
     <!-- POST-QUARTER SECTION (CoMotion, app work, photos) -->
     <div id="POST-QUARTER" class="section">
       <div class="text-section">
@@ -298,37 +249,15 @@
           <p>Though our time working on VocaLamp for school was over, we brought our prototype back online to conduct preliminary user testing. We observed a few parents and their children using the lamp together, identifying areas of future development. We learned that native speakers of English may not benefit as much from our lamp, but ESL students and their parents found it particularly useful. We explored monetization strategies and competitive advantages as members of UW CoMotion's Winter 2023 cohort.</p>
         </div>
         <div id="APP-WORK" class="subsection">
-          <h3 id="subsection-header">App Work</h3>
-          <p>I developed the parent's companion app further on my own, exploring ways to surface relevant content related to newly learned words. Initially, I added links to Google searches for definitions, images, and videos. Later, I integrated OwlBot's dictionary API to list word variants, definitions, and their usages. More recently, I explored integrating OpenAI's GPT-3.5 and Dall-E 2. When a parent opens the details for a newly scanned word, GPT appears as a personification of the word telling the user about itself in a more natural way than just reading a definition. GPT can also generate a bedtime story about the word. These are just a couple of ways VocaLamp can help parents reinforce word learning by using newly learned words in everyday life.</p>
+          <h3 id="subsection-header">Independent Work</h3>
+          <p>After our teamwork on the app was finished, I had some ideas for further development on our companion app. We had discussed adding in-app content for parents to engage with their children around the words they had learned. First, I added simple Google search links to find external content. Next, I replaced our placeholder definitions and examples with OwlBot's dictionary API. Eventually, I redesigned the app in its entirety, adding a proper back-end and timed learning progress. I also added two OpenAI-enabled features. The first of these is a GPT-based chat experience, allowing parents and children to speak to a new word personified by GPT. For instance, a child can ask a villa (a word prompted during user tests) how big it is, or who lived in it. The second AI feature is a generated bedtime story, complete with illustrations. Parents can generate engaging stories that help their child learn the word in-context.</p>
         </div>
       </div>
       <div id="POST-QUARTER-IMGS" class="photos-section">
         <div class="items">
           <div class="item polaroid">
             <img
-              class="image"
-              id="photo"
-              src="../images/vocalamp/pq/user_testing_setup.png"
-              alt="a prototype lamp with a book in front of it"
-            />
-            <div class="caption">
-              <p>Our user-testing station</p>
-            </div>
-          </div>
-          <div class="item polaroid">
-            <img
-              class="screenshot"
-              id="photo"
-              src="../images/vocalamp/pq/gpt_chat.png"
-              alt="a screen showing details of a word"
-            />
-            <div class="caption">
-              <p>GPT-enabled chats with the word</p>
-            </div>
-          </div>
-          <div class="item polaroid">
-            <img
-              class="screenshot"
+              class="screenshot image"
               id="photo"
               src="../images/vocalamp/pq/list.png"
               alt="a screen showing a list of words"
@@ -337,6 +266,63 @@
               <p>I overhauled the basic app design</p>
             </div>
           </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot image"
+              id="photo"
+              src="../images/vocalamp/pq/word.png"
+              alt="a screen showing details of a word"
+            />
+            <div class="caption">
+              <p>Content for further learning</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot image"
+              id="photo"
+              src="../images/vocalamp/pq/chat.png"
+              alt="a screen showing a conversation with a chatbot"
+            />
+            <div class="caption">
+              <p>Chat with a word personified</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot image"
+              id="photo"
+              src="../images/vocalamp/pq/story_cover.png"
+              alt="a screen showing the cover of a digital children's book"
+            />
+            <div class="caption">
+              <p>AI generates a bedtime story for each word</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot image"
+              id="photo"
+              src="../images/vocalamp/pq/story_page.png"
+              alt="a screen showing a children's book page"
+            />
+            <div class="caption">
+              <p>Each page has a generated illustration</p>
+            </div>
+          </div>
+          <div class="item polaroid">
+            <img
+              class="screenshot image"
+              id="photo"
+              src="../images/vocalamp/pq/definitions.png"
+              alt="a screen showing variants of a word"
+            />
+            <div class="caption">
+              <p>Definitions and examples for each word variant</p>
+            </div>
+          </div>
+          
+          
         </div>
       </div>
     </div>
