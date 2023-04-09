@@ -215,8 +215,10 @@ body {
   right: unset;
   height: 70vmax;
   width: 70vmax;
+  bottom: 0px;
   opacity: 0.3;
   background-image: url('../images/gifs/portrait.gif');
+  background-position: bottom;
   /* filter: brightness(200%); */
   max-width: 1200px;
 }
