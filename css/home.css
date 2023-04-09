@@ -1,20 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
-
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Poppins:wght@800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-@font-face {
-  font-family: 'Newake';
-  src: url('../assets/Newake-Font-Demo.otf');
-}
-
 :root {
-  --text-color: black;
-  --body-font: 'Space Mono', monospace;
-  --header-font: 'Newake';
-  --header-font: 'Poppins';
-
   --bg-color: #df8889;
   --card-bkg: #fff0f1;
   --error-color: transparent;
@@ -32,15 +16,6 @@
   --godart-bg-color: #92bbf2;
   --godart-card-color: #d0dff4;
 
-  --rebirth-bg-color: #55e0ff;
-  --rebirth-card-color: #c5f4fe;
-
-  --whackamole-bg-color: #ba96f5;
-  --whackamole-card-color: #e1d9fb;
-
-  --spotify-bg-color: #82e9a6;
-  --spotify-card-color: #b6e5c6;
-
   --shadow-normal: drop-shadow(6px 6px 0px #000);
   --shadow-hover: drop-shadow(0px 0px 0px #000);
 
@@ -50,107 +25,14 @@
 
   --edge-size: 1em;
 
-  --animation: 0.5s cubic-bezier(0.05, 0.8, 0.1, 0.95);
-
-  --bezier: cubic-bezier(0.05, 0.8, 0.1, 0.95);
-
-  --card-bkg-img: url('../images/surface_bkg.png');
-
-  --honeycomb_bkg: url('../images/home/honeycomb_bkg.png');
-  --vocalamp_bkg: url('../images/home/vocalamp_bkg.png');
-  --godart_bkg: url('../images/home/godart_bkg.png');
-  --rebirth_bkg: url('../images/home/rebirth_bkg.png');
-
-  --honeycomb_bkg_left: url('../images/home/honeycomb-bg-left.png');
-  --honeycomb_bkg_right: url('../images/home/honeycomb-bg-right.png');
-
-  --vocalamp_bkg_left: url('../images/home/vocalamp-bg-left.png');
-  --vocalamp_bkg_right: url('../images/home/vocalamp-bg-right.png');
-
-  --godart_bkg_left: url('../images/home/godart-bg-left.png');
-  --godart_bkg_right: url('../images/home/godart-bg-right.png');
-
-  --rebirth_bkg_left: url('../images/home/rebirth-bg-left.png');
-  --rebirth_bkg_right: url('../images/home/rebirth-bg-right.png');
-
-  --whackamole_bkg_left: url('../images/home/whackamole-bg-left.png');
-  --whackamole_bkg_right: url('../images/home/whackamole-bg-right.png');
-
-  --spotify_bkg_left: url('../images/home/spotify-bg-left.png');
-  --spotify_bkg_right: url('../images/home/spotify-bg-right.png');
-
-  --transform: rotate(-4deg) translateY(-20px) scale(1.2);
-
   --html-sizing: unset;
   --footer-position: unset;
   --dark-filter: unset;
 }
 
-body > * {
-  animation: fade_in 0.5s cubic-bezier(0.05, 0.8, 0.1, 0.95);
-}
-
-body.out {
-  animation: fade_out 1.5s cubic-bezier(0.05, 0.8, 0.1, 0.95);
-}
-
-@keyframes fade_in {
-  0% {
-    opacity: 0;
-    /* transform: translate(50px, 0px); */
-    transform: scale(0.5);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade_out {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50px, 50px);
-  }
-}
-
-@keyframes tease {
-  0% {
-    transform: translate(-10px, 0px);
-  }
-  50% {
-    transform: translate(-10px, 20px);
-  }
-  100% {
-    transform: translate(-10px, 0px);
-  }
-}
-
 /* DESKTOP */
 @media only screen and (min-width: 1024px) {
   :root {
-    --h1-size: 5vw;
-    --h2-size: 3vw;
-    --h3-size: 2vw;
-    --p-size: 4vw;
-
-    --h1-size: 60px;
-    --h2-size: 20px;
-    --h3-size: 18px;
-    --p-size: 16px;
-
-    --h1-line: 8px;
-    --h2-line: unset;
-    --h3-line: 8px;
-    --p-line: 1.3em;
-
     --footer-position: absolute;
     --body-height: 100%;
 
@@ -161,16 +43,6 @@ body.out {
 /* TABLET */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   :root {
-    --h1-size: 2.5rem;
-    --h2-size: 2.5vw;
-    --h3-size: 2vw;
-    --p-size: 1vw;
-
-    --h1-line: 8px;
-    --h2-line: unset;
-    --h3-line: 8px;
-    --p-line: 1.3em;
-
     --html-sizing: 100%;
   }
 }
@@ -178,16 +50,6 @@ body.out {
 /* PHONE */
 @media only screen and (max-width: 767px) {
   :root {
-    --h1-size: 2rem;
-    --h2-size: 4vw;
-    --h3-size: 4vw;
-    --p-size: 4vw;
-
-    --h1-line: 8px;
-    --h2-line: unset;
-    --h3-line: 8px;
-    --p-line: 1.3em;
-
     --html-sizing: 100%;
   }
 }
@@ -228,45 +90,6 @@ body.out {
   }
 }
 
-h1,
-h2,
-h3,
-p {
-  color: var(--text-color);
-  /* text-align: start; */
-}
-
-h1 {
-  font-size: var(--h1-size);
-  font-family: var(--header-font);
-  font-weight: 900;
-  /* letter-spacing: 0.2rem; */
-}
-
-h2 {
-  /* color: var(--text-color);
-  text-align: start; */
-  font-size: var(--h2-size);
-  font-family: var(--body-font);
-  font-weight: normal;
-}
-
-h3 {
-  /* color: var(--text-color);
-  text-align: start; */
-  font-size: var(--h3-size);
-  font-family: var(--body-font);
-  font-weight: normal;
-  line-height: 8px;
-}
-
-p {
-  /* color: var(--text-color);
-  font-size: var(--p-size); */
-  font-family: var(--body-font);
-  line-height: 1.3em;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -293,40 +116,6 @@ body {
   padding: 0;
   margin: 0;
   /* animation: fade_in 1s cubic-bezier(0.05, 0.8, 0.1, 0.95); */
-}
-
-.nav-wrapper {
-  display: flex;
-  flex-direction: row;
-  /* background-color: red; */
-  /* background-color: var(--bg-color); */
-  align-items: center;
-  justify-content: space-between;
-  align-self: center;
-  z-index: 20;
-  height: 40px;
-  width: 100vw;
-  padding-inline: 10px;
-  position: fixed;
-  top: 0px;
-}
-
-.nav-wrapper.scrolled {
-  background-color: var(--bg-color);
-  transition: background-color 200ms linear;
-}
-
-.nav-right,
-.nav-left {
-  display: flex;
-  gap: 10px;
-}
-a:link {
-  text-decoration: none;
-}
-
-.nav-text:hover {
-  font-weight: bold;
 }
 
 .section {
@@ -530,7 +319,7 @@ a:link {
 
 .project_card:hover {
   cursor: pointer;
-  transform: rotate(-4deg) translateY(calc(-10px - 0.5px)) scale(1.2);
+  transform: var(--transform);
   filter: var(--shadow-hover);
 }
 

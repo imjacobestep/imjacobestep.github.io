@@ -1,0 +1,27 @@
+:root {
+  --text-color: black;
+
+  --bg-color: white;
+  --border-color: black;
+  --surface-color-normal: white;
+  --surface-color-hover: white;
+
+  --dark-filter: unset;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: white;
+
+    --bg-color: #0c0c0c;
+
+    --card-bkg: #000000;
+
+    --button-color: #252525;
+
+    --surface-color-normal: black;
+
+    --surface-color-hover: black;
+
+    --dark-filter: invert(100%);
+  }
+}

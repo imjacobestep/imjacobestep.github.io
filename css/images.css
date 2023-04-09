@@ -1,0 +1,16 @@
+:root {
+  /* MATERIALS */
+  --card-bkg-img: url('../images/surface_bkg.png');
+  --sticky-bkg: url('../images/sticky_bkg.png');
+
+  /* BKG IMAGES */
+
+  --honeycomb_bkg_left: url('../images/home/honeycomb-bg-left.png');
+  --honeycomb_bkg_right: url('../images/home/honeycomb-bg-right.png');
+
+  --vocalamp_bkg_left: url('../images/home/vocalamp-bg-left.png');
+  --vocalamp_bkg_right: url('../images/home/vocalamp-bg-right.png');
+
+  --godart_bkg_left: url('../images/home/godart-bg-left.png');
+  --godart_bkg_right: url('../images/home/godart-bg-right.png');
+}

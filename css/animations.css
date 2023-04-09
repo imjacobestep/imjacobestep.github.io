@@ -1,0 +1,55 @@
+:root {
+  --animation: 0.5s cubic-bezier(0.05, 0.8, 0.1, 0.95);
+
+  --transform: translateY(calc(-10px - 0.5px)) scale(1.2);
+
+  --bezier: cubic-bezier(0.05, 0.8, 0.1, 0.95);
+
+  --nav-hover: background-color 0.5s var(--bezier);
+}
+body > * {
+  animation: fade_in 0.5s cubic-bezier(0.05, 0.8, 0.1, 0.95);
+}
+
+body.out {
+  animation: fade_out 1.5s cubic-bezier(0.05, 0.8, 0.1, 0.95);
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0.5;
+    /* transform: translate(50px, 0px); */
+    transform: translateY(400px) scale(0.75);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50px, 50px);
+  }
+}
+
+@keyframes tease {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, 20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

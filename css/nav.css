@@ -1,0 +1,35 @@
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  /* background-color: red; */
+  /* background-color: var(--bg-color); */
+  align-items: center;
+  justify-content: space-between;
+  /* align-self: center; */
+  z-index: 20;
+  height: 40px;
+  width: 99.5vw;
+  padding-inline: 20px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+}
+
+.nav-wrapper.scrolled {
+  background-color: var(--bg-color);
+  transition: var(--nav-hover);
+}
+
+.nav-right,
+.nav-left {
+  display: flex;
+  gap: 10px;
+}
+a:link {
+  text-decoration: none;
+}
+
+.nav-text:hover {
+  font-weight: bold;
+}
