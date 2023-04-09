@@ -1,117 +1,242 @@
 <!DOCTYPE html>
-<html lang="en" id="bkg">
+<html lang="en">
   <head>
+    <script src="../js/test.js" defer></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About me</title>
-    <link rel="icon" type="image/svg+xml" href="/images/links/favicon.svg" />
-    <link id="style-used" rel="stylesheet" href="css/test.css" />
-    <script src="js/scripts.js"></script>
+    <title>VocaLamp</title>
+    <link rel="stylesheet" href="../css/honeycomb.css" />
+    <link rel="icon" type="image/x-icon" href="/images/links/favicon.png" />
+    <style>
+      :root {
+        --bg-color: #92bbf2;
+        --card-bkg: #d0dff4;
+        --button-color: #1d7af4;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg-color: #0c0c0c;
+
+          --card-bkg: #000;
+
+          --button-color: #484848;
+        }
+      }
+      #header {
+        background-image: url('/images/ecommerce/cover.png');
+        background-size: contain;
+      }
+    </style>
   </head>
-  <body class="body">
-    <div id="header" class="section">
-      <div id="intro">
-        <div id="intro-title">
-          <h1>Hi, I'm Jacob</h1>
+  <body>
+    <div id="header">
+      <div class="nav-wrapper" id="nav-wrapper">
+        <div class="nav-left">
+          <a class="nav home" href="/">
+            <h2 class="nav-text">jacob estep</h2>
+          </a>
         </div>
-        <p>
-          I'm a queer Appalachian living with my partner (Fab) and my dog
-          (Meebo) in the Seattle area.
-        </p>
-        <p>
-          I really love learning new things! (especially tech, politics, and
-          philosophy). I have special interests in social and economic justice
-          (I almost got a minor in Gender Studies).
-        </p>
-        <p>
-          My brain loves to wrap itself around systems (operating systems,
-          design systems, social systems, product ecosystems). I love breaking
-          down problems into actors and processes to create repeatable and
-          scalable solutions.
-        </p>
-        <div class="links">
-          <div class="row">
-            <a class="social" href="https://www.behance.net/jacobestep">
-              <img
-                class="icon"
-                src="/images/links/behance.png"
-                alt="Behance"
-                width="45px"
-                height="45px"
-              />
-            </a>
-            <a
-              class="social"
-              href="https://www.linkedin.com/in/jacob-estep-8b8a8316b/"
-            >
-              <img
-                class="icon"
-                src="/images/links/linkedin.png"
-                alt="LinkedIn"
-                width="45px"
-                height="45px"
-              />
-            </a>
-            <a class="social" href="https://dribbble.com/estepdesign">
-              <img
-                class="icon"
-                src="/images/links/dribbble.png"
-                alt="Dribbble"
-                width="45px"
-                height="45px"
-              />
-            </a>
-            <a class="social" href="https://jacobestep.medium.com/">
-              <img
-                class="icon"
-                src="/images/links/medium.png"
-                alt="Medium"
-                width="45px"
-                height="45px"
-              />
-            </a>
-            <a class="social" href="https://github.com/imjacobestep">
-              <img
-                class="icon"
-                src="/images/links/github.png"
-                alt="Github"
-                width="45px"
-                height="45px"
-              />
-            </a>
-            <a class="social" href="mailto:jacobwestep@gmail.com">
-              <img
-                class="icon"
-                src="/images/links/mail.png"
-                alt="Email"
-                width="45px"
-                height="45px"
-              />
-            </a>
+        <div class="nav-right">
+          <a class="nav about" href="/about.html">
+            <h2 class="nav-text">about</h2>
+          </a>
+          <a class="nav contact" href="mailto:jacobwestep@gmail.com">
+            <h2 class="nav-text">contact</h2>
+          </a>
+        </div>
+      </div>
+      <div id="header-img" class="youtube">.</div>
+
+      <div id="project-info">
+        <div id="project-summary">
+          <h1>GoDart</h1>
+          <p>
+            GoDart is a community-focused ecommerce platform connecting small
+            merchants and artists with fast local delivery.
+          </p>
+        </div>
+        <div id="project-context">
+          <div class="project-detail" id="role">
+            <h3 id="subsection-header">Role</h3>
+            <p>Freelance UI Designer</p>
+            <p>(Product Design, Branding, Prototyping)</p>
+          </div>
+          <div class="project-detail" id="time-frame">
+            <h3 id="subsection-header">Time Frame</h3>
+            <p>2-week sprint</p>
           </div>
         </div>
       </div>
-      <div class="item polaroid">
-        <img
-          class="image"
-          id="photo"
-          src="../images/about/me_thumb.png"
-          alt="a prototype lamp"
-        />
-        <div class="caption">
-          <p>Me!</p>
+      <a href="#background" onclick="scrollTo(background)"
+        ><h3 id="down_arrow">V</h3></a
+      >
+    </div>
+
+    <!-- PROBLEM QUOTE -->
+    <div id="PROBLEM-QUOTE" class="quote section">
+      <div class="quote-text">
+        <h2>
+          How can we connect small and individual merchants with
+          <strong>simple, trackable local delivery</strong>?
+        </h2>
+      </div>
+    </div>
+    <!-- BACKGROUND -->
+    <div id="BACKGROUND" class="section">
+      <div class="text-section">
+        <h2>Background</h2>
+        <div>
+          <p>
+            Shortly after finishing undergrad, a friend needed UI mockups for a
+            local market/delivery app he was working on. He and a few others had
+            already begun developing the app, so I had basic gist of what they
+            had planned so far. GoDart would mix DoorDash-style delivery
+            services with a Facebook Marketplace competitor. There would have to
+            be three versions of the app for different users: buyers, merchants,
+            and drivers. Designs were only needed for the first two at the
+            moment.
+          </p>
         </div>
       </div>
     </div>
+
+    <!-- SKETCHING SECTION -->
+    <div id="SKETCHING" class="section">
+      <div class="text-section">
+        <h2 id="section-header">Sketching</h2>
+        <div id="sketching" class="subsection">
+          <p>
+            My friend sent me screenshots of his WIP code running on an
+            emulator. From these and requirements information he gave me, I was
+            able to sketch out some basic layouts. We knew that buyers and
+            merchants would need to see the delivery status of orders in
+            real-time, and that stores would be listed by distance and suggested
+            to the user.
+          </p>
+        </div>
+      </div>
+      <div id="big-photo" class="item polaroid">
+        <img
+          class="big-img image"
+          src="/images/ecommerce/sketches.png"
+          alt="Custom icons designed to match the rounded style"
+        />
+        <p>Sketching out the basic user flow</p>
+      </div>
+    </div>
+
+    <!-- PROTOTYPING SECTION -->
+    <div id="PROTOTYPING" class="section">
+      <div class="text-section">
+        <h2 id="section-header">Prototyping</h2>
+        <div id="BRANDING" class="subsection">
+          <h3 id="subsection-header">Branding</h3>
+          <p>
+            GoDart didn't have a logo yet! Creating some basic branding became
+            another duty of mine. I eventually landed on a combination of the
+            letter "G", a bullseye, and a map pin. These elements echo the app's
+            name as well as geolocation and delivery.
+          </p>
+        </div>
+      </div>
+      <div id="big-photo" class="item polaroid">
+        <img
+          class="big-img image"
+          src="/images/ecommerce/logos.png"
+          alt="A timeline of possible future work"
+        />
+        <p>Logo drafts</p>
+      </div>
+      <div class="text-section">
+        <div id="COLORS" class="subsection">
+          <h3 id="subsection-header">Colors</h3>
+          <p>
+            GoDart also needed a color palette. I played around with more
+            colorful, monochrome, and vivid palettes before settling on a fairly
+            muted monochrome palette. Blue would be the primary color for the
+            shopper app, and green for the merchant app.
+          </p>
+        </div>
+      </div>
+      <div id="big-photo" class="item polaroid">
+        <img
+          class="big-img image"
+          src="/images/ecommerce/colors.png"
+          alt="A timeline of possible future work"
+        />
+        <p>Iterations on the color palette</p>
+      </div>
+      <div class="text-section">
+        <div id="STYLIZATION" class="subsection">
+          <h3 id="subsection-header">Stylization</h3>
+          <p>
+            I also experimented with different stylizations before settling on a
+            friendly, slightly rounded style. I even started designing custom
+            icons to match this style.
+          </p>
+        </div>
+      </div>
+      <div id="big-photo" class="item polaroid">
+        <img
+          class="big-img image"
+          src="/images/ecommerce/login.png"
+          alt="Style variations for the login screen"
+        />
+        <p>Style variations for the login screen</p>
+      </div>
+      <div class="spacer">.</div>
+      <div id="big-photo" class="item polaroid">
+        <img
+          class="big-img image"
+          src="/images/ecommerce/icon.png"
+          alt="Custom icons designed to match the rounded style"
+        />
+        <p>Custom icons designed to match the rounded style</p>
+      </div>
+    </div>
+
+    <!-- HIFI SECTION -->
+    <div id="HIFI" class="section">
+      <div class="text-section">
+        <h2 id="section-header">Hi-Fidelity</h2>
+        <div id="hifi" class="subsection">
+          <p>
+            From my sketches, I created hi-fidelity mockups in Figma including
+            screens for setup, account settings, order status, storefronts,
+            order queues, and more.
+          </p>
+        </div>
+      </div>
+      <div id="big-photo" class="item polaroid">
+        <img
+          class="big-img image"
+          src="/images/ecommerce/buyer.png"
+          alt="A timeline of possible future work"
+        />
+        <p>The shopper variant of GoDart</p>
+      </div>
+      <div class="spacer">.</div>
+      <div id="big-photo" class="item polaroid">
+        <img
+          class="big-img image"
+          src="/images/ecommerce/merchant.png"
+          alt="A timeline of possible future work"
+        />
+        <p>The merchant variant of GoDart</p>
+      </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
   </body>
 
   <div class="footer">
     <a href="#header">
-      <h2>V</h2>
+      <h3>V</h3>
       <p>scroll to top</p>
-      <h2>V</h2>
+      <h3>V</h3>
     </a>
     <p>designed and coded by me, hosted on github</p>
+    <p>copyright Jacob Estep 2023</p>
   </div>
 </html>

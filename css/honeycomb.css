@@ -67,18 +67,38 @@
   --dark-filter: unset;
   --bezier: cubic-bezier(0.05, 0.8, 0.1, 0.95);
 }
+body > * {
+  animation: fade_in 0.5s cubic-bezier(0.05, 0.8, 0.1, 0.95);
+}
+
+body.out {
+  animation: fade_out 1.5s cubic-bezier(0.05, 0.8, 0.1, 0.95);
+}
 
 @keyframes fade_in {
   0% {
     opacity: 0;
     /* transform: translate(50px, 0px); */
-    /* transform: scale(1.2); */
+    transform: scale(0.5);
   }
   50% {
     opacity: 1;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50px, 50px);
   }
 }
 
@@ -400,11 +420,14 @@ a:link {
   justify-content: center;
   width: 100vw;
   position: relative;
+  /* background-image: url('../images/honeycomb/header.png'); */
 }
 
 #header-img {
-  background-image: var(--header-bkg);
-  background-size: cover;
+  /* background-image: var(--header-bkg); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
   height: 40vh;
   width: 100vw;
 }
@@ -579,8 +602,14 @@ strong {
 }
 
 #big-photo {
-  max-width: 90%;
+  width: 90%;
+  max-width: 800px;
 }
+.spacer {
+  height: 20px;
+  color: transparent;
+}
+
 .big-img {
   max-width: 100%;
 }
