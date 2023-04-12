@@ -15,53 +15,69 @@
     <link rel="icon" type="image/x-icon" href="/images/links/favicon.png" />
     <style>
       :root {
-        --bg-color: #c1f5b2;
-        --card-bkg: #dcfdd3;
-        --button-color: #50af33;
+        --bg-color: #1d7948;
+        --text-accent: #ddea90;
+        --border-color: black;
+        --card-bkg: #c8dad0;
+        --vocalamp_bkg_left: url('../images/home/vocalamp-bg-left.svg');
+        --vocalamp_bkg_right: url('../images/home/vocalamp-bg-right.svg');
+      }
+      .left_img {
+        background-image: var(--vocalamp_bkg_left);
+      }
+      .right_img {
+        background-image: var(--vocalamp_bkg_right);
       }
       @media (prefers-color-scheme: dark) {
         :root {
-          --bg-color: #0c0c0c;
+          --bg-color: #241305;
 
-          --card-bkg: #000;
+          --card-bkg: #160e08;
 
-          --button-color: #484848;
+          --button-color: #f7a559;
         }
       }
     </style>
   </head>
-  <body>
+  <body id="body">
     <div id="header">
       <div class="nav-wrapper" id="nav-wrapper">
         <div class="nav-left">
           <a class="nav home" href="/">
-            <h2 class="nav-text">jacob estep</h2>
+            <h2 class="nav-text accent_text">jacob estep</h2>
           </a>
         </div>
         <div class="nav-right">
           <a class="nav about" href="/about.html">
-            <h2 class="nav-text">about</h2>
+            <h2 class="nav-text accent_text">about</h2>
           </a>
           <a class="nav contact" href="mailto:jacobwestep@gmail.com">
-            <h2 class="nav-text">contact</h2>
+            <h2 class="nav-text accent_text">contact</h2>
           </a>
         </div>
       </div>
-      <iframe
-        width="450"
-        height="450"
-        id="header-img"
-        class="youtube"
-        src="https://www.youtube.com/embed/EfJi6HEn3-0?autoplay=0&rel=0&iv_load_policy=3&color=white&disablekb=1"
-        title="Honeycomb - a GIX Cohort 5 Launch Project"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-
-      <div id="project-info">
-        <div id="project-summary">
-          <h1>VocaLamp</h1>
+      <div class="left_img"></div>
+      <div class="right_img"></div>
+      <div id="video" class="item">
+        <iframe
+          width="800"
+          height="600"
+          id="header-img"
+          class="youtube"
+          src="https://www.youtube.com/embed/EfJi6HEn3-0?autoplay=0&rel=0&iv_load_policy=3&color=white&disablekb=1"
+          title="Honeycomb - a GIX Cohort 5 Launch Project"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <!-- <p>our final video</p> -->
+      </div>
+      <h1 id="project-title" class="accent_text">Honeycomb</h1>
+    </div>
+    <div id="SUMMARY" class="section">
+      <div id="left-details">
+        <div class="project-detail" id="context">
+          <h3 id="subsection-header">Context</h3>
           <p>
             VocaLamp is a prototype smart lamp that adapts lighting, reads word
             definitions, and helps parents reinforce learning. This was created
@@ -70,58 +86,55 @@
             was to help parents and children connect over distraction-free
             vocabulary learning
           </p>
-        </div>
-        <div id="project-context">
-          <div class="project-detail" id="role">
-            <h3 id="subsection-header">Role</h3>
-            <p>Lead Software Engineer / User Researcher</p>
-            <p>
-              (Secondary Research, User Research, System Design, Product Design,
-              Prototyping & Testing, Python, Android App Development)
-            </p>
-          </div>
           <div class="project-detail" id="time-frame">
             <h3 id="subsection-header">Time Frame</h3>
             <p>One 9-week Quarter</p>
           </div>
-          <div class="project-detail" id="links">
-            <h3 id="subsection-header">Links</h3>
-            <div id="project-links">
-              <a
-                class="social"
-                href="https://github.com/imjacobestep/smart_lamp_app"
-              >
-                <img
-                  class="icon"
-                  src="/images/links/github.png"
-                  alt="Github"
-                  width="45px"
-                  height="45px"
-                  loading="lazy"
-                />
-                <p>App Repo</p>
-              </a>
-              <a
-                class="social"
-                href="https://github.com/imjacobestep/smart-study-lamp"
-              >
-                <img
-                  class="icon"
-                  src="/images/links/github.png"
-                  alt="Final Presentation"
-                  width="45px"
-                  height="45px"
-                  loading="lazy"
-                />
-                <p>Lamp Repo</p>
-              </a>
-            </div>
+        </div>
+      </div>
+      <div id="right-details">
+        <div class="project-detail" id="role">
+          <h3 id="subsection-header">Role</h3>
+          <p>Lead Software Engineer / User Researcher</p>
+          <p>
+            (Secondary Research, User Research, System Design, Product Design,
+            Prototyping & Testing, Python, Android App Development)
+          </p>
+        </div>
+        <div class="project-detail" id="links">
+          <h3 id="subsection-header">Links</h3>
+          <div id="project-links">
+            <a
+              class="social"
+              href="https://github.com/imjacobestep/smart_lamp_app"
+            >
+              <img
+                class="icon"
+                src="/images/links/github.png"
+                alt="Github"
+                width="45px"
+                height="45px"
+                loading="lazy"
+              />
+              <p>App Repo</p>
+            </a>
+            <a
+              class="social"
+              href="https://github.com/imjacobestep/smart-study-lamp"
+            >
+              <img
+                class="icon"
+                src="/images/links/github.png"
+                alt="Final Presentation"
+                width="45px"
+                height="45px"
+                loading="lazy"
+              />
+              <p>Lamp Repo</p>
+            </a>
           </div>
         </div>
       </div>
-      <a href="#background" onclick="scrollTo(background)"
-        ><h3 id="down_arrow">V</h3></a
-      >
     </div>
 
     <!-- PROBLEM QUOTE -->
@@ -414,11 +427,11 @@
 
   <div class="footer">
     <a href="#header">
-      <h3>V</h3>
-      <p>scroll to top</p>
-      <h3>V</h3>
+      <h3 class="accent_text">V</h3>
+      <p class="accent_text">scroll to top</p>
+      <h3 class="accent_text">V</h3>
     </a>
-    <p>designed and coded by me, hosted on github</p>
-    <p>copyright Jacob Estep 2023</p>
+    <p class="accent_text">designed and coded by me, hosted on github</p>
+    <p class="accent_text">copyright Jacob Estep 2023</p>
   </div>
 </html>

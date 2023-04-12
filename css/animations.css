@@ -7,7 +7,7 @@
 
   --nav-hover: background-color 0.5s var(--bezier);
 }
-body > * {
+body {
   animation: fade_in 0.5s cubic-bezier(0.05, 0.8, 0.1, 0.95);
 }
 
@@ -17,13 +17,13 @@ body.out {
 
 @keyframes fade_in {
   0% {
-    opacity: 0.5;
+    opacity: 0;
     /* transform: translate(50px, 0px); */
     transform: translateY(400px) scale(0.75);
   }
-  50% {
+  /* 50% {
     opacity: 1;
-  }
+  } */
   100% {
     opacity: 1;
   }
@@ -33,12 +33,12 @@ body.out {
   0% {
     opacity: 1;
   }
-  50% {
+  /* 50% {
     opacity: 1;
-  }
+  } */
   100% {
     opacity: 0;
-    transform: translate(-50px, 50px);
+    transform: translateY(-10px) scale(0.9);
   }
 }
 

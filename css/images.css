@@ -5,12 +5,12 @@
 
   /* BKG IMAGES */
 
-  --honeycomb_bkg_left: url('../images/home/honeycomb-bg-left.png');
-  --honeycomb_bkg_right: url('../images/home/honeycomb-bg-right.png');
+  --honeycomb_bkg_left: url('../images/home/honeycomb-bg-left.svg');
+  --honeycomb_bkg_right: url('../images/home/honeycomb-bg-right.svg');
 
-  --vocalamp_bkg_left: url('../images/home/vocalamp-bg-left.png');
-  --vocalamp_bkg_right: url('../images/home/vocalamp-bg-right.png');
+  --vocalamp_bkg_left: url('../images/home/vocalamp-bg-left.svg');
+  --vocalamp_bkg_right: url('../images/home/vocalamp-bg-right.svg');
 
-  --godart_bkg_left: url('../images/home/godart-bg-left.png');
-  --godart_bkg_right: url('../images/home/godart-bg-right.png');
+  --godart_bkg_left: url('../images/home/godart-bg-left.svg');
+  --godart_bkg_right: url('../images/home/godart-bg-right.svg');
 }

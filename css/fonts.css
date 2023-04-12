@@ -88,3 +88,7 @@ p {
   font-family: var(--body-font);
   line-height: 1.3em;
 }
+
+.accent_text {
+  color: var(--text-accent);
+}

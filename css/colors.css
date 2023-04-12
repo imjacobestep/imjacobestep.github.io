@@ -1,8 +1,10 @@
 :root {
   --text-color: black;
+  --text-accent: #1b227d;
 
-  --bg-color: white;
-  --border-color: black;
+  --bg-color: #f2c4b8;
+  --fg-color: #1b227d;
+  --border-color: #1b227d;
   --surface-color-normal: white;
   --surface-color-hover: white;
 

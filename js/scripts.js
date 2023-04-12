@@ -15,3 +15,7 @@ window.onscroll = function () {
     console.log('removed: ' + document.body.scrollHeight);
   }
 };
+
+window.onbeforeunload = function (e) {
+  document.getElementById('body').className = 'out';
+};

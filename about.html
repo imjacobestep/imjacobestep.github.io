@@ -11,39 +11,48 @@
     <link id="style-used" rel="stylesheet" href="css/animations.css" />
     <link id="style-used" rel="stylesheet" href="css/colors.css" />
     <link id="style-used" rel="stylesheet" href="css/nav.css" />
+    <link id="style-used" rel="stylesheet" href="css/polaroid.css" />
+    <style>
+      :root {
+        --dark-filter: invert(8%) sepia(62%) saturate(6368%) hue-rotate(239deg)
+          brightness(89%) contrast(91%);
+      }
+    </style>
     <script src="js/scripts.js"></script>
   </head>
-  <body class="body">
+  <body class="body" id="body">
     <div class="nav-wrapper" id="nav-wrapper">
       <div class="nav-left">
         <a class="nav home" href="/">
-          <h2 class="nav-text">jacob estep</h2>
+          <h2 class="nav-text accent_text">jacob estep</h2>
         </a>
       </div>
       <div class="nav-right">
         <a class="nav about" href="/about.html">
-          <h2 class="nav-text">about</h2>
+          <h2 class="nav-text accent_text">about</h2>
         </a>
         <a class="nav contact" href="mailto:jacobwestep@gmail.com">
-          <h2 class="nav-text">contact</h2>
+          <h2 class="nav-text accent_text">contact</h2>
         </a>
       </div>
     </div>
     <div id="header" class="section">
+      <div class="left_img"></div>
+      <div class="right_img"></div>
       <div id="intro">
         <div id="intro-title">
-          <h1>Hi, I'm Jacob</h1>
+          <h1 class="accent_text">Hi, I'm Jacob</h1>
         </div>
-        <p>
+        <p class="accent_text intro-body">
           I'm a queer Appalachian living with my partner (Fab) and my dog
           (Meebo) in the Seattle area.
         </p>
-        <p>
+        <p class="accent_text intro-body">
           I really love learning new things! (especially tech, politics, and
           philosophy). I have special interests in social and economic justice
           (I almost got a minor in Gender Studies).
         </p>
-        <p>
+        <p class="accent_text intro-body">
           My brain loves to wrap itself around systems (operating systems,
           design systems, social systems, product ecosystems). I love breaking
           down problems into actors and processes to create repeatable and
@@ -121,12 +130,12 @@
         <img
           class="image"
           id="photo"
-          src="../images/about/me_thumb.png"
+          src="../images/about/me_thumb.jpg"
           alt="a prototype lamp"
           loading="lazy"
         />
         <div class="caption">
-          <p>Me!</p>
+          <p class="accent_text">Me!</p>
         </div>
       </div>
     </div>
@@ -134,10 +143,10 @@
 
   <div class="footer">
     <a href="#header">
-      <h2>V</h2>
-      <p>scroll to top</p>
-      <h2>V</h2>
+      <h2 class="accent_text">V</h2>
+      <p class="accent_text">scroll to top</p>
+      <h2 class="accent_text">V</h2>
     </a>
-    <p>designed and coded by me, hosted on github</p>
+    <p class="accent_text">designed and coded by me, hosted on github</p>
   </div>
 </html>
