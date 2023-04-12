@@ -90,5 +90,10 @@ p {
 }
 
 .accent_text {
-  color: var(--text-accent);
+  color: var(--fg-color);
+}
+
+strong {
+  color: var(--strong-text);
+  font-weight: bold;
 }

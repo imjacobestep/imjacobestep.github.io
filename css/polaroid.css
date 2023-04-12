@@ -7,8 +7,7 @@
   /* background */
   background-image: var(--card-bkg-img);
   background-repeat: repeat;
-  background-color: var(--card-bkg);
-  background-color: rgb(243, 243, 243);
+  background-color: var(--polaroid-color);
   background-position: center center;
   /* styling */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,

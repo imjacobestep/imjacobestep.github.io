@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "desvg": "^1.0.2"
+  }
+}

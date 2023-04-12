@@ -1,13 +1,4 @@
 :root {
-  --text-color: black;
-  --bg-color: #df8889;
-  --card-bkg: #fff0f1;
-  --error-color: transparent;
-  --border-color: black;
-  --button-color: #d45c5f;
-  --surface-color-normal: white;
-  --surface-color-hover: white;
-
   --shadow-normal: drop-shadow(6px 6px 0px #000);
   --shadow-hover: drop-shadow(0px 0px 0px #000);
 
@@ -56,36 +47,6 @@
     --show-arrow: none;
     --h1-size: 3.2rem;
     --body-height: 94vh;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: white;
-
-    --bg-color: #0c0c0c;
-
-    --card-bkg: #000000;
-
-    --button-color: #252525;
-
-    --surface-color-normal: black;
-
-    --surface-color-hover: black;
-
-    --dark-filter: invert(100%);
-
-    --honeycomb-bg-color: #171200;
-    --honeycomb-card-color: #2f2c17;
-
-    --vocalamp-bg-color: #001508;
-    --vocalamp-card-color: #223729;
-
-    --godart-bg-color: #000f22;
-    --godart-card-color: #161d28;
-
-    --rebirth-bg-color: #001317;
-    --rebirth-card-color: #16282d;
   }
 }
 
@@ -148,6 +109,10 @@ body {
   align-content: center;
   justify-content: center;
   position: relative;
+}
+
+.accent_text {
+  color: var(--fg-color);
 }
 
 #project-title {
@@ -252,7 +217,7 @@ body {
 
 #header-img {
   /* background-image: var(--header-bkg); */
-  background-size: contain;
+  /* background-size: contain; */
   background-repeat: no-repeat;
   background-position: center bottom;
   width: 100%;
@@ -260,9 +225,9 @@ body {
   max-height: 600px;
   max-width: 800px;
   outline-style: solid;
-  outline-color: var(--text-accent);
+  outline-color: var(--fg-color);
   outline-width: 4px;
-  border-color: var(--text-accent);
+  border-color: var(--fg-color);
   border-width: 2px;
 }
 
@@ -271,6 +236,7 @@ body {
   height: 60%;
   max-width: 800px;
   max-height: 800px;
+  z-index: 2;
 }
 
 .left_img,
@@ -280,8 +246,13 @@ body {
   position: absolute;
   height: 40vh;
   width: 40vw;
-  filter: var(--dark-filter);
-  z-index: 1;
+  /* filter: var(--dark-filter); */
+  z-index: 0;
+}
+
+.left_img path,
+.right_img path {
+  fill: var(--fg-color);
 }
 
 .left_img {
@@ -325,7 +296,7 @@ body {
   align-items: center;
   padding-right: 20px;
   background-repeat: repeat;
-  border-color: var(--border-color);
+  border-color: var(--text-color);
   border-width: var(--surface-border-normal);
   border-style: solid;
   transition: var(--animation);
@@ -365,10 +336,6 @@ a > p {
   max-width: 1000px;
 }
 
-strong {
-  color: var(--bg-color);
-}
-
 .quote {
   padding: 20px 50px;
 }
@@ -377,7 +344,7 @@ strong {
   background-color: var(--card-bkg);
 }
 .section:nth-child(even) {
-  background-color: white;
+  background-color: var(--body-color);
 }
 
 .polaroid {
@@ -391,7 +358,7 @@ strong {
   background-image: var(--card-bkg-img);
   background-repeat: repeat;
   background-color: var(--card-bkg);
-  background-color: white;
+  background-color: var(--polaroid-color);
   background-position: center center;
   /* styling */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,

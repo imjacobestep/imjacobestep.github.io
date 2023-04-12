@@ -180,8 +180,8 @@ h1 {
 
 .divider {
   height: 20px;
-  color: white;
-  background-color: white;
+  color: var(--body-color);
+  background-color: var(--body-color);
 }
 
 .left_img,
@@ -192,7 +192,7 @@ h1 {
   position: absolute;
   height: 40vh;
   width: 40vw;
-  filter: var(--dark-filter);
+  /* filter: var(--dark-filter); */
   z-index: 0;
 }
 
@@ -237,21 +237,13 @@ h1 {
   height: 60vmax;
   width: 60vmax;
   bottom: 0px;
-  filter: invert(8%) sepia(62%) saturate(6368%) hue-rotate(239deg)
-    brightness(89%) contrast(91%);
+  filter: var(--dark-filter);
   background-image: url('../images/gifs/portrait.gif');
   background-position: bottom;
   max-width: 1200px;
 }
 
 /* HONEYCOMB */
-
-#honeycomb > .left_img {
-  background-image: var(--honeycomb_bkg_left);
-}
-#honeycomb > .right_img {
-  background-image: var(--honeycomb_bkg_right);
-}
 
 #honeycomb {
   background-color: var(--honeycomb-bg-color);
@@ -268,11 +260,9 @@ h1 {
 
 /* VOCALAMP */
 
-#vocalamp > .left_img {
-  background-image: var(--vocalamp_bkg_left);
-}
-#vocalamp > .right_img {
-  background-image: var(--vocalamp_bkg_right);
+#vocalamp > .left_img path,
+#vocalamp > .right_img path {
+  fill: var(--vocalamp-fg-color);
 }
 
 #vocalamp {
@@ -285,11 +275,9 @@ h1 {
 
 /* GODART */
 
-#godart > .left_img {
-  background-image: var(--godart_bkg_left);
-}
-#godart > .right_img {
-  background-image: var(--godart_bkg_right);
+#godart > .left_img path,
+#godart > .right_img path {
+  fill: var(--godart-fg-color);
 }
 
 #godart {

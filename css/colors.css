@@ -1,28 +1,52 @@
 :root {
   --text-color: black;
-  --text-accent: #1b227d;
+  --text-accent: red;
+
+  --polaroid-color: white;
 
   --bg-color: #f2c4b8;
+  --body-color: white;
   --fg-color: #1b227d;
   --border-color: #1b227d;
-  --surface-color-normal: white;
-  --surface-color-hover: white;
+  --surface-color-normal: red;
+  --surface-color-hover: red;
+
+  --honeycomb-bg-color: #e9944a;
+  --honeycomb-fg-color: #f5f5da;
+
+  --vocalamp-bg-color: #1d7948;
+  --vocalamp-fg-color: #ddea90;
+
+  --godart-bg-color: #87b1ac;
+  --godart-fg-color: #19184d;
 
   --dark-filter: unset;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color: white;
+    --text-accent: red;
 
-    --bg-color: #0c0c0c;
+    --polaroid-color: #292929;
 
-    --card-bkg: #000000;
+    --bg-color: #292929;
+    --fg-color: #f2c4b8;
+    --body-color: black;
 
-    --button-color: #252525;
+    --honeycomb-bg-color: #292929;
+    --honeycomb-fg-color: #e9944a;
 
-    --surface-color-normal: black;
+    --vocalamp-bg-color: #292929;
+    --vocalamp-fg-color: #4baf7a;
 
-    --surface-color-hover: black;
+    --godart-bg-color: #292929;
+    --godart-fg-color: #87b1ac;
+
+    --button-color: red;
+
+    --surface-color-normal: red;
+
+    --surface-color-hover: red;
 
     --dark-filter: invert(100%);
   }

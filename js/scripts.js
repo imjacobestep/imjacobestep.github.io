@@ -19,3 +19,9 @@ window.onscroll = function () {
 window.onbeforeunload = function (e) {
   document.getElementById('body').className = 'out';
 };
+
+window.addEventListener('load', function () {
+  // 1. selector for the <img /> tags to replace
+  // 2. whether to strip inline style tags from SVG paths
+  deSVG('.replace-svg', true);
+});

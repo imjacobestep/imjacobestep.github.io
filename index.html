@@ -18,6 +18,18 @@
     <link id="style-used" rel="stylesheet" href="css/colors.css" />
     <link id="style-used" rel="stylesheet" href="css/images.css" />
     <link id="style-used" rel="stylesheet" href="css/nav.css" />
+    <style>
+      :root {
+        --dark-filter: invert(8%) sepia(62%) saturate(6368%) hue-rotate(239deg)
+          brightness(89%) contrast(91%);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --dark-filter: invert(85%) sepia(17%) saturate(731%)
+            hue-rotate(317deg) brightness(98%) contrast(93%);
+        }
+      }
+    </style>
   </head>
   <body class="body" id="body">
     <div class="nav-wrapper" id="nav-wrapper">
@@ -58,8 +70,16 @@
     <div class="divider">.</div>
 
     <div id="honeycomb" class="section project is-animated">
-      <div class="left_img"></div>
-      <div class="right_img"></div>
+      <img
+        class="left_img replace-svg"
+        src="/images/home/honeycomb-bg-left.svg"
+        alt="test"
+      />
+      <img
+        class="right_img replace-svg"
+        src="/images/home/honeycomb-bg-right.svg"
+        alt="test"
+      />
       <a class="project_card" href="/projects/honeycomb.html">
         <h1 class="project_title">Honeycomb</h1>
         <p class="project_tagline">
@@ -70,8 +90,16 @@
     </div>
     <div class="divider">.</div>
     <div id="vocalamp" class="section project">
-      <div class="left_img"></div>
-      <div class="right_img"></div>
+      <img
+        class="left_img replace-svg"
+        src="/images/home/vocalamp-bg-left.svg"
+        alt="test"
+      />
+      <img
+        class="right_img replace-svg"
+        src="/images/home/vocalamp-bg-right.svg"
+        alt="test"
+      />
       <a class="project_card" href="/projects/vocalamp.html">
         <h1 class="project_title">VocaLamp</h1>
         <p class="project_tagline">
@@ -82,8 +110,16 @@
     </div>
     <div class="divider">.</div>
     <div id="godart" class="section project">
-      <div class="left_img"></div>
-      <div class="right_img"></div>
+      <img
+        class="left_img replace-svg"
+        src="/images/home/godart-bg-left.svg"
+        alt="test"
+      />
+      <img
+        class="right_img replace-svg"
+        src="/images/home/godart-bg-right.svg"
+        alt="test"
+      />
       <a class="project_card" href="/projects/ecommerce.html">
         <h1 class="project_title">GoDart</h1>
         <p class="project_tagline">
@@ -93,6 +129,7 @@
     </div>
     <div class="divider">.</div>
     <script src="js/scripts.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"></script>
   </body>
 
   <div class="footer">

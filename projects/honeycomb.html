@@ -8,7 +8,11 @@
       rel="stylesheet"
     />
     <script src="../js/test.js" defer></script>
-
+    <script src="../js/scripts.js" defer></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"
+      defer
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,26 +28,16 @@
     <style>
       :root {
         --bg-color: #e9944a;
-        --text-accent: #f5f5da;
-        --border-color: #f5f5da;
-        --card-bkg: #f1e0d1;
-        --button-color: #da6a02;
-        --honeycomb_bkg_left: url('../images/home/honeycomb-bg-left.svg');
-        --honeycomb_bkg_right: url('../images/home/honeycomb-bg-right.svg');
-      }
-      .left_img {
-        background-image: var(--honeycomb_bkg_left);
-      }
-      .right_img {
-        background-image: var(--honeycomb_bkg_right);
+        --fg-color: #f5f5da;
+        --card-bkg: #fbeadb;
+        --strong-text: var(--bg-color);
       }
       @media (prefers-color-scheme: dark) {
         :root {
-          --bg-color: #241305;
-
-          --card-bkg: #160e08;
-
-          --button-color: #f7a559;
+          --bg-color: #292929;
+          --fg-color: #e9944a;
+          --card-bkg: #2f1e0f;
+          --strong-text: var(--fg-color);
         }
       }
     </style>
@@ -65,8 +59,16 @@
           </a>
         </div>
       </div>
-      <div class="left_img"></div>
-      <div class="right_img"></div>
+      <img
+        class="left_img replace-svg"
+        src="/images/home/honeycomb-bg-left.svg"
+        alt="test"
+      />
+      <img
+        class="right_img replace-svg"
+        src="/images/home/honeycomb-bg-right.svg"
+        alt="test"
+      />
       <div id="video" class="item">
         <iframe
           width="800"
@@ -851,7 +853,6 @@
         <p>We also invisioned future expansions</p>
       </div>
     </div>
-    <script src="../js/scripts.js"></script>
   </body>
 
   <div class="footer">

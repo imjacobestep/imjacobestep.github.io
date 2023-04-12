@@ -2,44 +2,43 @@
 <html lang="en">
   <head>
     <script src="../js/test.js" defer></script>
+    <script src="../js/scripts.js" defer></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"
+      defer
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VocaLamp</title>
-    <link rel="stylesheet" href="../css/projects.css" />
     <link id="style-used" rel="stylesheet" href="../css/fonts.css" />
     <link id="style-used" rel="stylesheet" href="../css/animations.css" />
     <link id="style-used" rel="stylesheet" href="../css/colors.css" />
     <link id="style-used" rel="stylesheet" href="../css/images.css" />
     <link id="style-used" rel="stylesheet" href="../css/nav.css" />
+    <link id="style-used" rel="stylesheet" href="../css/polaroid.css" />
     <link rel="icon" type="image/x-icon" href="/images/links/favicon.png" />
+    <link rel="stylesheet" href="../css/projects.css" />
     <style>
       :root {
         --bg-color: #87b1ac;
-        --text-accent: #19184d;
-        --border-color: black;
-        --card-bkg: #dde5e4;
-        --vocalamp_bkg_left: url('../images/home/godart-bg-left.svg');
-        --vocalamp_bkg_right: url('../images/home/godart-bg-right.svg');
+        --fg-color: #19184d;
+        --card-bkg: #e7efee;
+        --strong-text: var(--bg-color);
       }
-      .left_img {
-        background-image: var(--vocalamp_bkg_left);
-      }
-      .right_img {
-        background-image: var(--vocalamp_bkg_right);
+      .youtube {
+        background-image: url(/images/ecommerce/cover.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
       }
       @media (prefers-color-scheme: dark) {
         :root {
-          --bg-color: #241305;
-
-          --card-bkg: #160e08;
-
-          --button-color: #f7a559;
+          --bg-color: #292929;
+          --fg-color: #87b1ac;
+          --card-bkg: #1b2322;
+          --strong-text: var(--fg-color);
         }
-      }
-      #header-img {
-        background-image: url('/images/ecommerce/cover.png');
-        background-size: cover;
       }
     </style>
   </head>
@@ -60,8 +59,16 @@
           </a>
         </div>
       </div>
-      <div class="left_img"></div>
-      <div class="right_img"></div>
+      <img
+        class="left_img replace-svg"
+        src="/images/home/godart-bg-left.svg"
+        alt="test"
+      />
+      <img
+        class="right_img replace-svg"
+        src="/images/home/godart-bg-right.svg"
+        alt="test"
+      />
       <div id="video" class="item">
         <div id="header-img" class="youtube">.</div>
       </div>
@@ -250,8 +257,6 @@
         <p>The merchant variant of GoDart</p>
       </div>
     </div>
-
-    <script src="js/scripts.js"></script>
   </body>
 
   <div class="footer">

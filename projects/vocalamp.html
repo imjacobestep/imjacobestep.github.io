@@ -2,39 +2,36 @@
 <html lang="en">
   <head>
     <script src="../js/test.js" defer></script>
+    <script src="../js/scripts.js" defer></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"
+      defer
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VocaLamp</title>
-    <link rel="stylesheet" href="../css/projects.css" />
     <link id="style-used" rel="stylesheet" href="../css/fonts.css" />
     <link id="style-used" rel="stylesheet" href="../css/animations.css" />
     <link id="style-used" rel="stylesheet" href="../css/colors.css" />
     <link id="style-used" rel="stylesheet" href="../css/images.css" />
     <link id="style-used" rel="stylesheet" href="../css/nav.css" />
+    <link id="style-used" rel="stylesheet" href="../css/polaroid.css" />
     <link rel="icon" type="image/x-icon" href="/images/links/favicon.png" />
+    <link rel="stylesheet" href="../css/projects.css" />
     <style>
       :root {
         --bg-color: #1d7948;
-        --text-accent: #ddea90;
-        --border-color: black;
-        --card-bkg: #c8dad0;
-        --vocalamp_bkg_left: url('../images/home/vocalamp-bg-left.svg');
-        --vocalamp_bkg_right: url('../images/home/vocalamp-bg-right.svg');
-      }
-      .left_img {
-        background-image: var(--vocalamp_bkg_left);
-      }
-      .right_img {
-        background-image: var(--vocalamp_bkg_right);
+        --fg-color: #ddea90;
+        --card-bkg: #dbefe4;
+        --strong-text: var(--bg-color);
       }
       @media (prefers-color-scheme: dark) {
         :root {
-          --bg-color: #241305;
-
-          --card-bkg: #160e08;
-
-          --button-color: #f7a559;
+          --bg-color: #292929;
+          --fg-color: #4baf7a;
+          --card-bkg: #0f2318;
+          --strong-text: var(--fg-color);
         }
       }
     </style>
@@ -56,8 +53,16 @@
           </a>
         </div>
       </div>
-      <div class="left_img"></div>
-      <div class="right_img"></div>
+      <img
+        class="left_img replace-svg"
+        src="/images/home/vocalamp-bg-left.svg"
+        alt="test"
+      />
+      <img
+        class="right_img replace-svg"
+        src="/images/home/vocalamp-bg-right.svg"
+        alt="test"
+      />
       <div id="video" class="item">
         <iframe
           width="800"
@@ -65,14 +70,14 @@
           id="header-img"
           class="youtube"
           src="https://www.youtube.com/embed/EfJi6HEn3-0?autoplay=0&rel=0&iv_load_policy=3&color=white&disablekb=1"
-          title="Honeycomb - a GIX Cohort 5 Launch Project"
+          title="Vocalamp - a GIX Cohort 5 Launch Project"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
         <!-- <p>our final video</p> -->
       </div>
-      <h1 id="project-title" class="accent_text">Honeycomb</h1>
+      <h1 id="project-title" class="accent_text">Vocalamp</h1>
     </div>
     <div id="SUMMARY" class="section">
       <div id="left-details">
@@ -422,7 +427,6 @@
         </div>
       </div>
     </div>
-    <script src="js/scripts.js"></script>
   </body>
 
   <div class="footer">
