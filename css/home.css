@@ -34,7 +34,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   :root {
     --html-sizing: 100%;
-    --body-height: 90vh;
+    --body-height: 94vh;
   }
 }
 
@@ -42,7 +42,7 @@
 @media only screen and (max-width: 767px) {
   :root {
     --html-sizing: 100%;
-    --body-height: 90vh;
+    --body-height: 94vh;
   }
 }
 
@@ -87,7 +87,7 @@ html {
   position: relative;
 }
 body {
-  height: 100vh;
+  height: var(--body-height);
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -111,7 +111,7 @@ h1 {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: var(--body-height);
   width: 100vw;
   position: relative;
 }
