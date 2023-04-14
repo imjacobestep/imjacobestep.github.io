@@ -353,16 +353,16 @@ a > p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
   /* background */
-  background-image: var(--card-bkg-img);
+  /* background-image: var(--card-bkg-img);
   background-repeat: repeat;
   background-color: var(--card-bkg);
   background-color: var(--polaroid-color);
-  background-position: center center;
+  background-position: center center; */
   /* styling */
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
   transition: var(--animation);
 
   min-width: 300px;
@@ -384,11 +384,11 @@ a > p {
 
 .image {
   width: 100%;
-  max-width: 280px;
-  background-color: var(--card-bkg);
+  max-width: 380px;
+  /* background-color: var(--card-bkg);
   border-width: 1px;
   border-color: black;
-  border-style: solid;
+  border-style: solid; */
 }
 
 .teammate-img {
@@ -408,7 +408,7 @@ a > p {
 #big-photo {
   width: 90%;
   height: 60%;
-  max-width: 800px;
+  max-width: 1000px;
   max-height: 800px;
 }
 .spacer {
