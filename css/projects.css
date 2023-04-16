@@ -130,7 +130,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   height: auto;
   width: 100vw;
   position: relative;
@@ -140,8 +140,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
-  width: 100%;
-  padding-inline: 50px;
+  width: 90%;
   padding-top: 30px;
   padding-bottom: 4px;
   gap: 10px;
@@ -279,8 +278,8 @@ body {
 #left-details,
 #right-details {
   width: 90%;
-  max-width: 400px;
-  padding: 10px;
+  max-width: 500px;
+  padding-block: 10px;
 }
 
 #project-links {
@@ -370,7 +369,6 @@ a > p {
 }
 
 .caption {
-  padding-top: 10px;
   height: 100%;
   min-width: 280px;
   display: flex;
@@ -418,6 +416,10 @@ a > p {
 
 .big-img {
   max-width: 100%;
+  padding-top: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--card-bkg);
 }
 
 .items::-webkit-scrollbar {
