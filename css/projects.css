@@ -272,6 +272,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: start;
+  justify-content: center;
   justify-self: center;
 }
 
