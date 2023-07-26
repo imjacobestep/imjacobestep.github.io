@@ -42,58 +42,6 @@ function setScrollVar() {
 
 setScrollVar();
 
-// const observer = new IntersectionObserver((entries) => {
-//   for (let i = entries.length - 1; i >= 0; i--) {
-//     const entry = entries[i];
-//     if (entry.isIntersecting) {
-//       document.querySelectorAll("img").forEach((img) => {
-//         img.classList.remove("show");
-//       });
-//       const img = document.querySelector(entry.target.dataset.imgToShow);
-//       img?.classList.add("show");
-//       break;
-//     }
-//   }
-// });
-
-// document.querySelectorAll("project").forEach((section) => {
-//   observer.observe(section);
-// });
-
-// const observer = new IntersectionObserver(
-//   (entries) => {
-//     entries.forEach((entry) => {
-//       const intersecting = entry.isIntersecting;
-//       // entry.target.style.opacity = intersecting ? "1" : "0.2";
-//       entry.target.opacity = entry.intersectionRatio;
-//     });
-//   },
-//   { threshold: 1 }
-// );
-
-// observer.observe(document.getElementsByClassName("project"));
-
-// function intersectionCallback(entries) {
-//   console.log(JSON.stringify(entries));
-
-//   entries.forEach((entry) => {
-//     console.log(entry.className);
-
-//     entry.target.opacity = entry.intersectionRatio;
-//   });
-// }
-
-// console.log(
-//   JSON.stringify(
-//     typeof document.getElementsByClassName("animate--opacity--in").entries()
-//   )
-// );
-
-// intersectionCallback(
-//   document.getElementsByClassName("animate--opacity--in").entries()
-// );
-// intersectionCallback(document.getElementById("honeycomb"));
-
 const observerOptions = {
   root: null,
   threshold: 0,
@@ -119,5 +67,3 @@ window.addEventListener("DOMContentLoaded", (event) => {
     observer.observe(section);
   }
 });
-
-// observer.observe(document.getElementById("honeycomb"));
