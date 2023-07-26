@@ -14,10 +14,26 @@
   top: 0px;
   left: 0px;
   margin: 0;
+  isolation: isolate;
+  /* position: relative; */
 }
 
 .nav-wrapper.scrolled {
+  /* background-color: var(--bg-color); */
+  /* translate: calc(-5px * var(--scroll)) calc(5px * var(--scroll)); */
+  /* opacity: calc(var(--scroll) / 100); */
+  transition: var(--nav-hover);
+}
+
+.nav-bkg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
   background-color: var(--bg-color);
+  opacity: calc(var(--scroll) / 100);
   transition: var(--nav-hover);
 }
 
@@ -30,6 +46,18 @@ a:link {
   text-decoration: none;
 }
 
+.nav-text {
+  transition: var(--animation);
+  font-weight: regular;
+}
+
 .nav-text:hover {
   font-weight: bold;
+  transform: var(--smallTransform);
+}
+
+.nav-text:active {
+  font-weight: bold;
+  opacity: 0.6;
+  transform: var(--activeTransform);
 }

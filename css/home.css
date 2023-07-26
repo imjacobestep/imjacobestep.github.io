@@ -19,13 +19,15 @@
 
   --html-sizing: unset;
   --footer-position: unset;
+
+  --scroll: 0;
 }
 
 /* DESKTOP */
 @media only screen and (min-width: 1024px) {
   :root {
     --footer-position: absolute;
-    --body-height: 100vh;
+    --body-height: 100dvh;
     --html-sizing: 100%;
   }
 }
@@ -34,7 +36,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   :root {
     --html-sizing: 100%;
-    --body-height: 94vh;
+    --body-height: 94dvh;
   }
 }
 
@@ -42,7 +44,7 @@
 @media only screen and (max-width: 767px) {
   :root {
     --html-sizing: 100%;
-    --body-height: 94vh;
+    --body-height: 94dvh;
   }
 }
 
@@ -74,21 +76,21 @@
 
 html {
   background-color: var(--bg-color);
-  height: 100vh;
-  width: 100vw;
+  height: 100dvh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
   overflow: scroll;
   overflow-x: hidden;
-  background-color: var(--bg-color);
+  background-color: var(--body-color);
   scroll-behavior: smooth;
   position: relative;
 }
 body {
   height: var(--body-height);
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -112,8 +114,9 @@ h1 {
   background-size: contain;
   background-repeat: no-repeat;
   min-height: var(--body-height);
-  width: 100vw;
+  width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .project {
@@ -130,6 +133,11 @@ h1 {
 #intro:hover {
   cursor: pointer;
   transform: var(--transform);
+}
+
+#intro:active {
+  cursor: pointer;
+  transform: var(--activeTransform);
 }
 
 #intro-title {
@@ -173,9 +181,18 @@ h1 {
   justify-self: center;
   position: absolute;
   transform: translate(-10px, 0px);
+  transition: var(--animation);
   bottom: 20%;
   font-size: 40px;
   animation: tease 3s cubic-bezier(0.15, 1.8, 0.5, 1.95) 2s infinite;
+}
+
+#down_arrow:hover {
+  transform: var(--transform);
+}
+
+#down_arrow:active {
+  transform: var(--activeTransform);
 }
 
 .divider {
@@ -211,20 +228,61 @@ h1 {
   transition: var(--animation);
 }
 
+.project {
+  border: var(--body-color) 0px solid;
+  transition: var(--animation);
+  width: 100%;
+}
+
+.project:hover {
+  border: var(--body-color) 24px solid;
+  /* transform: scale(0.8); */
+}
+
 .project:hover > .left_img {
   top: 2%;
   left: 4%;
   opacity: 0.4;
+  transform: rotate(5deg);
 }
 .project:hover > .right_img {
   bottom: 2%;
   right: 4%;
   opacity: 0.4;
+  transform: rotate(5deg);
 }
 
 .project:hover > .project_card {
   cursor: pointer;
   transform: var(--transform);
+}
+
+.project:active > .project_card {
+  cursor: pointer;
+  transform: var(--activeTransform);
+}
+
+.project:active {
+  border: var(--body-color) 30px solid;
+  /* transform: scale(0.8); */
+}
+
+.project:active > .left_img {
+  top: 4%;
+  left: 8%;
+  opacity: 0.2;
+  transform: rotate(8deg);
+}
+.project:active > .right_img {
+  bottom: 4%;
+  right: 8%;
+  opacity: 0.2;
+  transform: rotate(8deg);
+}
+
+#header {
+  position: relative;
+  background-color: var(--bg-color);
 }
 
 #header > .left_img {
@@ -237,10 +295,28 @@ h1 {
   height: 60vmax;
   width: 60vmax;
   bottom: 0px;
+  position: absolute;
   filter: var(--dark-filter);
-  background-image: url('../images/gifs/portrait.gif');
+  background-image: url("../images/gifs/portrait.gif");
   background-position: bottom;
   max-width: 1200px;
+  transform: scale(calc(1 - (var(--scroll) / 100)));
+  translate: 0 calc(5px * var(--scroll) * 100 / 50);
+}
+
+/* NDC */
+
+#ndconnect {
+  background-color: var(--ndc-bg-color);
+}
+#ndconnect > .project_card > .project_title,
+#ndconnect > .project_card > .project_tagline {
+  color: var(--ndc-fg-color);
+}
+
+#ndconnect > .left_img path,
+#ndconnect > .right_img path {
+  fill: var(--ndc-fg-color);
 }
 
 /* HONEYCOMB */
@@ -293,13 +369,18 @@ h1 {
 .project_card {
   text-decoration: none;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   /* background-image: var(--card-bkg-img);
   background-color: var(--card-bkg);
   background-repeat: repeat; */
   padding: 10px 40px 40px 40px;
-  width: 40%;
-  max-width: 890px;
-  width: clamp(300px, 40%, 890px);
+  width: 100%;
+  height: 100%;
+  /* max-width: 890px; */
+  /* width: clamp(300px, 40%, 890px); */
   /* border-color: var(--border-color);
   border-width: var(--surface-border-static);
   border-style: solid;
@@ -344,4 +425,17 @@ h1 {
   opacity: 60%;
   padding: 20px;
   /* bottom: 10px; */
+}
+
+.fadeup {
+  transform: translateY(50px);
+  opacity: 0;
+  /* transition-property: transform, opacity;
+  transition-duration: 1s;
+  transition-timing-function: linear; */
+  transition: transform 1s linear, opacity 1s linear, var(--animation);
+}
+.in-view {
+  transform: none;
+  opacity: 1;
 }

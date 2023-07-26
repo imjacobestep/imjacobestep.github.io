@@ -217,6 +217,11 @@ a:link {
   border-width: var(--surface-border-static);
   border-style: solid;
   transform: var(--transform);
+  transition: var(--animation);
+}
+
+.social:active {
+  transform: var(--activeTransform);
 }
 
 .footer > a {
@@ -242,4 +247,17 @@ a:link {
   color: var(--text-color);
   opacity: 60%;
   padding: 20px;
+}
+
+.fadeup {
+  transform: translateY(50px);
+  opacity: 0;
+  /* transition-property: transform, opacity;
+  transition-duration: 1s;
+  transition-timing-function: linear; */
+  transition: transform 1s linear, opacity 1s linear, var(--animation);
+}
+.in-view {
+  transform: none;
+  opacity: 1;
 }

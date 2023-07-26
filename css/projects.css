@@ -14,6 +14,54 @@
   --html-sizing: unset;
   --footer-position: unset;
   --dark-filter: unset;
+
+  --nd-button-shadow-primary: inset 0px -4px 2px #312e819f,
+    inset 0px 4px 2px #b6b4e850, 0px 2px 4px 0px #635fda1e;
+  --nd-button-shadow-secondary: inset 0px -4px 2px #312e810f,
+    inset 0px 4px 2px #e6e5f47a, 0px 2px 4px 0px #827ede0f;
+  --nd-button-shadow-tertiary: none;
+  --nd-button-shadow-hover: inset 0px -2px 2px #312e818f,
+    inset 0px 2px 2px #d7d7ef7a, 0px 6px 6px 2px #635fda0a;
+  --nd-button-shadow-pressed: inset 0px 8px 6px #312e81af;
+
+  --nd-button-primary-bg: var(--nd-brand-600);
+  --nd-button-primary-fg: var(--nd-brand-50);
+
+  --nd-button-secondary-bg: var(--nd-brand-100);
+  --nd-button-secondary-fg: var(--nd-brand-600);
+
+  --nd-button-tertiary-bg: var(--basic-white);
+  --nd-button-tertiary-fg: var(--nd-brand-500);
+  --nd-button-tertiary-outline: var(--nd-brand-100);
+
+  --nd-button-hover-bg: var(--nd-brand-400);
+  --nd-button-hover-fg: var(--basic-white);
+
+  --nd-button-active-bg: var(--nd-brand-500);
+  --nd-button-active-fg: var(--nd-brand-100);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --nd-button-shadow-primary: inset 0px -4px 2px #6967b29f,
+      inset 0px 4px 2px #efefff98, 0px 2px 4px 0px #635fda0c;
+    --nd-button-shadow-secondary: inset 0px -4px 2px #12121d5d,
+      inset 0px 4px 2px #dbdbe81e, 0px 2px 4px 0px #635fda0c;
+    --nd-button-shadow-tertiary: none;
+    --nd-button-shadow-hover: inset 0px -2px 2px #312e818f,
+      inset 0px 4px 2px #b6b4e888, 0px 6px 6px 2px #6b67ea58;
+    --nd-button-shadow-pressed: inset 0px 6px 2px #312e81e1;
+
+    --nd-button-primary-bg: var(--nd-brand-200);
+    --nd-button-primary-fg: var(--basic-black);
+
+    --nd-button-secondary-bg: var(--nd-brand-600);
+    --nd-button-secondary-fg: var(--basic-white);
+
+    --nd-button-tertiary-bg: var(--nd-neutral-900);
+    --nd-button-tertiary-fg: var(--nd-brand-100);
+    --nd-button-tertiary-outline: var(--nd-neutral-600);
+  }
 }
 
 /* DESKTOP */
@@ -68,7 +116,7 @@ ul li {
 }
 
 ul li::before {
-  content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: var(--text-color); /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
@@ -259,12 +307,16 @@ body {
   top: -2%;
   left: -1%;
   opacity: 0.25;
+  transform: scale(calc(1 - (var(--scroll) / 200)));
+  translate: calc(-5px * var(--scroll)) calc(5px * var(--scroll));
 }
 .right_img {
   background-position: right;
   bottom: -2%;
   right: -1%;
   opacity: 0.25;
+  transform: scale(calc(1 - (var(--scroll) / 200)));
+  translate: calc(5px * var(--scroll)) calc(5px * var(--scroll));
 }
 
 #SUMMARY {
@@ -323,6 +375,58 @@ a > p {
   left: 48%;
   font-size: 30px;
   animation: tease 3s cubic-bezier(0.15, 1.8, 0.5, 1.95) 2s infinite;
+}
+
+/* ND BUTTONS */
+.nd-button-wrapper {
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: var(--body-color) 0px 0px 10px 20px;
+  background: var(--body-color);
+}
+
+.nd-connect-button {
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  transition: var(--animationShort);
+}
+.nd-connect-button.primary {
+  background-color: var(--nd-button-primary-bg);
+  color: var(--nd-button-primary-fg);
+  box-shadow: var(--nd-button-shadow-primary);
+}
+.nd-connect-button.secondary {
+  background-color: var(--nd-button-secondary-bg);
+  color: var(--nd-button-secondary-fg);
+  box-shadow: var(--nd-button-shadow-secondary);
+}
+.nd-connect-button.tertiary {
+  background-color: var(--nd-button-tertiary-bg);
+  color: var(--nd-button-tertiary-fg);
+  box-shadow: var(--nd-button-shadow-tertiary);
+  outline: var(--nd-button-tertiary-outline) 3px solid;
+  outline-offset: -3px;
+}
+.nd-connect-button:hover {
+  cursor: pointer;
+  outline: none;
+  background-color: var(--nd-button-hover-bg);
+  color: var(--nd-button-hover-fg);
+  box-shadow: var(--nd-button-shadow-hover);
+  transform: translateY(-2px);
+}
+.nd-connect-button:active {
+  outline: none;
+  background-color: var(--nd-button-active-bg);
+  color: var(--nd-button-active-fg);
+  box-shadow: var(--nd-button-shadow-pressed);
+  transform: translateY(0px);
+}
+.nd-connect-button:active > * {
+  transform: translateY(4px);
 }
 
 /* QUOTE */
@@ -523,4 +627,17 @@ a > p {
   opacity: 60%;
   padding: 20px;
   /* bottom: 10px; */
+}
+
+.fadeup {
+  transform: translateY(50px);
+  opacity: 0;
+  /* transition-property: transform, opacity;
+  transition-duration: 1s;
+  transition-timing-function: linear; */
+  transition: transform 1s linear, opacity 1s linear, var(--animation);
+}
+.in-view {
+  transform: none;
+  opacity: 1;
 }
