@@ -54,7 +54,8 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: var(--body-spacing);
+  align-items: var(--body-spacing);
+  justify-items: center;
   row-gap: 20px;
 }
 

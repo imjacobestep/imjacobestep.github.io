@@ -16,7 +16,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Honeycomb</title>
+    <title>ND Connect</title>
     <link id="style-used-font" rel="stylesheet" href="../css/fonts.css" />
     <link
       id="style-used-animation"
@@ -26,7 +26,8 @@
     <link id="style-used-color" rel="stylesheet" href="../css/colors.css" />
     <link id="style-used-image" rel="stylesheet" href="../css/images.css" />
     <link id="style-used-nav" rel="stylesheet" href="../css/nav.css" />
-    <link rel="icon" type="image/x-icon" href="/images/links/favicon.png" />
+    <link id="style-used-accessibility" rel="stylesheet" href="../css/accessibility.css" />
+    <link rel="icon" type="image/x-icon" href="/images/links/ndc-favicon.png" />
     <link rel="stylesheet" href="../css/projects.css" />
     <script src="project-scripts.js" defer></script>
     <style>
@@ -84,7 +85,7 @@
           id="header-img"
           class="youtube"
           src="https://www.youtube.com/embed/H16WPzBRqfo?autoplay=0&rel=0&iv_load_policy=3&color=white&disablekb=1"
-          title="Honeycomb - a GIX Cohort 5 Launch Project"
+          title="Neurodiversity Connect YIC Submission"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
@@ -218,9 +219,9 @@
       </div>
 
       <div class="nd-button-wrapper fadeup fade--in--on--load">
-        <button class="nd-connect-button primary"><div class="button-text">Primary Button</div></button>
-        <button class="nd-connect-button secondary"><div class="button-text">Secondary Button</div></button></button>
-        <button class="nd-connect-button tertiary"><div class="button-text">Tertiary Button</div></button></button>
+        <button aria-label="Primary Button" class="nd-connect-button primary"><div class="button-text">Primary Button</div></button>
+        <button aria-label="Secondary Button" class="nd-connect-button secondary"><div class="button-text">Secondary Button</div></button></button>
+        <button aria-label="Tertiary Button" class="nd-connect-button tertiary"><div class="button-text">Tertiary Button</div></button></button>
       </div>
       
       <div id="BUTTON-STATES" class="text-section fadeup  fade--in--on--load">
@@ -259,6 +260,22 @@
           </p>
         </div>
       </div>
+      <div id="big-photo" class="item polaroid nd-button-wrapper">
+        <img
+          class="big-img image dark-invert fadeup  fadeup  fade--in--on--load profile--img"
+          src="/images/ndc/user_profile.png"
+          alt="A screenshot of a user profile on ND Connect"
+          loading="lazy"
+        />
+      </div>
+      <div id="DESIGNING-FOR-ANXIETY" class="text-section fadeup  fadeup  fade--in--on--load">
+        <div>
+          <h3 id="subsection-header">Designing for Anxiety</h3>
+          <p>
+            Social platforms can easily trigger social anxiety in users. This is especially relevant considering how many autistic folks experience trauma related to how they're perceived and understood by others. We wanted to ease this as much as possible by making sure our users know how they appear to others on our platform and what comes next. At the end of our setup process, I've given users a preview of their profile, in the same card view that will pop up for other users in their connection matching stack. This gives users that extra piece of mind knowing exactly how they'll be represented to other users and putting all the information they've added to their profile into context.
+          </p>
+        </div>
+      </div>
       
     </div>
     <div id="PROBLEM-STATEMENT" class="quote section">
@@ -290,22 +307,21 @@
       </div>
       <div id="big-photo" class="item polaroid">
         <img
-          class="big-img image fadeup  fadeup  fade--in--on--load"
+          class="big-img image dark-invert fadeup  fadeup  fade--in--on--load"
           src="/images/ndc/professional_question.png"
           alt="Handwritten text saying 'How can we make professional growth more human?'"
           loading="lazy"
         />
       </div>
-      <div class="text-section">
-        <div id="ACCOUNTING-FOR-WHEN-THINGS-DONT-WORK-OUT" class="subsection fadeup  fadeup  fade--in--on--load">
-          <h3 id="subsection-header">
-            Accounting for when things don't work out
-          </h3>
+      <div id="ACCOUNTING-FOR-WHEN-THINGS-DONT-WORK-OUT" class="text-section fadeup  fadeup  fade--in--on--load">
+        <div>
+          <h3 id="subsection-header">Accounting for when things don't work out</h3>
           <p>
             Relationships are complicated, even when solely focused on support in a specific area. Two users might have multiple possible relationship types, and they might not know what their relationship looks like until they've met a few times. Despite that ambiguity and fluidity, our users specifically asked for structured relationship types. To accommodate this, we created a two-stage relationship system. New connections default to 'informal connections'. If things work out and you want a structured relationship type, you can 'commit' to a structured peer-peer or mentor-mentee relationship. Some users also expressed anxiety with ending a connection that wasn't working out. To counter this, we designed an expiring commitment system that gives users a built-in exit from a stale connection.
           </p>
         </div>
       </div>
+      
       <div id="big-photo" class="item polaroid">
         <img
           class="big-img image dark-invert fadeup  fadeup  fade--in--on--load"
@@ -315,7 +331,9 @@
         />
       </div>
     <div id="USER-QUOTE" class="quote section ">
-      <div class="quote-text fadeup  fade--in--on--load">
+    </div>
+    <div id="USER-QUOTE" class="quote section">
+      <div class="quote-text fadeup  fadeup  fade--in--on--load">
         <h2>
           “I’m so interested in your project because it seems like you will be
           making this kind of connection more broadly available and

@@ -21,6 +21,8 @@
   --footer-position: unset;
 
   --scroll: 0;
+
+  --meebo-vertical-alignment: 0px
 }
 
 /* DESKTOP */
@@ -45,6 +47,7 @@
   :root {
     --html-sizing: 100%;
     --body-height: 94dvh;
+    --meebo-vertical-alignment: 100vh
   }
 }
 
@@ -129,6 +132,14 @@ h1 {
   z-index: 1;
   transition: var(--animation);
 }
+
+#header{
+  transition: var(--animation);
+}
+
+/* #header:hover {
+  border: var(--body-color) 40px solid;
+} */
 
 #intro:hover {
   cursor: pointer;
@@ -228,6 +239,21 @@ h1 {
   transition: var(--animation);
 }
 
+.top_left_img {
+  background-position: left;
+  top: -4%;
+  left: -2%;
+  opacity: 0.25;
+  transition: var(--animation);
+}
+.top_right_img {
+  background-position: right;
+  bottom: -4%;
+  right: -2%;
+  opacity: 0.25;
+  transition: var(--animation);
+}
+
 .project {
   border: var(--body-color) 0px solid;
   transition: var(--animation);
@@ -253,6 +279,29 @@ h1 {
 }
 
 .project:hover > .project_card {
+  cursor: pointer;
+  transform: var(--transform);
+}
+
+.project:focus-within {
+  border: var(--body-color) 24px solid;
+  /* transform: scale(0.8); */
+}
+
+.project:focus-within > .left_img {
+  top: 2%;
+  left: 4%;
+  opacity: 0.4;
+  transform: rotate(5deg);
+}
+.project:focus-within > .right_img {
+  bottom: 2%;
+  right: 4%;
+  opacity: 0.4;
+  transform: rotate(5deg);
+}
+
+.project:focus-within     > .project_card {
   cursor: pointer;
   transform: var(--transform);
 }
@@ -285,10 +334,21 @@ h1 {
   background-color: var(--bg-color);
 }
 
-#header > .left_img {
-  /* background-image: url('../images/gifs/star.gif'); */
-  filter: brightness(-300%);
-  max-width: 400px;
+#header > .top_right_img {
+  right: 0px;
+  height: 60vmax;
+  width: 20vmax;
+  bottom: var(--meebo-vertical-alignment);
+  position: absolute;
+  filter: var(--dark-filter);
+  background-image: url('../images/gifs/meebo.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  max-width: 1200px;
+  transform: scale(calc(1 - (var(--scroll) / 100)));
+  translate:  calc(5px * var(--scroll) * 100 / 50) 0;
+  
 }
 #header > .right_img {
   right: unset;

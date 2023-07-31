@@ -1,10 +1,3 @@
-// function scrollTo(elementID) {
-//   document.getElementById(elementID).scrollIntoView(true);
-// }
-
-// var downArrow = document.getElementById('down_arrow');
-// downArrow.addEventListener('click', scrollTo('#honeycomb'), false);
-
 var nav = document.getElementById("nav-wrapper");
 window.onscroll = function () {
   if (document.body.scrollHeight >= 41) {
@@ -67,3 +60,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
     observer.observe(section);
   }
 });
+
+// const cards = document.getElementsByClassName('project')
+// cards.forEach((entry )=>{
+//   const mainLink = entry.children
+
+// })
