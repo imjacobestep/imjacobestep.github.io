@@ -151,6 +151,7 @@ body {
   align-content: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 
 .accent_text {
