@@ -15,10 +15,13 @@
   --footer-position: unset;
   --dark-filter: unset;
 
-  --nd-button-shadow-primary: inset 0px -4px 2px #312e819f, inset 0px 4px 2px #b6b4e850, 0px 2px 4px 0px #635fda2f;
-  --nd-button-shadow-secondary: inset 0px -4px 2px #312e810f,inset 0px 4px 2px #e6e5f47a, 0px 2px 4px 0px #817ede2a;
+  --nd-button-shadow-primary: inset 0px -4px 2px #312e819f,
+    inset 0px 4px 2px #b6b4e850, 0px 2px 4px 0px #635fda2f;
+  --nd-button-shadow-secondary: inset 0px -4px 2px #312e810f,
+    inset 0px 4px 2px #e6e5f47a, 0px 2px 4px 0px #817ede2a;
   --nd-button-shadow-tertiary: none;
-  --nd-button-shadow-hover: inset 0px -2px 2px #312e818f,inset 0px 2px 2px #d7d7ef7a, 0px 6px 6px 2px #635fda27;
+  --nd-button-shadow-hover: inset 0px -2px 2px #312e818f,
+    inset 0px 2px 2px #d7d7ef7a, 0px 6px 6px 2px #635fda27;
   --nd-button-shadow-pressed: inset 0px 8px 6px #312e81af;
 
   --nd-button-primary-bg: var(--nd-brand-600);
@@ -40,10 +43,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --nd-button-shadow-primary: inset 0px -4px 2px #6967b29f,inset 0px 4px 2px #efefff98, 0px 2px 4px 0px #635fda0c;
-    --nd-button-shadow-secondary: inset 0px -4px 2px #12121d5d,inset 0px 4px 2px #dbdbe81e, 0px 2px 4px 0px #635fda0c;
+    --nd-button-shadow-primary: inset 0px -4px 2px #6967b29f,
+      inset 0px 4px 2px #efefff98, 0px 2px 4px 0px #635fda0c;
+    --nd-button-shadow-secondary: inset 0px -4px 2px #12121d5d,
+      inset 0px 4px 2px #dbdbe81e, 0px 2px 4px 0px #635fda0c;
     --nd-button-shadow-tertiary: none;
-    --nd-button-shadow-hover: inset 0px -2px 2px #312e818f,inset 0px 4px 2px #b6b4e888, 0px 6px 6px 2px #6b67ea58;
+    --nd-button-shadow-hover: inset 0px -2px 2px #312e818f,
+      inset 0px 4px 2px #b6b4e888, 0px 6px 6px 2px #6b67ea58;
     --nd-button-shadow-pressed: inset 0px 6px 2px #312e81e1;
 
     --nd-button-primary-bg: var(--nd-brand-200);
@@ -94,6 +100,18 @@
 
 * {
   box-sizing: border-box;
+}
+
+aside {
+  width: 30%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  padding-block: 50px;
+  float: right;
+  font-style: italic;
+  color: var(--fg-color);
+  background-color: var(--bg-color);
+  border-radius: 10px;
 }
 
 .icon {
