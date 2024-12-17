@@ -2,14 +2,21 @@
 <html lang="en" id="bkg">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125139783-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-125139783-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-JJH0EPM721');
-</script>
+      gtag("config", "G-JJH0EPM721");
+    </script>
+
+    <meta name="view-transition" content="same-origin" />
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,8 +38,12 @@
     />
     <link id="style-used-color" rel="stylesheet" href="css/colors.css" />
     <link id="style-used-image" rel="stylesheet" href="css/images.css" />
-        <link id="style-used-nav" rel="stylesheet" href="css/nav.css" />
-        <link id="style-used-accessibility" rel="stylesheet" href="css/accessibility.css" />
+    <link id="style-used-nav" rel="stylesheet" href="css/nav.css" />
+    <link
+      id="style-used-accessibility"
+      rel="stylesheet"
+      href="css/accessibility.css"
+    />
     <style>
       :root {
         --dark-filter: invert(8%) sepia(62%) saturate(6368%) hue-rotate(239deg)
@@ -69,7 +80,7 @@
       <div class="top_left_img"></div>
       <div class="top_right_img"></div>
       <div class="right_img"></div>
-      <a href="./about.html" id="intro">
+      <a href="./about.html" id="intro" onclick="startTransition()">
         <div id="intro-title">
           <h1>Hi, I'm Jacob Estep</h1>
           <p>(they/he)</p>
@@ -87,8 +98,8 @@
     </div>
 
     <div class="divider">.</div>
-<!-- ND CONNECT -->
-<!-- <div
+    <!-- ND CONNECT -->
+    <!-- <div
 tabindex="6" role="button"    
   id="ndconnect"
   class="section fadeup fade--in--on--load project is-animated"
@@ -114,7 +125,8 @@ tabindex="6" role="button"
     <div class="divider">.</div> -->
     <!-- HONEYCOMB -->
     <div
-    tabindex="7" role="button"
+      tabindex="7"
+      role="button"
       id="honeycomb"
       class="section fadeup fade--in--on--load project is-animated"
     >
@@ -128,7 +140,11 @@ tabindex="6" role="button"
         src="/images/home/honeycomb-bg-right.svg"
         alt="test"
       />
-      <a aria-label="Honeycomb project" class="project_card" href="/projects/honeycomb.html">
+      <a
+        aria-label="Honeycomb project"
+        class="project_card"
+        href="/projects/honeycomb.html"
+      >
         <h1 class="project_title">Honeycomb</h1>
         <p class="project_tagline">
           Helping Mary's Place Seattle connect unhoused families with community
@@ -138,7 +154,12 @@ tabindex="6" role="button"
     </div>
     <div class="divider">.</div>
     <!-- VOCALAMP -->
-    <div tabindex="8" role="button" id="vocalamp" class="section fadeup fade--in--on--load project">
+    <div
+      tabindex="8"
+      role="button"
+      id="vocalamp"
+      class="section fadeup fade--in--on--load project"
+    >
       <img
         class="left_img replace-svg"
         src="/images/home/vocalamp-bg-left.svg"
@@ -149,7 +170,11 @@ tabindex="6" role="button"
         src="/images/home/vocalamp-bg-right.svg"
         alt="test"
       />
-      <a aria-label="Vocalamp project" class="project_card" href="/projects/vocalamp.html">
+      <a
+        aria-label="Vocalamp project"
+        class="project_card"
+        href="/projects/vocalamp.html"
+      >
         <h1 class="project_title">VocaLamp</h1>
         <p class="project_tagline">
           Helping parents and their children connect over distraction-free

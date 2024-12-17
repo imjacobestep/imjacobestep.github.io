@@ -135,14 +135,23 @@ a:link {
   top: 2%;
   left: 2%;
   opacity: 0.2;
-  background-image: url(/images/about/about-bg-right.svg);
+  background-color: var(--border-color);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url(/images/about/about-bg-right.svg);
+  mask-image: url(/images/about/about-bg-right.svg);
 }
 .right_img {
   background-position: right;
   bottom: 2%;
   right: 2%;
   opacity: 0.2;
-  background-image: url(/images/about/about-bg-left.svg);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: right;
+  background-color: var(--border-color);
+  -webkit-mask-image: url(/images/about/about-bg-left.svg);
+  mask-image: url(/images/about/about-bg-left.svg);
 }
 
 #intro {

@@ -15,14 +15,14 @@
   --footer-position: unset;
   --dark-filter: unset;
 
-  --nd-button-shadow-primary: inset 0px -4px 2px #312e819f,
-    inset 0px 4px 2px #b6b4e850, 0px 2px 4px 0px #635fda2f;
-  --nd-button-shadow-secondary: inset 0px -4px 2px #312e810f,
-    inset 0px 4px 2px #e6e5f47a, 0px 2px 4px 0px #817ede2a;
+  --nd-button-shadow-primary: inset 0px -4px 0px #312e819f,
+    0px 2px 0px #635fda2e;
+  --nd-button-shadow-secondary: inset 0px -2px 0px #312e810f,
+    0px 2px 2px 0px #827ede1f;
   --nd-button-shadow-tertiary: none;
-  --nd-button-shadow-hover: inset 0px -2px 2px #312e818f,
-    inset 0px 2px 2px #d7d7ef7a, 0px 6px 6px 2px #635fda27;
-  --nd-button-shadow-pressed: inset 0px 8px 6px #312e81af;
+  --nd-button-shadow-hover: inset 0px -4px 0px #312e811f,
+    0px 6px 0px 0px #635fda1a;
+  --nd-button-shadow-pressed: inset 0px 8px 0px #312e81af;
 
   --nd-button-primary-bg: var(--nd-brand-600);
   --nd-button-primary-fg: var(--nd-brand-50);
@@ -43,14 +43,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --nd-button-shadow-primary: inset 0px -4px 2px #6967b29f,
-      inset 0px 4px 2px #efefff98, 0px 2px 4px 0px #635fda0c;
-    --nd-button-shadow-secondary: inset 0px -4px 2px #12121d5d,
-      inset 0px 4px 2px #dbdbe81e, 0px 2px 4px 0px #635fda0c;
+    --nd-button-shadow-primary: inset 0px -4px 0px #6967b29f,
+      0px 2px 4px 0px #635fda0c;
+    --nd-button-shadow-secondary: inset 0px -4px 0px #12121d5d,
+      0px 2px 4px 0px #635fda0c;
     --nd-button-shadow-tertiary: none;
-    --nd-button-shadow-hover: inset 0px -2px 2px #312e818f,
-      inset 0px 4px 2px #b6b4e888, 0px 6px 6px 2px #6b67ea58;
-    --nd-button-shadow-pressed: inset 0px 6px 2px #312e81e1;
+    --nd-button-shadow-hover: inset 0px -2px 0px #312e818f,
+      0px 6px 6px 2px #6b67ea58;
+    --nd-button-shadow-pressed: inset 0px 6px 0px #312e81e1;
 
     --nd-button-primary-bg: var(--nd-brand-200);
     --nd-button-primary-fg: var(--basic-black);
@@ -333,18 +333,23 @@ body {
 }
 
 #SUMMARY {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: start;
-  justify-content: center;
+  justify-content: center; */
   justify-self: center;
+  gap: "2em";
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+  gap: 1rem;
+  place-content: center;
 }
 
 #left-details,
 #right-details {
-  width: 90%;
-  max-width: 500px;
+  width: 100%;
+  max-width: calc(500px - 0.5rem);
   padding-block: 10px;
 }
 
@@ -440,7 +445,7 @@ a > p {
   transform: translateY(0px);
 }
 .nd-connect-button:active > * {
-  transform: translateY(4px);
+  transform: translateY(2px);
 }
 
 /* QUOTE */
