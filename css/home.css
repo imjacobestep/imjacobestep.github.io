@@ -22,7 +22,7 @@
 
   --scroll: 0;
 
-  --meebo-vertical-alignment: 0px
+  --meebo-vertical-alignment: 0px;
 }
 
 /* DESKTOP */
@@ -47,7 +47,7 @@
   :root {
     --html-sizing: 100%;
     --body-height: 94dvh;
-    --meebo-vertical-alignment: 100vh
+    --meebo-vertical-alignment: 100vh;
   }
 }
 
@@ -133,7 +133,7 @@ h1 {
   transition: var(--animation);
 }
 
-#header{
+#header {
   transition: var(--animation);
 }
 
@@ -220,7 +220,6 @@ h1 {
   position: absolute;
   height: 40vh;
   width: 40vw;
-  /* filter: var(--dark-filter); */
   z-index: 0;
 }
 
@@ -301,7 +300,7 @@ h1 {
   transform: rotate(5deg);
 }
 
-.project:focus-within     > .project_card {
+.project:focus-within > .project_card {
   cursor: pointer;
   transform: var(--transform);
 }
@@ -341,14 +340,13 @@ h1 {
   bottom: var(--meebo-vertical-alignment);
   position: absolute;
   filter: var(--dark-filter);
-  background-image: url('../images/gifs/meebo.gif');
+  background-image: url("../images/gifs/meebo.gif");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
   max-width: 1200px;
   transform: scale(calc(1 - (var(--scroll) / 100)));
-  translate:  calc(5px * var(--scroll) * 100 / 50) 0;
-  
+  translate: calc(5px * var(--scroll) * 100 / 50) 0;
 }
 #header > .right_img {
   right: unset;

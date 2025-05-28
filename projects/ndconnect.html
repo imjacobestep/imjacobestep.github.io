@@ -47,6 +47,12 @@
         --card-bkg: #e1dceb;
         --strong-text: var(--bg-color);
       }
+      .youtube {
+        background-image: url(/images/ndc/ndc_cover.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
       @media (prefers-color-scheme: dark) {
         :root {
           --bg-color: #292929;
@@ -89,7 +95,8 @@
         alt="test"
       />
       <div id="video" class="item">
-        <iframe
+        <div id="header-img" class="youtube">.</div>
+        <!-- <iframe
           width="800"
           height="600"
           id="header-img"
@@ -99,7 +106,7 @@
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        ></iframe>
+        ></iframe> -->
         <!-- <p>our final video</p> -->
       </div>
       <h1 id="project-title" class="accent_text">ND Connect</h1>
@@ -110,22 +117,20 @@
         <div class="project-detail" id="context">
           <h3 id="subsection-header">Context</h3>
           <p>
-            ND Connect is a platform that connects neurodivergent adults with mentors, peers, and ecosystems of care. It's a vertical social network designed to be a safe, accessible, intersectional space for neurodivergent people to find their pod of champions.
+            ND Connect is a virtual clubhouse and mentorship platform for neurodivergent adults to learn and grow together. We want to build a new kind of networking, accessible to everyone.
           </p>
           <div class="project-detail" id="time-frame">
             <h3 id="subsection-header">Time Frame</h3>
-            <p>10 months and counting</p>
+            <p>since April 2023</p>
           </div>
         </div>
       </div>
       <div id="right-details">
         <div class="project-detail" id="role">
           <h3 id="subsection-header">Role</h3>
-          <p>Co-founding UX Engineer</p>
+          <p>Co-founder, CTO</p>
           <p>
-            (Primary User Research and Testing, Wireframing, Prototype
-            Development, Design Systems, Product Strategy, Front-end Web
-            Development)
+            (user research, prototyping, design system, product design & strategy, front-end development, analytics, test development, product management)
           </p>
         </div>
         <div class="project-detail" id="links">
@@ -142,17 +147,7 @@
               />
               <p>ndconnect.app</p>
             </a>
-            <a class="social" href="https://youtu.be/H16WPzBRqfo">
-              <img
-                class="icon"
-                src="/images/links/youtube.png"
-                alt="Final Presentation"
-                width="45px"
-                height="45px"
-                loading="lazy"
-              />
-              <p>Pitch video</p>
-            </a>
+           
           </div>
         </div>
       </div>
@@ -173,7 +168,7 @@
         <h2>Background</h2>
         <div>
           <p>
-            I met Eliana from a LinkedIn post in early 2023. She was looking for people to help build an online platform matching neurodivergent adults with mentors and peers. Finding a mentor who, like herself, had ADHD changed her life, and the idea had been kicking around between a few folks in the non-profit she co-founded. I reached out, met with her a few times, and hit the ground running! When I joined, the project was in its early stages, with a few user interviews and some rough prototypes of what the platform would look like.
+            I'm autistic myself, and I've experienced firsthand how that can affect your social capital and, as a result, your career. I want to help build a new way to network, accessible to folks like me! I met Eliana from a LinkedIn post in early 2023, looking for co-founders to build this exact thing. She had been working with Peter on a neurodiversity-focused non-profit for a few years already.
         </div>
         <h3 id="subsection-header">ND Connect Team</h3>
       </div>
@@ -187,166 +182,121 @@
       </div>
     </div>
 
-    <div id="ACCESSIBILITY" class="section">
+    <div id="PODCAST" class="section">
       
       <div class="text-section fadeup  fadeup  fade--in--on--load">
-        <h2 id="section-header">Accessibility</h2>
+        <h2 id="section-header">Before I ramble, I was on a podcast about ND Connect!</h2>
         
       </div>
-      <div id="big-photo" class="item polaroid">
-        <img
-          class="big-img image dark-invert fadeup  fadeup  fade--in--on--load"
-          src="/images/ndc/accessibility_question.png"
-          alt="Handwritten text saying: 'How can we ensure everyone in our community has access to mentorship and support?"
-          loading="lazy"
-        />
+      
+      <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/nd-connect-neurodivergent-mentorship-and-friendship/id1794032906?i=1000705380827"></iframe>
+
+      
+    </div>
+
+    <div id="TOOLS" class="section">
+      
+      <div class="text-section fadeup  fadeup  fade--in--on--load">
+        <h2 id="section-header">Tools I've used to build ND Connect</h2>
+        
       </div>
-      <div id="WCAG" class="text-section fadeup  fadeup  fade--in--on--load">
-        <div>
-          <h3 id="subsection-header">WCAG AAA</h3>
-          <p>
-            WCAG is the most widely accepted web accessibility standard. Most
-            sites aim for AA compliance, ensuring things are usable for most
-            people without going out of the way. We're specifically building for
-            a disabled and accessibility-aware community, so we needed to go
-            further than the bare minimum of AA compliance. We started with
-            designing all of our components with AAA contrast levels and
-            accessible touch target sizes in mind. Our choice to use Chakra UI
-            as our front-end component library was also deliberate, specifically
-            because of Chakra's deep ARIA screen-reader support. Once we started
-            development, keyboard navigation was also a high priority, even
-            including dedicated keyboard shortcuts in our connection browsing
-            stack.
+      
+      <div id="TOOLS-LIST" class="text-section fadeup  fadeup  fade--in--on--load">
+        <div class="tool-list">
+          <p class="tool">React</p>
+          <p class="tool">Typescript</p>
+          <p class="tool">Nextjs</p>
+          <p class="tool">Chakra UI</p>
+          <p class="tool">Tanstack Query</p>
+          <p class="tool">Firebase Auth</p>
+          <p class="tool">FCM</p>
+          <p class="tool">Expo</p>
+          <p class="tool">React Native</p>
+          <p class="tool">Zustand</p>
+          <p class="tool">Playwright</p>
+          <p class="tool">Jest</p>
+          <p class="tool">PostHog</p>
+          <p class="tool">Socket.io</p>
+          <p class="tool">Stream Chat</p>
+          <p class="tool">Vercel</p>
+          <p class="tool">TipTap</p>
+          <p class="tool">Figma</p>
+          <p class="tool">Figjam</p>
+          <p class="tool">Linear</p>
+          <p class="tool">PWA</p>
         </div>
       </div>
 
-      <div class="nd-button-wrapper fadeup fade--in--on--load">
-        <button aria-label="Primary Button" class="nd-connect-button primary"><div class="button-text">Primary Button</div></button>
-        <button aria-label="Secondary Button" class="nd-connect-button secondary"><div class="button-text">Secondary Button</div></button></button>
-        <button aria-label="Tertiary Button" class="nd-connect-button tertiary"><div class="button-text">Tertiary Button</div></button></button>
-      </div>
-      
-      <div id="BUTTON-STATES" class="text-section fadeup  fade--in--on--load">
-        <div>
-          <h3 id="subsection-header">Button States</h3>
-          <p>
-            People with some cognitive disabilities and motor impairments have
-            difficulties telling the difference between a button that is clicked
-            and one which isn't. Simple changes to make button states super
-            clear can make a huge difference and reduce frustration. For ND
-            Connect, I combined a more visually engaging skeuomorphic button
-            style with our minimal design system. Immediately after testing this
-            out on our landing page, we got specific praise for this. Our
-            buttons were satisfying to click, and some users told us they would
-            click them just because it's fun!
-        </div>
-      </div>
-      <div id="big-photo" class="item polaroid">
-        <img
-          class="big-img image dark-invert fadeup  fadeup  fade--in--on--load"
-          src="/images/ndc/accessibility_disabilities.png"
-          alt="A collection of shapes with the words ADHD, Autism, Dyslexia, Dyspraxia, and memory disabilities written in them"
-          loading="lazy"
-        />
-      </div>
-      <div id="COPYWRITING" class="text-section fadeup  fadeup  fade--in--on--load">
-        <div>
-          <h3 id="subsection-header">Copywriting</h3>
-          <p>
-            The visual attributes of ND Connect were accessible, but the content
-            needed to be too. We were very deliberate about how we worded button
-            labels, headers, and input prompts to ensure they were easily
-            understandable across disabilities. Text formatting was another key
-            choice, bolding key points, avoiding underlining for dyslexic users,
-            and using easily-scannable bullet points where possible.
-          </p>
-        </div>
-      </div>
-      <div id="big-photo" class="item polaroid nd-button-wrapper">
-        <img
-          class="big-img image dark-invert fadeup  fadeup  fade--in--on--load profile--img"
-          src="/images/ndc/user_profile.png"
-          alt="A screenshot of a user profile on ND Connect"
-          loading="lazy"
-        />
-      </div>
-      <div id="DESIGNING-FOR-ANXIETY" class="text-section fadeup  fadeup  fade--in--on--load">
-        <div>
-          <h3 id="subsection-header">Designing for Anxiety</h3>
-          <p>
-            Social platforms can easily trigger social anxiety in users. This is especially relevant considering how many autistic folks experience trauma related to how they're perceived and understood by others. We wanted to ease this as much as possible by making sure our users know how they appear to others on our platform and what comes next. At the end of our setup process, I've given users a preview of their profile, in the same card view that will pop up for other users in their connection matching stack. This gives users that extra piece of mind knowing exactly how they'll be represented to other users and putting all the information they've added to their profile into context.
-          </p>
-        </div>
-      </div>
       
     </div>
-    <div id="PROBLEM-STATEMENT" class="quote section">
-      <div class="quote-text fadeup  fadeup  fade--in--on--load">
-        <h2>
-          How can we help people who
-          <strong
-            >learn and think differently grow in the ways that matter</strong
-          >
-          to them?
-        </h2>
-      </div>
-    </div>
+  
     <div id="HUMANITY" class="section">
       <div class="text-section">
-        <h2 id="section-header">Humanity</h2>
+        <h2 id="section-header">What we've been up to</h2>
         <div id="BRAINSTORMING" class="subsection fadeup  fadeup  fade--in--on--load">
-          <h3 id="subsection-header">Robust Profile Building</h3>
+          <h3 id="subsection-header">Launching and learning quickly</h3>
           <p>
-            On a platform all about finding someone who gets you, you need solid
-            profile prompts. Our customer interviews and user tests yielded some
-            interesting questions people would like to know about each other
-            before connecting. We incorporated these as optional prompts to
-            complement our identity tag system. This puts a lot of information
-            in a profile, so we prioritized the scan-ability of our profile card
-            design.
+            We started planning out ND Connect around May of 2023. Initially, we thought the core problem we needed to solve was helping people keep up with long term mentor/mentee relationships. We built our MVP around creating profiles, swiping Tinder-style on mentors, and booking meetings with them through our platform. We also set up a Slack community and weekly community hours for early testers to talk to us and each other, shaping what we built. We very quickly learned that THIS was the product, not a buggy hybrid of LinkedIn and Calendly. People connected, found friends, commiserated about job searching, and shared milestones with each other in our Slack. A few weeks in, and we knew we needed to bring our Slack community into our app.
           </p>
         </div>
       </div>
-      <div id="big-photo" class="item polaroid">
-        <img
-          class="big-img image dark-invert fadeup  fadeup  fade--in--on--load"
-          src="/images/ndc/professional_question.png"
-          alt="Handwritten text saying 'How can we make professional growth more human?'"
-          loading="lazy"
-        />
-      </div>
+     
       <div id="ACCOUNTING-FOR-WHEN-THINGS-DONT-WORK-OUT" class="text-section fadeup  fadeup  fade--in--on--load">
         <div>
-          <h3 id="subsection-header">Accounting for when things don't work out</h3>
+          <h3 id="subsection-header">Swiping fatigue, and a new home screen</h3>
           <p>
-            Relationships are complicated, even when solely focused on support in a specific area. Two users might have multiple possible relationship types, and they might not know what their relationship looks like until they've met a few times. Despite that ambiguity and fluidity, our users specifically asked for structured relationship types. To accommodate this, we created a two-stage relationship system. New connections default to 'informal connections'. If things work out and you want a structured relationship type, you can 'commit' to a structured peer-peer or mentor-mentee relationship. Some users also expressed anxiety with ending a connection that wasn't working out. To counter this, we designed an expiring commitment system that gives users a built-in exit from a stale connection.
+            We also heard loud and clear that many of our members were tired of swiping on people. It's association with dating apps just confused people. We added a search-based member directory, and rewrote our home screen from the ground up. Gone were the four big ugly buttons (as our designer, I'd been campaigning for this for a long time!), now our home screen highlighted what made our community special: the people.
+          </p>
+        </div>
+      </div>
+
+      <div id="ACCOUNTING-FOR-WHEN-THINGS-DONT-WORK-OUT" class="text-section fadeup  fadeup  fade--in--on--load">
+        <div>
+          <h3 id="subsection-header">New competitor, time to build our own community feed</h3>
+          <p>
+            As we approached our year mark, we got our first major competitor 💀. It was scary! They had investor money, experienced founders with a focus on marketing, and they already had a community feed. The timing was not ideal (I was about to move across the country, and one of my co-founders was starting a second job to keep us going), but we had to catch up. In all the frantic rush, we chose an existing community SDK that would become the bane of our existence for almost a year (do a lot of research and prototyping folks, tech debt sucks).
+          </p>
+        </div>
+      </div>
+
+      <div id="ACCOUNTING-FOR-WHEN-THINGS-DONT-WORK-OUT" class="text-section fadeup  fadeup  fade--in--on--load">
+        <div>
+          <h3 id="subsection-header">Gearing up for our first university pilots</h3>
+          <p>
+            After adding the community and DMs came an admin portal for our university partners! Here, they could add events, resources, and announcements for their students to see in our main app. Faculty members could also register as 'allies' after a training. They show up to students using our platform, without getting access to our main app (we really want to keep our community members safe and private!).
+          </p>
+        </div>
+      </div>
+
+      <div id="ACCOUNTING-FOR-WHEN-THINGS-DONT-WORK-OUT" class="text-section fadeup  fadeup  fade--in--on--load">
+        <div>
+          <h3 id="subsection-header">Rewriting DMs from scratch</h3>
+          <p>
+            In Spring of 2025, we really needed to replace our community/DMs stack. It was very limited and very buggy. We started off with a total rewrite of our DMs, using our own back-end, file uploads, and web-sockets. This was a big moment for us to prove to ourselves that, especially after making a choice we'd regret initially, we could deliver a solid technical product for our community. The new DMs got rave reviews! Messaging was fast, stable, and felt a lot more like the Slack community we were used to.
+          </p>
+        </div>
+      </div>
+
+      <div id="ACCOUNTING-FOR-WHEN-THINGS-DONT-WORK-OUT" class="text-section fadeup  fadeup  fade--in--on--load">
+        <div>
+          <p>
+            Now, we're working on rebuilding the community side of things, replacing our old stack once and for all! Wish us luck!
+          </p>
+        </div>
+      </div>
+
+
+      <div id="ACCOUNTING-FOR-WHEN-THINGS-DONT-WORK-OUT" class="text-section fadeup  fadeup  fade--in--on--load">
+        <div>
+          <p>
+            <b>If you need to know more about ND Connect, please reach out to me!</b>
           </p>
         </div>
       </div>
       
-      <div id="big-photo" class="item polaroid">
-        <img
-          class="big-img image dark-invert fadeup  fadeup  fade--in--on--load"
-          src="/images/ndc/relationship_structure.png"
-          alt="a flow chart showing two users connect as informal connections and choose to disconnect or commit to a structured relationship"
-          loading="lazy"
-        />
-      </div>
-    <div id="USER-QUOTE" class="quote section ">
-    </div>
-    <div id="USER-QUOTE" class="quote section">
-      <div class="quote-text fadeup  fadeup  fade--in--on--load">
-        <h2>
-          “I’m so interested in your project because it seems like you will be
-          making this kind of connection more broadly available and
-          <strong
-          >it’s exactly the platform I would have looked for myself a few
-          years back if it had existed</strong
-          >. ”
-          </h2>
-          <p>-Eleanor, a future mentor</p>
-      </div>
-    </div>
+     
+   
+   
 
     
   </body>

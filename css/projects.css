@@ -102,6 +102,24 @@
   box-sizing: border-box;
 }
 
+.tool-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+#TOOLS-LIST {
+  padding-top: 0rem;
+}
+
+.tool {
+  border: 1px solid var(--fg-color);
+  border-radius: 1rem;
+  padding: 0.25rem 0.625rem;
+  margin: 0;
+}
+
 aside {
   width: 30%;
   padding-left: 0.5rem;
