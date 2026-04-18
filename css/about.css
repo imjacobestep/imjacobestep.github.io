@@ -138,10 +138,10 @@ a:link {
   background-color: var(--border-color);
   mask-size: contain;
   mask-repeat: no-repeat;
-  -webkit-mask-image: url(/images/about/about-bg-right.svg);
-  mask-image: url(/images/about/about-bg-right.svg);
+  -webkit-mask-image: url(/images/about/about-bg-left.svg);
+  mask-image: url(/images/about/about-bg-left.svg);
 }
-.right_img {
+/* .right_img {
   background-position: right;
   bottom: 2%;
   right: 2%;
@@ -152,7 +152,7 @@ a:link {
   background-color: var(--border-color);
   -webkit-mask-image: url(/images/about/about-bg-left.svg);
   mask-image: url(/images/about/about-bg-left.svg);
-}
+} */
 
 #intro {
   max-width: 500px;
@@ -265,7 +265,10 @@ a:link {
   /* transition-property: transform, opacity;
   transition-duration: 1s;
   transition-timing-function: linear; */
-  transition: transform 1s linear, opacity 1s linear, var(--animation);
+  transition:
+    transform 1s linear,
+    opacity 1s linear,
+    var(--animation);
 }
 .in-view {
   transform: none;
